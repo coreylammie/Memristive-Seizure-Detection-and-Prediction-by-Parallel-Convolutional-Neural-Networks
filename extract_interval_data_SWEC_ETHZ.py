@@ -1,6 +1,5 @@
 import os
 import sys
-
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from utils import create_dir, round_down, get_time
@@ -16,6 +15,36 @@ import pyedflib
 import scipy
 from scipy.io import loadmat
 import os
+
+
+# ------------------------------------------------------------------------------
+# Generic Parameters
+# ------------------------------------------------------------------------------
+n_channels = 22
+sample_rate = 256  # Sample rate (Hz)
+window_size = 64  # Window size (seconds)
+# # Stride length (seconds) used to generate synthetic preictal and ictal samples ------------- To be implemented
+# stride_len = 1
+# Data directory path
+data_dir = "E:/ieeg-swez.ethz.ch/"
+processed_data_dir = "processed_data"  # Processed data output directory path
+patients = np.arange(1, 19)
+# ------------------------------------------------------------------------------
+# Detection-specific Parameters
+# ------------------------------------------------------------------------------
+ictal_interval_padding_duration = 32
+# ------------------------------------------------------------------------------
+# Prediction-specific Parameters
+# ------------------------------------------------------------------------------
+seizure_occurance_period = 30  # Seizure occurrence period (minutes)
+seizure_prediction_horizon = 5  # Seizure prediction horizon (minutes)
+# ------------------------------------------------------------------------------
+extract_ictal_samples = True
+extract_preictal_samples = True
+# ------------------------------------------------------------------------------
+
+print(patients)
+exit(0)
 
 
 def extract_interval_data(
@@ -38,7 +67,8 @@ def extract_interval_data(
     ictal_files = []
     preictal_intervals = []
     preictal_files = []
-    seizure_begin_timestamps = np.array(patient_summary["seizure_begin"]).flatten()
+    seizure_begin_timestamps = np.array(
+        patient_summary["seizure_begin"]).flatten()
     seizure_end_timestamps = np.array(patient_summary["seizure_end"]).flatten()
     assert len(seizure_begin_timestamps) == len(seizure_end_timestamps)
     n_seizures = len(seizure_begin_timestamps)
@@ -128,7 +158,8 @@ def extract_interval_data(
         interictal_files_used = 0
         while interictal_files_used < n_interictal_files:
             if interictal_file_idx not in active_files:
-                interictal_intervals.append([(file_idx - 1) * 3600, file_idx * 3600])
+                interictal_intervals.append(
+                    [(file_idx - 1) * 3600, file_idx * 3600])
                 interictal_files.append(
                     [
                         (file_idx - 1) * 3600,
@@ -185,7 +216,7 @@ def extract_batches_from_interval(
         data = load_patient_data(patient, files, data_dir)[:, start:]
     else:
         end = ((interval_end - files_start) * sample_rate) + 1
-        data = load_patient_data(patient, files, data_dir)[:, start : end + 1]
+        data = load_patient_data(patient, files, data_dir)[:, start: end + 1]
 
     if (data.shape[0] >= n_channels) and (
         data.shape[1] >= sample_rate * window_size * len(files)
@@ -263,15 +294,15 @@ n_channels = 22
 # print(data.shape)
 # print(idx)
 
-data, idx = extract_batches(
-    1,
-    interictal_files[0],
-    "E:/ieeg-swez.ethz.ch/",
-    0,
-    interictal_intervals,
-    256,
-    64,
-    22,
-)
-print(data.shape)
-print(idx)
+# data, idx = extract_batches(
+#     1,
+#     interictal_files[0],
+#     "E:/ieeg-swez.ethz.ch/",
+#     0,
+#     interictal_intervals,
+#     256,
+#     64,
+#     22,
+# )
+# print(data.shape)
+# print(idx)
