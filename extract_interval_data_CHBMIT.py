@@ -299,8 +299,6 @@ if __name__ == "__main__":
     for patient in patients:
         try:
             print("Patient: %02d" % patient)
-            spectogram_index = 0
-            total_instances = 0
             create_dir(processed_data_dir)
             (
                 interictal_intervals,
@@ -362,7 +360,6 @@ if __name__ == "__main__":
                 interictal_data,
             )
             del interictal_data
-
             if extract_ictal_samples:
                 # Extract ictal samples (batches)
                 for file in ictal_files:
