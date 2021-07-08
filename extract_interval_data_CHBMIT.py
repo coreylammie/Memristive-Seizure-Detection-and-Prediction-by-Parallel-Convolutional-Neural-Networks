@@ -26,6 +26,7 @@ processed_data_dir = "processed_data"  # Processed data output directory path
 patients = np.arange(1, 24)
 # Remove patients 4, 6, 7, 12, and 20, as their records contain anomalous data
 patients = np.delete(patients, [3, 5, 6, 11, 19])
+patients = [1]  # TEMP
 # ------------------------------------------------------------------------------
 # Detection-specific Parameters
 # ------------------------------------------------------------------------------

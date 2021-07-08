@@ -1,7 +1,5 @@
 import os
 import sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
 from utils import create_dir, round_down, get_time
 import copy
 from math import floor
@@ -30,7 +28,7 @@ data_dir = "E:/ieeg-swez.ethz.ch/"
 processed_data_dir = "processed_data"  # Processed data output directory path
 patients = np.arange(1, 19)
 patients = [1]  # TEMP
-n_interictal_files = 1  # 10 TEMP
+n_interictal_files = 10
 # ------------------------------------------------------------------------------
 # Detection-specific Parameters
 # ------------------------------------------------------------------------------
@@ -71,8 +69,7 @@ def extract_interval_data(
         patient_summary["seizure_begin"]).flatten()
     seizure_end_timestamps = np.array(patient_summary["seizure_end"]).flatten()
     assert len(seizure_begin_timestamps) == len(seizure_end_timestamps)
-    # n_seizures = len(seizure_begin_timestamps)
-    n_seizures = 1  # TEMP
+    n_seizures = len(seizure_begin_timestamps)
     active_files = []
     # Extract ictal and preictal interval data
     for seizure_idx in range(n_seizures):
@@ -301,11 +298,8 @@ def gen_synthetic_batches(
         synthetic_batches = np.array([]).reshape(
             n_channels, 0, sample_rate * window_size
         )
-        synthetic_interval_start = interval_start + \
-            timedelta(seconds=stride_len)
-        synthetic_interval_end = synthetic_interval_start + timedelta(
-            seconds=window_size
-        )
+        synthetic_interval_start = interval_start + stride_len
+        synthetic_interval_end = synthetic_interval_start + window_size
         while synthetic_interval_end < interval_end:
             extracted_batches = extract_batches_from_interval(
                 patient,
@@ -324,8 +318,8 @@ def gen_synthetic_batches(
                 synthetic_batches = np.concatenate(
                     (synthetic_batches, extracted_batches), axis=1
                 )
-            synthetic_interval_start += timedelta(seconds=stride_len)
-            synthetic_interval_end += timedelta(seconds=stride_len)
+            synthetic_interval_start += stride_len
+            synthetic_interval_end += stride_len
 
         return synthetic_batches, segment_index
     else:
