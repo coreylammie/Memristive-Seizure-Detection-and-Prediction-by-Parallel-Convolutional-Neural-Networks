@@ -18,7 +18,7 @@ n_channels = 22
 sample_rate = 256  # Sample rate (Hz)
 window_size = 64  # Window size (seconds)
 # Stride length (seconds) used to generate synthetic preictal and ictal samples
-stride_len = 1
+stride_len = 32
 # Data directory path
 # data_dir = "/scratch/jcu/cl/CHBMIT/chb-mit-scalp-eeg-database-1.0.0/"
 data_dir = "E:/chbmit-1.0.0.physionet.org/"
@@ -26,6 +26,7 @@ processed_data_dir = "processed_data"  # Processed data output directory path
 patients = np.arange(1, 24)
 # Remove patients 4, 6, 7, 12, and 20, as their records contain anomalous data
 patients = np.delete(patients, [3, 5, 6, 11, 19])
+patients = [1]  # TEMP
 # ------------------------------------------------------------------------------
 # Detection-specific Parameters
 # ------------------------------------------------------------------------------
@@ -36,7 +37,7 @@ ictal_interval_padding_duration = 32
 seizure_occurance_period = 30  # Seizure occurrence period (minutes)
 seizure_prediction_horizon = 5  # Seizure prediction horizon (minutes)
 # ------------------------------------------------------------------------------
-extract_ictal_samples = True
+extract_ictal_samples = False
 extract_preictal_samples = True
 generate_synthetic_samples = True
 # ------------------------------------------------------------------------------
@@ -355,7 +356,7 @@ if __name__ == "__main__":
             np.save(
                 os.path.join(
                     processed_data_dir,
-                    "patient_%02d_interictal.npy" % patient,
+                    "CHBMIT_patient_%02d_interictal.npy" % patient,
                 ),
                 interictal_data,
             )
@@ -380,7 +381,7 @@ if __name__ == "__main__":
                 np.save(
                     os.path.join(
                         processed_data_dir,
-                        "patient_%02d_ictal.npy" % patient,
+                        "CHBMIT_patient_%02d_ictal.npy" % patient,
                     ),
                     ictal_data,
                 )
@@ -408,7 +409,7 @@ if __name__ == "__main__":
                     np.save(
                         os.path.join(
                             processed_data_dir,
-                            "patient_%02d_synthetic_ictal.npy" % patient,
+                            "CHBMIT_patient_%02d_synthetic_ictal.npy" % patient,
                         ),
                         synthetic_ictal_data,
                     )
@@ -435,7 +436,7 @@ if __name__ == "__main__":
                 np.save(
                     os.path.join(
                         processed_data_dir,
-                        "patient_%02d_preictal.npy" % patient,
+                        "CHBMIT_patient_%02d_preictal.npy" % patient,
                     ),
                     preictal_data,
                 )
@@ -464,7 +465,7 @@ if __name__ == "__main__":
                     np.save(
                         os.path.join(
                             processed_data_dir,
-                            "patient_%02d_synthetic_preictal.npy" % patient,
+                            "CHBMIT_patient_%02d_synthetic_preictal.npy" % patient,
                         ),
                         synthetic_preictal_data,
                     )

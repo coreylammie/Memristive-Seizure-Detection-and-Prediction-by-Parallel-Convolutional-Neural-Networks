@@ -29,7 +29,8 @@ window_size = 64  # Window size (seconds)
 data_dir = "E:/ieeg-swez.ethz.ch/"
 processed_data_dir = "processed_data"  # Processed data output directory path
 patients = np.arange(1, 19)
-n_interictal_files = 10
+patients = [1]
+n_interictal_files = 1
 # ------------------------------------------------------------------------------
 # Detection-specific Parameters
 # ------------------------------------------------------------------------------
@@ -40,8 +41,9 @@ ictal_interval_padding_duration = 32
 seizure_occurance_period = 30  # Seizure occurrence period (minutes)
 seizure_prediction_horizon = 5  # Seizure prediction horizon (minutes)
 # ------------------------------------------------------------------------------
-extract_ictal_samples = True
+extract_ictal_samples = True  # False
 extract_preictal_samples = True
+generate_synthetic_samples = True
 # ------------------------------------------------------------------------------
 
 
@@ -69,7 +71,8 @@ def extract_interval_data(
         patient_summary["seizure_begin"]).flatten()
     seizure_end_timestamps = np.array(patient_summary["seizure_end"]).flatten()
     assert len(seizure_begin_timestamps) == len(seizure_end_timestamps)
-    n_seizures = len(seizure_begin_timestamps)
+    # n_seizures = len(seizure_begin_timestamps)
+    n_seizures = 1  # TEMP
     active_files = []
     # Extract ictal and preictal interval data
     for seizure_idx in range(n_seizures):
@@ -159,12 +162,13 @@ def extract_interval_data(
                 interictal_intervals.append(
                     [(file_idx - 1) * 3600, file_idx * 3600])
                 interictal_files.append(
-                    [
+                    [[
                         (file_idx - 1) * 3600,
                         file_idx * 3600,
                         "ID%02d_%dh.mat" % (patient, interictal_file_idx),
-                    ]
+                    ]]
                 )
+                interictal_files_used += 1
 
             interictal_file_idx += 1
 
@@ -309,7 +313,7 @@ if __name__ == "__main__":
                 synthetic_preictal_segment_index = 0
                 preictal_data = copy.deepcopy(interictal_data)
                 synthetic_preictal_data = copy.deepcopy(interictal_data)
-            
+
             # Extract interictal samples (batches)
             for file in interictal_files:
                 data, interictal_segment_index = extract_batches(
@@ -329,7 +333,7 @@ if __name__ == "__main__":
             np.save(
                 os.path.join(
                     processed_data_dir,
-                    "patient_%02d_interictal.npy" % patient,
+                    "SWEC_ETHZ_patient_%02d_interictal.npy" % patient,
                 ),
                 interictal_data,
             )
@@ -354,39 +358,39 @@ if __name__ == "__main__":
                 np.save(
                     os.path.join(
                         processed_data_dir,
-                        "patient_%02d_ictal.npy" % patient,
+                        "SWEC_ETHZ_patient_%02d_ictal.npy" % patient,
                     ),
                     ictal_data,
                 )
                 del ictal_data
-                if generate_synthetic_samples:
-                    # Generate synthetic ictal samples (batches)
-                    for file in ictal_files:
-                        data, synthetic_ictal_segment_index = gen_synthetic_batches(
-                            patient,
-                            file,
-                            data_dir,
-                            synthetic_ictal_segment_index,
-                            ictal_intervals,
-                            sample_rate,
-                            window_size,
-                            stride_len,
-                            n_channels,
-                        )
-                        if data.size > 0:
-                            synthetic_ictal_data = np.concatenate(
-                                (synthetic_ictal_data, data), axis=1
-                            )
+                # if generate_synthetic_samples:
+                #     # Generate synthetic ictal samples (batches)
+                #     for file in ictal_files:
+                #         data, synthetic_ictal_segment_index = gen_synthetic_batches(
+                #             patient,
+                #             file,
+                #             data_dir,
+                #             synthetic_ictal_segment_index,
+                #             ictal_intervals,
+                #             sample_rate,
+                #             window_size,
+                #             stride_len,
+                #             n_channels,
+                #         )
+                #         if data.size > 0:
+                #             synthetic_ictal_data = np.concatenate(
+                #                 (synthetic_ictal_data, data), axis=1
+                #             )
 
-                    print("Synthetic Ictal: ", synthetic_ictal_data.shape)
-                    np.save(
-                        os.path.join(
-                            processed_data_dir,
-                            "patient_%02d_synthetic_ictal.npy" % patient,
-                        ),
-                        synthetic_ictal_data,
-                    )
-                    del synthetic_ictal_data
+                #     print("Synthetic Ictal: ", synthetic_ictal_data.shape)
+                #     np.save(
+                #         os.path.join(
+                #             processed_data_dir,
+                #             "patient_%02d_synthetic_ictal.npy" % patient,
+                #         ),
+                #         synthetic_ictal_data,
+                #     )
+                #     del synthetic_ictal_data
 
             if extract_preictal_samples:
                 # Extract preictal samples (batches)
@@ -405,45 +409,46 @@ if __name__ == "__main__":
                         preictal_data = np.concatenate(
                             (preictal_data, data), axis=1)
 
+                    break
+
                 print("Preictal: ", preictal_data.shape)
                 np.save(
                     os.path.join(
                         processed_data_dir,
-                        "patient_%02d_preictal.npy" % patient,
+                        "SWEC_ETHZ_patient_%02d_preictal.npy" % patient,
                     ),
                     preictal_data,
                 )
                 del preictal_data
-                if generate_synthetic_samples:
-                    # Generate synthetic preictal samples (batches)
-                    for file in preictal_files:
-                        data, synthetic_preictal_segment_index = gen_synthetic_batches(
-                            patient,
-                            file,
-                            data_dir,
-                            synthetic_preictal_segment_index,
-                            preictal_intervals,
-                            sample_rate,
-                            window_size,
-                            stride_len,
-                            n_channels,
-                        )
-                        if data.size > 0:
-                            synthetic_preictal_data = np.concatenate(
-                                (synthetic_preictal_data, data), axis=1
-                            )
+                # if generate_synthetic_samples:
+                #     # Generate synthetic preictal samples (batches)
+                #     for file in preictal_files:
+                #         data, synthetic_preictal_segment_index = gen_synthetic_batches(
+                #             patient,
+                #             file,
+                #             data_dir,
+                #             synthetic_preictal_segment_index,
+                #             preictal_intervals,
+                #             sample_rate,
+                #             window_size,
+                #             stride_len,
+                #             n_channels,
+                #         )
+                #         if data.size > 0:
+                #             synthetic_preictal_data = np.concatenate(
+                #                 (synthetic_preictal_data, data), axis=1
+                #             )
 
-                    print("Synthetic Preictal: ",
-                          synthetic_preictal_data.shape)
-                    np.save(
-                        os.path.join(
-                            processed_data_dir,
-                            "patient_%02d_synthetic_preictal.npy" % patient,
-                        ),
-                        synthetic_preictal_data,
-                    )
-                    del synthetic_preictal_data
+                #     print("Synthetic Preictal: ",
+                #           synthetic_preictal_data.shape)
+                #     np.save(
+                #         os.path.join(
+                #             processed_data_dir,
+                #             "patient_%02d_synthetic_preictal.npy" % patient,
+                #         ),
+                #         synthetic_preictal_data,
+                #     )
+                #     del synthetic_preictal_data
         except Exception as e:
             print("Patient: %02d Failed" % patient)
             print(e)
-
