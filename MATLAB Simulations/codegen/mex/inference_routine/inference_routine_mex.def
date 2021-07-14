@@ -1,0 +1,17 @@
+LIBRARY inference_routine_mex.mexw64
+EXPORTS
+mexFunction
+mexfilerequiredapiversion
+emlrtMexFcnProperties
+inference_routine
+inference_routine_initialize
+inference_routine_terminate
+inference_routine_atexit
+emxFreeStruct_sparse
+emxEnsureCapacity_real_T
+emxEnsureCapacity_int32_T
+emxInitStruct_sparse
+emxInit_int32_T
+emxFree_int32_T
+emxFree_real_T
+emxInit_real_T

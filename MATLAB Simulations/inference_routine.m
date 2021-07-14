@@ -1,5 +1,5 @@
 function out = inference_routine(tile_1, tile_2, max_weight, n_kernels, kernel_sizes, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, test_data, test_labels, n_samples)
-    predictions = zeros(n_samples+1, 1);
+    predictions = zeros(1, n_samples+1);
     V_BL = zeros(64,1); %Ground column voltages (set columns to 0 V)
     R_source = 20; % 20-50 source resistance (ohms) for simulation model
     R_line = 2;   % 2-5 line resistance (ohms) for simulation model
@@ -14,7 +14,6 @@ function out = inference_routine(tile_1, tile_2, max_weight, n_kernels, kernel_s
     G_max = 1./R_min; % Calculate max conductance based on resistance
     G_min = 1./R_max; % Calculate min conductance based on resistance
     output_bits = 6;
-    output_bits = 6;
     scaling_factor = (G_max - G_min)./max_weight;
     for sample_idx = 1:n_samples+1
         disp(sample_idx);
@@ -23,22 +22,19 @@ function out = inference_routine(tile_1, tile_2, max_weight, n_kernels, kernel_s
         % Forward operation for tiles 1 and 2 (convolution)
         conv_out = zeros(128 - kernel_sizes(1) - kernel_sizes(2) + 2, n_kernels);
         % First convolution
-        for i = 1:(64 - kernel_sizes(1) + 1)
+        parfor i = 1:(64 - kernel_sizes(1) + 1)
             V_WL = [1, input_vec(i:i+kernel_sizes(1)-1), zeros(1, kernel_sizes(2)+1)];
             [~, I_temp, ~] = voltage_deg_model_sparse_conductance(tile_1, V_WL, V_BL, R_source, R_line);
             I_temp = (I_temp - G_min(1)) ./ scaling_factor(1);
-            pos_I = I_temp(:, 1:2:end);
-            neg_I = I_temp(:, 2:2:end);
-            conv_out(i, 1:end) = pos_I - neg_I;
+            conv_out(i, :) = I_temp(:, 1:2:end) - I_temp(:, 2:2:end);
         end
         % Second convolution
-        for i = 1:(64 - kernel_sizes(2) + 1)
+        i_offset = 64 - kernel_sizes(1) + 1;
+        parfor i = 1:(64 - kernel_sizes(2) + 1)
             V_WL = [1, input_vec(i:i+kernel_sizes(2)-1), zeros(1, kernel_sizes(1)+1),];
             [~, I_temp, ~] = voltage_deg_model_sparse_conductance(tile_2, V_WL, V_BL, R_source, R_line);
             I_temp = (I_temp - G_min(2)) ./ scaling_factor(2);
-            pos_I = I_temp(:, 1:2:end);
-            neg_I = I_temp(:, 2:2:end);
-            conv_out(i + 64 - kernel_sizes(1) + 1, 1:end) = pos_I - neg_I;
+            conv_out(i + i_offset, :) = I_temp(:, 1:2:end) - I_temp(:, 2:2:end);
         end
         % Implement output resolution
         conv_outstep = (max(max(conv_out)) - min(min(conv_out)))./(2^output_bits-1);
@@ -47,22 +43,18 @@ function out = inference_routine(tile_1, tile_2, max_weight, n_kernels, kernel_s
         conv_out(conv_out<0)=0;
         % Forward operation for tile 8 (avgerage pooling)
         avgpool_out = zeros(34, 32);
-        for i=1:2:68
-            for j=1:32
-                if i==1
-                    avgpool_out(1,j) = 0.5*conv_out(i,j)+0.5*conv_out(i+1,j);
-                else
-                    avgpool_out((i+1)/2,j) = 0.5*conv_out(i,j)+0.5*conv_out(i+1,j);
-                end
-            end
+        i_values = 1:2:68;
+        parfor i_values_idx = 1:numel(i_values)            
+            avgpool_out(i_values_idx, :) = conv_out(i_values(i_values_idx),1:32) + conv_out(i_values(i_values_idx)+1,1:32);
         end
+        avgpool_out = avgpool_out ./ 2;
         % Apply ReLU
         avgpool_out(avgpool_out<0) = 0;
         % Forward operation for tile 3-7 (first dense layer with 8 neurons)
         avgpool_out = reshape(avgpool_out,[1088,1]); % Reformat the output from previous layer
         total = zeros(1,16);
         reading = [1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64];
-        for i=1:17 %1088/64=17
+        parfor i=1:17 %1088/64=17
             if (1<=i) && (i<=4)
                 V_WL = [avgpool_out(((i-1)*64+1):i*64,:)];
                 [~, I_temp, ~] = voltage_deg_model_sparse_conductance(dense1a,V_WL,V_BL,R_source,R_line);
@@ -112,10 +104,9 @@ function out = inference_routine(tile_1, tile_2, max_weight, n_kernels, kernel_s
         dense2_out = round(dense2_out./dense2_outstep)*dense2_outstep;
         % Convert to final prediction
         [~, maxIndex] = max(dense2_out);
-%         predictions = [predictions, maxIndex-1];
-        predictions(sample_idx) = maxIndex - 1;
+        predictions(1, sample_idx) = maxIndex - 1;
         % List comparison and calculate accuracy
-        dif = predictions - test_labels(1, 1:sample_idx);
+        dif = predictions(1, 1:sample_idx) - test_labels(1, 1:sample_idx);
         dif(dif<0) = 1;
         [~, coln] = size(predictions);
         accuracy = (coln-sum(dif))./coln;

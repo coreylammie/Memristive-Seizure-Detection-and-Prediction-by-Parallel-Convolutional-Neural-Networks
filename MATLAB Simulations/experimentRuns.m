@@ -473,6 +473,7 @@ function [] = experimentRuns()
     testdata = round(testdata./inputstep)*inputstep;
     
     %% Inference Routine
+%     predictions = inference_routine_mex(tile1, tile2, max_weight, n_ker, n_kersize, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, testdata, testlabel, 2);
     predictions = inference_routine(tile1, tile2, max_weight, n_ker, n_kersize, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, testdata, testlabel, 2);
 
     %% Save Predictions
