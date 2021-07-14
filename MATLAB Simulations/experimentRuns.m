@@ -474,7 +474,7 @@ function [] = experimentRuns()
     
     %% Inference Routine
 %     predictions = inference_routine_mex(tile1, tile2, max_weight, n_ker, n_kersize, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, testdata, testlabel, 2);
-    predictions = inference_routine(tile1, tile2, max_weight, n_ker, n_kersize, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, testdata, testlabel, 2);
+    predictions = inference_routine(tile1, tile2, n_ker, n_kersize, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, R_source, R_line, G_min, outputbits, scaling_factor, testdata, testlabel, 2);
 
     %% Save Predictions
     filename = sprintf('LowResSeed%dRmaxrange%.3fRminrange%.3fPercenterror%.3fBitres%dInputbits%dOutputbits%dStuck%.4fRsource%dRline%dRmax%dRmin%d.txt',seed,rmaxrange(2),rminrange(1),percenterror,bit_res,inputbits,outputbits,stuck,R_source,R_line,RMAX,RMIN);

@@ -1,6 +1,20 @@
-function out = inference_routine(tile_1, tile_2, n_kernels, kernel_sizes, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, R_source, R_line, G_min, output_bits, scaling_factor, test_data, test_labels, n_samples)
+function out = inference_routine(tile_1, tile_2, n_kernels, kernel_sizes, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, test_data, test_labels, n_samples)
     predictions = zeros(1, n_samples+1);
     V_BL = zeros(64,1); % Ground column voltages (set columns to 0 V)
+%     R_source = 20; % 20-50 source resistance (ohms) for simulation model
+%     R_line = 2;   % 2-5 line resistance (ohms) for simulation model
+%     R_max = 100E3; %100 kohm is max resistance of memristors
+%     R_min = 10E3;  %10 kohm is min resistance of memristors
+%     rminrange = [0.95,1]; %limit for min_R [1,1] to turn off
+%     rmaxrange = [1,1.05]; %limit for max_R [1,1] to turn off
+%     rmaxlimit = rmaxrange(1)+rand(1,8).*(rmaxrange(2)-rmaxrange(1));
+%     rminlimit = rminrange(1)+rand(1,8).*(rminrange(2)-rminrange(1));
+%     R_max = R_max.*rmaxlimit;
+%     R_min = R_min.*rminlimit;
+%     G_max = 1./R_min; % Calculate max conductance based on resistance
+%     G_min = 1./R_max; % Calculate min conductance based on resistance
+%     output_bits = 6;
+%     scaling_factor = (G_max - G_min)./max_weight;
     for sample_idx = 1:n_samples+1
         disp(sample_idx);
         input_vec = test_data(:, sample_idx); % Input vector
