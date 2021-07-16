@@ -1,5 +1,9 @@
-function [] = experimentRuns()
-    for seed=5:9
+% parpool('local', 32);
+n_seed = 5;
+output_dir = 'out';
+table_headers = {'seed', 'R_min_range', 'R_max_range', 'percent_error', 'bit_res', 'input_bits', 'output_bits', 'stuck', 'R_source', 'R_line', 'R_min', 'R_max', 'predictions_file_path'};
+table_data = cell(n_seed, 13);
+for seed=1:n_seed
     rng(seed);
     %% Define global variables 
     %To do:
@@ -25,12 +29,8 @@ function [] = experimentRuns()
     n_ker = 32; %number of kernels
     n_kersize = [32,30]; %kernel sizes
     start_num = 1; %number of test data to run code through
-    end_num = 2; %start_num+249;
-
-    
-
-    predictions = [];
-
+    end_num = start_num+249;
+    V_BL = zeros(64,1); %Ground column voltages (set columns to 0 V)
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     R_max = 100E3; %100 kohm is max resistance of memristors
     R_min = 10E3;  %10 kohm is min resistance of memristors
@@ -40,17 +40,16 @@ function [] = experimentRuns()
 
     percenterror = 0.05; %percent error for crossbar implementation, 0 to turn off
 
-    V_BL = zeros(64,1); %Ground column voltages (set columns to 0 V)
-    R_source = 20; % 20-50 source resistance (ohms) for simulation model
+    R_source = 200; % 20-50 source resistance (ohms) for simulation model
     R_line = 2;   % 2-5 line resistance (ohms) for simulation model
     bit_res = 6; % bits for weight resolution
 
     inputbits = 6; %Number of input bits, comment out lines to turn off ###
     outputbits = 6;
 
-    stuck = 0.001; %stuck on/off percentange, 0 to turn off
+    stuck = 0.01; %stuck on/off percentange, 0 to turn off
 
-    visualize = 0; % 1 to visualize, 0 to not visualize
+    visualize = 1; % 1 to visualize, 0 to not visualize
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     RMAX = R_max; %file labelling only
     RMIN = R_min; %file labelling only
@@ -112,14 +111,25 @@ function [] = experimentRuns()
 
     %Read weightsPytorch and bias full resolution
     %against sets AE 0.998 test accuracy
-    file1w = fopen('weightsPytorch/conv1dweights.txt', 'r');
-    file1b = fopen('weightsPytorch/conv1dbias.txt', 'r');
-    file2w = fopen('weightsPytorch/conv1d_1weights.txt', 'r');
-    file2b = fopen('weightsPytorch/conv1d_1bias.txt', 'r');
-    file3w = fopen('weightsPytorch/denseweights.txt','r');
-    file3b = fopen('weightsPytorch/densebias.txt','r');
-    file4w = fopen('weightsPytorch/dense_1weights.txt','r');
-    file4b = fopen('weightsPytorch/dense_1bias.txt','r');
+    % file1w = fopen('weightsPytorch/conv1dweights.txt', 'r');
+    % file1b = fopen('weightsPytorch/conv1dbias.txt', 'r');
+    % file2w = fopen('weightsPytorch/conv1d_1weights.txt', 'r');
+    % file2b = fopen('weightsPytorch/conv1d_1bias.txt', 'r');
+    % file3w = fopen('weightsPytorch/denseweights.txt','r');
+    % file3b = fopen('weightsPytorch/densebias.txt','r');
+    % file4w = fopen('weightsPytorch/dense_1weights.txt','r');
+    % file4b = fopen('weightsPytorch/dense_1bias.txt','r');
+
+    %Read weightsPytorch and bias low resolution
+    %against sets AE 1 test accuracy
+    file1w = fopen('weightsPytorchLowRes32/conv1dweights.txt', 'r');
+    file1b = fopen('weightsPytorchLowRes32/conv1dbias.txt', 'r');
+    file2w = fopen('weightsPytorchLowRes32/conv1d_1weights.txt', 'r');
+    file2b = fopen('weightsPytorchLowRes32/conv1d_1bias.txt', 'r');
+    file3w = fopen('weightsPytorchLowRes32/denseweights.txt','r');
+    file3b = fopen('weightsPytorchLowRes32/densebias.txt','r');
+    file4w = fopen('weightsPytorchLowRes32/dense_1weights.txt','r');
+    file4b = fopen('weightsPytorchLowRes32/dense_1bias.txt','r');
 
     %Reshape and reorder weights
     conv1w = fscanf(file1w,'%f',[n_ker,n_kersize(1)]);
@@ -407,13 +417,13 @@ function [] = experimentRuns()
     avgpool(toGmax) = G_max(8);
 
 
-%     if (visualize == 1)
-%         subplot(2,2,4)
-%         imagesc(dense1a); colormap('jet'); colorbar
-%         figure()
-%         imagesc(dense1b); colormap('jet'); colorbar
-%         title('Mapping of Scaled Conductance Weights with Error and Stuck On/Off onto the Crossbar')
-%     end
+    if (visualize == 1)
+        subplot(2,2,4)
+        imagesc(tile1); colormap('parula'); colorbar
+        figure()
+        imagesc(tile2); colormap('parula'); colorbar
+        title('Mapping of Scaled Conductance Weights with Error and Stuck On/Off onto the Crossbar')
+    end
     %% ADC and DAC parameters
     % Check for ADC resolution effects with serial binary inputs
     % Run through CNN on crossbar
@@ -473,11 +483,25 @@ function [] = experimentRuns()
     testdata = round(testdata./inputstep)*inputstep;
     
     %% Inference Routine
-%     predictions = inference_routine_mex(tile1, tile2, max_weight, n_ker, n_kersize, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, testdata, testlabel, 2);
-    predictions = inference_routine(tile1, tile2, n_ker, n_kersize, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, R_source, R_line, G_min, outputbits, scaling_factor, testdata, testlabel, 2);
+    predictions = inference_routine(tile1, tile2, n_ker, n_kersize, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, R_source, R_line, G_min, outputbits, scaling_factor, testdata, testlabel, end_num);
+    predictions_file_path = sprintf("out/%s.txt", java.util.UUID.randomUUID);
 
     %% Save Predictions
-    filename = sprintf('LowResSeed%dRmaxrange%.3fRminrange%.3fPercenterror%.3fBitres%dInputbits%dOutputbits%dStuck%.4fRsource%dRline%dRmax%dRmin%d.txt',seed,rmaxrange(2),rminrange(1),percenterror,bit_res,inputbits,outputbits,stuck,R_source,R_line,RMAX,RMIN);
-    writematrix(predictions,filename);
-    end
+    table_data(seed, 1) = {seed};
+    table_data(seed, 2) = {rminrange(1)};
+    table_data(seed, 3) = {rmaxrange(2)};
+    table_data(seed, 4) = {percenterror};
+    table_data(seed, 5) = {bit_res};
+    table_data(seed, 6) = {inputbits};
+    table_data(seed, 7) = {outputbits};
+    table_data(seed, 8) = {stuck};
+    table_data(seed, 9) = {R_source};
+    table_data(seed, 10) = {R_line};
+    table_data(seed, 11) = {RMIN};
+    table_data(seed, 12) = {RMAX};
+    table_data(seed, 13) = {predictions_file_path};
+    writematrix(predictions, predictions_file_path);
 end
+T = cell2table(table_data);
+T.Properties.VariableNames = table_headers;
+writetable(T,'out/experiment_runs_low_res.csv')  

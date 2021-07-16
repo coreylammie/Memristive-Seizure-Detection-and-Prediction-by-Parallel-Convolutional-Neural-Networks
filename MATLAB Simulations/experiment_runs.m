@@ -1,5 +1,9 @@
-function [] = experimentRuns()
-    for seed=5:9
+% parpool('local', 32);
+n_seed = 5;
+output_dir = 'out';
+table_headers = {'seed', 'R_min_range', 'R_max_range', 'percent_error', 'bit_res', 'input_bits', 'output_bits', 'stuck', 'R_source', 'R_line', 'R_min', 'R_max', 'predictions_file_path'};
+table_data = cell(n_seed, 13);
+for seed=1:n_seed
     rng(seed);
     %% Define global variables 
     %To do:
@@ -26,11 +30,6 @@ function [] = experimentRuns()
     n_kersize = [32,30]; %kernel sizes
     start_num = 1; %number of test data to run code through
     end_num = 2; %start_num+249;
-
-    V_BL = zeros(64,1); %Ground column voltages (set columns to 0 V)
-
-    predictions = [];
-
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     R_max = 100E3; %100 kohm is max resistance of memristors
     R_min = 10E3;  %10 kohm is min resistance of memristors
@@ -40,6 +39,7 @@ function [] = experimentRuns()
 
     percenterror = 0.05; %percent error for crossbar implementation, 0 to turn off
 
+    V_BL = zeros(64,1); %Ground column voltages (set columns to 0 V)
     R_source = 20; % 20-50 source resistance (ohms) for simulation model
     R_line = 2;   % 2-5 line resistance (ohms) for simulation model
     bit_res = 6; % bits for weight resolution
@@ -406,13 +406,13 @@ function [] = experimentRuns()
     avgpool(toGmax) = G_max(8);
 
 
-%     if (visualize == 1)
-%         subplot(2,2,4)
-%         imagesc(dense1a); colormap('jet'); colorbar
-%         figure()
-%         imagesc(dense1b); colormap('jet'); colorbar
-%         title('Mapping of Scaled Conductance Weights with Error and Stuck On/Off onto the Crossbar')
-%     end
+    %     if (visualize == 1)
+    %         subplot(2,2,4)
+    %         imagesc(dense1a); colormap('jet'); colorbar
+    %         figure()
+    %         imagesc(dense1b); colormap('jet'); colorbar
+    %         title('Mapping of Scaled Conductance Weights with Error and Stuck On/Off onto the Crossbar')
+    %     end
     %% ADC and DAC parameters
     % Check for ADC resolution effects with serial binary inputs
     % Run through CNN on crossbar
@@ -470,163 +470,27 @@ function [] = experimentRuns()
     %% Implement input resolution
     inputstep = (max(max(testdata)) - min(min(testdata)))./(2^inputbits-1);
     testdata = round(testdata./inputstep)*inputstep;
-    %% Start train loop
-    for z = start_num:end_num
-    z
-    inputvec = testdata(:,z); %input vector
-    inputvec = inputvec';
 
-    %% Forward Operation for tile 1 and 2 (convolution)
-    totalI = [];
-    %First convolution
-    for i = 1:(64-n_kersize(1)+1)
-        V_WL = [1,inputvec(i:i+n_kersize(1)-1),zeros(1,n_kersize(2)+1)];
-        [VM_temp, I_temp, P_temp] = voltage_deg_model_sparse_conductance(tile1,V_WL,V_BL,R_source,R_line);
-        I_temp=(I_temp-G_min(1))./scaling_factor(1);
-        posI = I_temp(:,1:2:end);
-        negI = I_temp(:,2:2:end);
-        tempI = posI-negI;
-        totalI = [totalI;tempI];
-    end
-
-    %Second convolution
-    for i = 1:(64-n_kersize(2)+1)
-        V_WL = [1,inputvec(i:i+n_kersize(2)-1),zeros(1,n_kersize(1)+1),];
-        [VM_temp, I_temp, P_temp] = voltage_deg_model_sparse_conductance(tile2,V_WL,V_BL,R_source,R_line);
-        I_temp=(I_temp-G_min(2))./scaling_factor(2);
-        posI = I_temp(:,1:2:end);
-        negI = I_temp(:,2:2:end);
-        tempI = posI-negI;
-        totalI = [totalI;tempI];
-    end
-
-    conv_out = totalI;
-
-    % Implement output resolution
-    conv_outstep = (max(max(conv_out)) - min(min(conv_out)))./(2^outputbits-1);
-    conv_out = round(conv_out./conv_outstep)*conv_outstep;
-
-    %Apply relu
-    conv_out(conv_out<0)=0;
-    %% Forward operation for tile 8 (avgerage pooling)
-    avgpool_out = 0;
-    % totalI = [];
-    % for i=1:n_ker
-    %     V_WL = [conv_out(1:34,i);zeros(30,1)];
-    %     [~, I_temp, P_temp] = voltage_deg_model_sparse_conductance(avgpool,V_WL,V_BL,R_source,R_line);
-    %     tempI1=(I_temp(1:17)-G_min(8))./scaling_factor(8);
-    %     
-    %     V_WL = [conv_out(35:68,i);zeros(30,1)];
-    %     [VM_temp, I_temp, P_temp] = voltage_deg_model_sparse_conductance(avgpool,V_WL,V_BL,R_source,R_line);
-    %     tempI2=(I_temp(1:17)-G_min(8))./scaling_factor(8);
-    % 
-    %     
-    %     tempI = [tempI1,tempI2];
-    %     totalI = [totalI;tempI];
-    % end
-    % 
-    % avgpool_out = totalI';
-    % 
-    % % Implement output resolution
-    % avgpool_outstep = (max(max(avgpool_out)) - min(min(avgpool_out)))./(2^outputbits-1);
-    % avgpool_out = round(avgpool_out./avgpool_outstep)*avgpool_outstep;
-
-    for i=1:2:68
-        for j=1:32
-            if i==1
-                avgpool_out(1,j) = 0.5*conv_out(i,j)+0.5*conv_out(i+1,j);
-            else
-                avgpool_out((i+1)/2,j) = 0.5*conv_out(i,j)+0.5*conv_out(i+1,j);
-            end
-        end
-    end
-
-    %Apply relu
-    avgpool_out(avgpool_out<0)=0;
-    %% Forward operation for tile 3-7 (first dense layer with 8 neurons)
-
-    %Reformat the output from previous layer
-    %avgpool_out = permute(avgpool_out,[2,1]);
-    avgpool_out = reshape(avgpool_out,[1088,1]);
-
-    %Perform calculation
-    total = zeros(1,16);
-    reading = [1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64,1,16,17,32,33,48,49,64];
-    for i=1:17 %1088/64=17
-        if (1<=i) && (i<=4)
-            V_WL = [avgpool_out(((i-1)*64+1):i*64,:)];
-            [VM_temp, I_temp, P_temp] = voltage_deg_model_sparse_conductance(dense1a,V_WL,V_BL,R_source,R_line);
-            tempI=(I_temp(reading(1,(i*2-1)):reading(1,i*2))-G_min(3))./scaling_factor(3);
-            total = total+tempI;
-        elseif (5<=i) && (i<=8)
-            V_WL = [avgpool_out(((i-1)*64+1):i*64,:)];
-            [VM_temp, I_temp, P_temp] = voltage_deg_model_sparse_conductance(dense1b,V_WL,V_BL,R_source,R_line);
-            tempI=(I_temp(reading(1,(i*2-1)):reading(1,i*2))-G_min(4))./scaling_factor(4);
-            total = total+tempI;
-        elseif (9<=i) && (i<=12)
-            V_WL = [avgpool_out(((i-1)*64+1):i*64,:)];
-            [VM_temp, I_temp, P_temp] = voltage_deg_model_sparse_conductance(dense1c,V_WL,V_BL,R_source,R_line);
-            tempI=(I_temp(reading(1,(i*2-1)):reading(1,i*2))-G_min(5))./scaling_factor(5);
-            total = total+tempI;
-        elseif (13<=i) && (i<=16)
-            V_WL = [avgpool_out(((i-1)*64+1):i*64,:)];
-            [VM_temp, I_temp, P_temp] = voltage_deg_model_sparse_conductance(dense1d,V_WL,V_BL,R_source,R_line);
-            tempI=(I_temp(reading(1,(i*2-1)):reading(1,i*2))-G_min(6))./scaling_factor(6);
-            total = total+tempI;
-        else
-            V_WL = [avgpool_out(((i-1)*64+1):i*64,:)];
-            [VM_temp, I_temp, P_temp] = voltage_deg_model_sparse_conductance(dense1e,V_WL,V_BL,R_source,R_line);
-            tempI=(I_temp(reading(1,(i*2-1)):reading(1,i*2))-G_min(7))./scaling_factor(7);
-            total = total+tempI;
-        end
-    end
-
-    %Add bias
-    total = total+dense1b_diff;
-
-    % Implement output resolution
-    totalstep = (max(max(total)) - min(min(total)))./(2^outputbits-1);
-    total = round(total./totalstep)*totalstep;
-
-    %Convert back from differential form and apply relu
-    posI = total(:,1:2:end);
-    negI = total(:,2:2:end);
-    dense1_out = posI-negI;
-    %dense1_out(dense1_out<0)=0;
-
-
-
-    %% Forward operation for 1 (second dense layer with 2 neurons)
-
-    a = size(dense1_out);
-    V_WL = [zeros(1,n_kersize(1)+1),dense1_out,zeros(1,64-8-n_kersize(1))];
-    [VM_temp, I_temp, P_temp] = voltage_deg_model_sparse_conductance(tile1,V_WL,V_BL,R_source,R_line);
-    tempI=(I_temp(1:4)-G_min(1))./scaling_factor(1);
-    posI = tempI(:,1:2:end);
-    negI = tempI(:,2:2:end);
-    dense2_out = posI-negI;
-    dense2_out=dense2_out+dense2b;
-
-    % Implement output resolution
-    dense2_outstep = (max(max(dense2_out)) - min(min(dense2_out)))./(2^outputbits-1);
-    dense2_out = round(dense2_out./dense2_outstep)*dense2_outstep;
-
-
-
-    %% Convert to final prediction
-    [maxNum,maxIndex]=max(dense2_out);
-    predictions = [predictions,maxIndex-1];
-
-    %% List comparison and calculate accuracy
-    dif = predictions-testlabel(1,start_num:z);
-    dif(dif<0)=1;
-    [rown,coln] = size(predictions);
-    accuracy = (coln-sum(dif))./coln
-    end
-
+    %% Inference Routine
+    predictions = inference_routine(tile1, tile2, n_ker, n_kersize, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, R_source, R_line, G_min, outputbits, scaling_factor, testdata, testlabel, end_num);
+    predictions_file_path = sprintf("out/%s.txt", java.util.UUID.randomUUID);
+    
     %% Save Predictions
-
-    filename = sprintf('LowResSeed%dRmaxrange%.3fRminrange%.3fPercenterror%.3fBitres%dInputbits%dOutputbits%dStuck%.4fRsource%dRline%dRmax%dRmin%d.txt',seed,rmaxrange(2),rminrange(1),percenterror,bit_res,inputbits,outputbits,stuck,R_source,R_line,RMAX,RMIN);
-    writematrix(predictions,filename);
-    end
+    table_data(seed, 1) = {seed};
+    table_data(seed, 2) = {rminrange(1)};
+    table_data(seed, 3) = {rmaxrange(2)};
+    table_data(seed, 4) = {percenterror};
+    table_data(seed, 5) = {bit_res};
+    table_data(seed, 6) = {inputbits};
+    table_data(seed, 7) = {outputbits};
+    table_data(seed, 8) = {stuck};
+    table_data(seed, 9) = {R_source};
+    table_data(seed, 10) = {R_line};
+    table_data(seed, 11) = {RMIN};
+    table_data(seed, 12) = {RMAX};
+    table_data(seed, 13) = {predictions_file_path};
+    writematrix(predictions, predictions_file_path);
 end
+T = cell2table(table_data);
+T.Properties.VariableNames = table_headers;
+writetable(T,'out/experiment_runs.csv')  
