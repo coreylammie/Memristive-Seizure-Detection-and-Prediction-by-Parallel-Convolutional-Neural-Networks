@@ -1,4 +1,5 @@
 chb-mit-scalp-eeg-database-1.0.0/
 processed_data/
 *.npy
+*.asv
 __pycache__/
