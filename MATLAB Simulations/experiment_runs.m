@@ -1,3 +1,5 @@
+mycluster=parcluster('local');
+mycluster.NumWorkers=32;
 parpool('local', 32);
 n_seed = 5;
 output_dir = 'out';
