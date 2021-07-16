@@ -1,4 +1,4 @@
-% parpool('local', 32);
+parpool('local', 32);
 n_seed = 5;
 output_dir = 'out';
 table_headers = {'seed', 'R_min_range', 'R_max_range', 'percent_error', 'bit_res', 'input_bits', 'output_bits', 'stuck', 'R_source', 'R_line', 'R_min', 'R_max', 'predictions_file_path'};
@@ -29,7 +29,7 @@ for seed=1:n_seed
     n_ker = 32; %number of kernels
     n_kersize = [32,30]; %kernel sizes
     start_num = 1; %number of test data to run code through
-    end_num = 2; %start_num+249;
+    end_num = start_num + 249;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     R_max = 100E3; %100 kohm is max resistance of memristors
     R_min = 10E3;  %10 kohm is min resistance of memristors
@@ -474,6 +474,8 @@ for seed=1:n_seed
     %% Inference Routine
     predictions = inference_routine(tile1, tile2, n_ker, n_kersize, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, R_source, R_line, G_min, outputbits, scaling_factor, testdata, testlabel, end_num);
     predictions_file_path = sprintf("out/%s.txt", java.util.UUID.randomUUID);
+    [~, predictions_file, ~] = fileparts(predictions_file_path);
+    predictions_file = predictions_file + '.txt';
     
     %% Save Predictions
     table_data(seed, 1) = {seed};
@@ -488,7 +490,7 @@ for seed=1:n_seed
     table_data(seed, 10) = {R_line};
     table_data(seed, 11) = {RMIN};
     table_data(seed, 12) = {RMAX};
-    table_data(seed, 13) = {predictions_file_path};
+    table_data(seed, 13) = {predictions_file};
     writematrix(predictions, predictions_file_path);
 end
 T = cell2table(table_data);
