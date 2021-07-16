@@ -1,0 +1,6 @@
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "mvapich2"
+   Try: "module spider mvapich2" to see how to load the module(s).
+
+
+
