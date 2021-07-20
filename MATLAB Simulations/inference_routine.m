@@ -6,8 +6,8 @@ function out = inference_routine(tile_1, tile_2, n_kernels, kernel_sizes, dense1
         input_vec = test_data(:, sample_idx); % Input vector
         input_vec = input_vec';
         % Forward operation for tiles 1 and 2 (convolution)
-        conv_out_1 = zeros(128 - kernel_sizes(1) + 1, n_kernels);
-        conv_out_2 = zeros(128 - kernel_sizes(2) + 1, n_kernels);
+        conv_out_1 = zeros(64 - kernel_sizes(1) + 1, n_kernels);
+        conv_out_2 = zeros(64 - kernel_sizes(2) + 1, n_kernels);
         i_range = 64 - min(kernel_sizes(1), kernel_sizes(2)) + 1;
         parfor i = 1:i_range
             if i <= 64 - kernel_sizes(1) + 1
@@ -23,8 +23,8 @@ function out = inference_routine(tile_1, tile_2, n_kernels, kernel_sizes, dense1
                 conv_out_2(i, :) = I_temp(:, 1:2:end) - I_temp(:, 2:2:end);
             end
         end
-        conv_out_1 = (conv_out_1 - G_min(1)) ./ scaling_factor(1);
-        conv_out_2 = (conv_out_2 - G_min(2)) ./ scaling_factor(2);
+        conv_out_1 = conv_out_1 ./ scaling_factor(1);
+        conv_out_2 = conv_out_2 ./ scaling_factor(2);
         conv_out = [conv_out_1; conv_out_2];
         % Implement output resolution
         conv_outstep = (max(max(conv_out)) - min(min(conv_out)))./(2^output_bits-1);
