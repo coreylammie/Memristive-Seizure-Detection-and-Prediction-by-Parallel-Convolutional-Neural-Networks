@@ -1,6 +1,6 @@
-mycluster=parcluster('local');
-mycluster.NumWorkers=32;
-parpool('local', 32);
+% mycluster=parcluster('local');
+% mycluster.NumWorkers=32;
+% parpool('local', 32);
 n_seed = 5;
 output_dir = 'out';
 table_headers = {'seed', 'R_min_range', 'R_max_range', 'percent_error', 'bit_res', 'input_bits', 'output_bits', 'stuck', 'R_source', 'R_line', 'R_min', 'R_max', 'predictions_file_path'};
@@ -291,12 +291,12 @@ for seed=1:n_seed
     dense1epad = zeros(array_row,array_col-n); 
     dense1e = [dense1e,dense1epad];
 
-    if (visualize == 1)
+%     if (visualize == 1)
         figure('Renderer', 'painters', 'Position',[10 10 1200 1200])
         subplot(2,2,1)
         imagesc(dense1e); colormap('jet'); colorbar
         title('Mapping of Original Weights onto the Crossbar')
-    end
+%     end
     %% Find max of each tile
     % max1 = max(conv1w(:));
     % max2 = max(conv1b(:));
@@ -339,161 +339,12 @@ for seed=1:n_seed
     avgpool = round((avgpool.*scaling_factor(8))./G_step(8))*G_step(8)+G_min(8);
 
 
-    if (visualize == 1)
+%     if (visualize == 1)
         subplot(2,2,2)
         imagesc(dense1a); colormap('jet'); colorbar
         title('Mapping of Scaled Conductance Weights onto the Crossbar')
-    end
-    %% Introduce error
-    %Error for tile 1
-    tile1error = 1 + percenterror.*randn(size(tile1));
-    tile1 = tile1.*tile1error;
-
-    %Error for tile 2
-    tile2error = 1 + percenterror.*randn(size(tile2));
-    tile2 = tile2.*tile2error;
-
-    %Error for tile 3
-    dense1aerror = 1 + percenterror.*randn(size(dense1a));
-    dense1a = dense1a.*dense1aerror;
-
-    %Error for tile 4
-    dense1berror = 1 + percenterror.*randn(size(dense1b));
-    dense1b = dense1b.*dense1berror;
-
-    %Error for tile 5
-    dense1cerror = 1 + percenterror.*randn(size(dense1c));
-    dense1c = dense1c.*dense1cerror;
-
-    %Error for tile 6
-    dense1derror = 1 + percenterror.*randn(size(dense1d));
-    dense1d = dense1d.*dense1derror;
-
-    %Error for tile 7
-    dense1eerror = 1 + percenterror.*randn(size(dense1e));
-    dense1e = dense1e.*dense1eerror;
-
-    %Error for tile 8
-    avgpoolerror = 1 + percenterror*randn(size(avgpool));
-    avgpool = avgpool.*avgpoolerror;
-
-
-    if (visualize == 1)
-        subplot(2,2,3)
-        imagesc(dense1a); colormap('jet'); colorbar
-        title('Mapping of Scaled Conductance Weights with Error onto the Crossbar')
-    end
-    %% Stuck on/off (half at max conductance, half at min conductance)
-    tostuck = randperm(array_row*array_col,round(array_row*array_col*stuck));
-    [m,n] = size(tostuck);
-    toGmin = tostuck(1,1:round(n/2));
-    toGmax = tostuck(1,round(n/2)+1:end);
-
-    tile1(toGmin) = G_min(1);
-    tile2(toGmin) = G_min(2);
-    dense1a(toGmin) = G_min(3);
-    dense1b(toGmin) = G_min(4);
-    dense1c(toGmin) = G_min(5);
-    dense1d(toGmin) = G_min(6);
-    dense1e(toGmin) = G_min(7);
-    avgpool(toGmin) = G_min(8);
-
-    tile1(toGmax) = G_max(1);
-    tile2(toGmax) = G_max(2);
-    dense1a(toGmax) = G_max(3);
-    dense1b(toGmax) = G_max(4);
-    dense1c(toGmax) = G_max(5);
-    dense1d(toGmax) = G_max(6);
-    dense1e(toGmax) = G_max(7);
-    avgpool(toGmax) = G_max(8);
-
-
-    %     if (visualize == 1)
-    %         subplot(2,2,4)
-    %         imagesc(dense1a); colormap('jet'); colorbar
-    %         figure()
-    %         imagesc(dense1b); colormap('jet'); colorbar
-    %         title('Mapping of Scaled Conductance Weights with Error and Stuck On/Off onto the Crossbar')
-    %     end
-    %% ADC and DAC parameters
-    % Check for ADC resolution effects with serial binary inputs
-    % Run through CNN on crossbar
-
-    % ADC parameters
-    % round_adc = 1;   % set to 1 if outputs are rounded by ADC
-    % adjust_adc_flag = 0; % set to 1 if outputs are dynamically rounded by ADC
-    % max_current = 1024*0.2*G_max;
-    % ADC_bit = 8;
-    % adc_res = max_current/2^ADC_bit; % for R_min = 10k, resolution is 80 uA
-
-    % DAC parameters
-    % input_bits = 8; % analog input divided into a certain number of bits
-    % input_res = 0.2/(2^input_bits - 1);
-    %accuracy_DAC = zeros(1,6);
-
-    %% Import train files 
-    % %without normalization
-    % testdatafile = fopen('test/testdata.txt', 'r');
-    % testlabelfile = fopen('test/testlabel.txt', 'r');
-    % 
-    % testdata = fscanf(testdatafile,'%f',[64,2560]);
-    % testdata = permute(testdata,[2,1]);
-    % testlabel = fscanf(testlabelfile,'%f',[1,2560]);
-
-
-
-    % %with normalization [-1.2,1.2] against all sets
-    % testdatafile = fopen('test2/testdata.txt', 'r');
-    % testlabelfile = fopen('test2/testlabel.txt', 'r');
-    % 
-    % testdata = fscanf(testdatafile,'%f',[64,2560]);
-    % testdata = permute(testdata,[2,1]);
-    % testlabel = fscanf(testlabelfile,'%f',[1,2560]);
-
-
-
-    % %with normalization [-1.2,1.2] against set AE
-    % testdatafile = fopen('test3/testdata.txt', 'r');
-    % testlabelfile = fopen('test3/testlabel.txt', 'r');
-    % 
-    % testdata = fscanf(testdatafile,'%f',[64,2560]);
-    % testdata = permute(testdata,[2,1]);
-    % testlabel = fscanf(testlabelfile,'%f',[1,2560]);
-
-
-
-    %with normalization [-1.2,1.2] against set AE 0.97 accuracy
-    testdatafile = fopen('testPytorch/testdata.txt', 'r');
-    testlabelfile = fopen('testPytorch/testlabel.txt', 'r');
-
-    testdata = fscanf(testdatafile,'%f',[64,2560]);
-    %testdata = permute(testdata,[2,1]);
-    testlabel = fscanf(testlabelfile,'%f',[1,2560]);
-    %% Implement input resolution
-    inputstep = (max(max(testdata)) - min(min(testdata)))./(2^inputbits-1);
-    testdata = round(testdata./inputstep)*inputstep;
-
-    %% Inference Routine
-    predictions = inference_routine(tile1, tile2, n_ker, n_kersize, dense1a, dense1b, dense1c, dense1d, dense1e, dense1b_diff, dense2b, R_source, R_line, G_min, outputbits, scaling_factor, testdata, testlabel, end_num);
-    predictions_file_path = sprintf("out/%s.txt", java.util.UUID.randomUUID);
-    [~, predictions_file, ~] = fileparts(predictions_file_path);
-    predictions_file = predictions_file + '.txt';
+%     end
     
-    %% Save Predictions
-    table_data(seed, 1) = {seed};
-    table_data(seed, 2) = {rminrange(1)};
-    table_data(seed, 3) = {rmaxrange(2)};
-    table_data(seed, 4) = {percenterror};
-    table_data(seed, 5) = {bit_res};
-    table_data(seed, 6) = {inputbits};
-    table_data(seed, 7) = {outputbits};
-    table_data(seed, 8) = {stuck};
-    table_data(seed, 9) = {R_source};
-    table_data(seed, 10) = {R_line};
-    table_data(seed, 11) = {RMIN};
-    table_data(seed, 12) = {RMAX};
-    table_data(seed, 13) = {predictions_file};
-    writematrix(predictions, predictions_file_path);
 end
 T = cell2table(table_data);
 T.Properties.VariableNames = table_headers;
