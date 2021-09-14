@@ -97,7 +97,7 @@ plotdata.plot(kind="bar", color=my_colors, zorder=2, legend=None,
 plt.grid(axis='both')
 plt.title("Effect of ADC and DAC Resolution",
           fontsize=titleSize, fontdict=dict(weight='bold'))
-plt.xlabel("I/O Resolution (bits)", fontsize=labelSize,
+plt.xlabel("ACD and DAC Resolution (bits)", fontsize=labelSize,
            fontdict=dict(weight='bold'))
 plt.ylabel("Accuracy (%)", fontsize=labelSize, fontdict=dict(weight='bold'))
 plt.locator_params(axis='y', nbins=12)

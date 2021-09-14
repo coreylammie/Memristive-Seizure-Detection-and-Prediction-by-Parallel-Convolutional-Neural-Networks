@@ -18,9 +18,9 @@ yLimLowLst = [0, 0, 0, 0, 0]
 yLimHighLst = [100, 100, 100, 1, 16]
 titleLst = ['Accuracy (%)', 'Sensitivity (%)',
             'Specitivity (%)', 'AUROC', 'FP (/hr)']
-nominal_bar_color = "#e4e7e8"
+nominal_bar_color = "#12b0e9"
 nominal_edge_color = "#000000"
-QAT_bar_color = "#83e8f5"
+QAT_bar_color = "#ef127b"
 QAT_egde_color = "#000000"
 
 plt.subplot(2, 5, 1)
