@@ -8,12 +8,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="690.72955pt"
+   height="689.54156pt"
    version="1.1"
-   viewBox="0 0 1420.6439 690.72955"
+   viewBox="0 0 1420.6439 689.54156"
    width="1420.6439pt"
    id="svg11052"
-   sodipodi:docname="Bonn.svg"
+   sodipodi:docname="Bonn2.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -24,18 +24,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="3200"
-     inkscape:window-height="1734"
+     inkscape:window-width="3840"
+     inkscape:window-height="2093"
      id="namedview11054"
      showgrid="false"
      inkscape:zoom="0.86588542"
-     inkscape:cx="1141.7758"
-     inkscape:cy="598.66364"
-     inkscape:window-x="4791"
+     inkscape:cx="896.40371"
+     inkscape:cy="459.44994"
+     inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g16405"
-     showguides="true" />
+     inkscape:current-layer="axes_4" />
   <metadata
      id="metadata7344">
     <rdf:RDF>
@@ -63,7 +62,7 @@
   <g
      id="figure_1"
      style="stroke-linecap:butt;stroke-linejoin:round"
-     transform="translate(-17.075623,-9.8519795)">
+     transform="translate(-17.075625,-11.04)">
     <g
        id="patch_1"
        style="stroke-linecap:butt;stroke-linejoin:round" />
@@ -1902,11 +1901,11 @@
       </g>
       <g
          id="text_20"
-         transform="translate(0,-5.226452)"
+         transform="translate(0,-7.5)"
          style="stroke-linecap:butt;stroke-linejoin:round">
         <!-- Effect of Weight Resolution -->
         <g
-           transform="matrix(0.18,0,0,-0.18,96.34375,29.406452)"
+           transform="matrix(0.18,0,0,-0.18,96.34375,31.68)"
            id="g7922"
            style="stroke-linecap:butt;stroke-linejoin:round">
           <defs
@@ -8201,93 +8200,6 @@
              height="100%" />
         </g>
       </g>
-      <g
-         id="g20527"
-         transform="matrix(0.75,0,0,0.75,95.329904,-1152.3567)"
-         style="stroke-linecap:butt;stroke-linejoin:round">
-        <g
-           id="g16405"
-           transform="translate(-52.927509,-30)"
-           style="stroke-linecap:butt;stroke-linejoin:round">
-          <text
-             xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-linecap:butt;stroke-linejoin:round"
-             x="-53.026115"
-             y="1599.0256"
-             id="text16424"><tspan
-               sodipodi:role="line"
-               id="tspan16422"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;font-family:Arial;-inkscape-font-specification:Arial;stroke-linecap:butt;stroke-linejoin:round"
-               x="-53.026115"
-               y="1599.0256">(a)</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-linecap:butt;stroke-linejoin:round"
-             x="439.2139"
-             y="2063.6572"
-             id="text16424-0"><tspan
-               sodipodi:role="line"
-               id="tspan16422-0"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;font-family:Arial;-inkscape-font-specification:Arial;stroke-linecap:butt;stroke-linejoin:round"
-               x="439.2139"
-               y="2063.6572">(f)</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-linecap:butt;stroke-linejoin:round"
-             x="895.45386"
-             y="1599.0256"
-             id="text16424-9"><tspan
-               sodipodi:role="line"
-               id="tspan16422-3"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;font-family:Arial;-inkscape-font-specification:Arial;stroke-linecap:butt;stroke-linejoin:round"
-               x="895.45386"
-               y="1599.0256">(c)</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-linecap:butt;stroke-linejoin:round"
-             x="1369.694"
-             y="1599.0256"
-             id="text16424-3"><tspan
-               sodipodi:role="line"
-               id="tspan16422-09"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;font-family:Arial;-inkscape-font-specification:Arial;stroke-linecap:butt;stroke-linejoin:round"
-               x="1369.694"
-               y="1599.0256">(d)</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-linecap:butt;stroke-linejoin:round"
-             x="439.2139"
-             y="1599.0256"
-             id="text16424-1"><tspan
-               sodipodi:role="line"
-               id="tspan16422-6"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;font-family:Arial;-inkscape-font-specification:Arial;stroke-linecap:butt;stroke-linejoin:round"
-               x="439.2139"
-               y="1599.0256">(b)</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-linecap:butt;stroke-linejoin:round"
-             x="-53.026115"
-             y="2063.6572"
-             id="text16424-18"><tspan
-               sodipodi:role="line"
-               id="tspan16422-8"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;font-family:Arial;-inkscape-font-specification:Arial;stroke-linecap:butt;stroke-linejoin:round"
-               x="-53.026115"
-               y="2063.6572">(e)</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-linecap:butt;stroke-linejoin:round"
-             x="895.45386"
-             y="2063.6572"
-             id="text16424-92"><tspan
-               sodipodi:role="line"
-               id="tspan16422-30"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;font-family:Arial;-inkscape-font-specification:Arial;stroke-linecap:butt;stroke-linejoin:round"
-               x="895.45386"
-               y="2063.6572">(g)</tspan></text>
-        </g>
-      </g>
     </g>
     <g
        id="axes_5"
@@ -13586,7 +13498,7 @@
   </defs>
   <g
      id="g11209"
-     transform="translate(-14.788956,-3.9360707)"
+     transform="translate(-14.788958,-5.1240912)"
      style="stroke-linecap:butt;stroke-linejoin:round">
     <rect
        y="408.2803"
