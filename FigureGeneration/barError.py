@@ -2,59 +2,57 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-
-plt.rcParams["figure.figsize"] = (12,9)
-plt.rcParams.update({'font.size': 25})
-plt.rcParams['axes.linewidth'] = 5
-
-raw = pd.read_excel('SeizurePredictionResult.xlsx','Summary')
-data=raw.iloc[0:5,1:12]
-labels=raw.iloc[0:5,0]
+plt.rcParams['font.family'] = 'sans-serif'
+plt.rcParams['font.sans-serif'] = ['Arial']
+plt.rcParams["figure.figsize"] = (25, 10)
+plt.rcParams.update({'font.size': 16})
+plt.rcParams['axes.linewidth'] = 2
+raw = pd.read_excel('SeizurePredictionResult.xlsx', 'Summary')
+data = np.array(raw.iloc[0:10, 1:11] * 100)
+data[:, 3] = data[:, 3] / 100
+data[:, 8] = data[:, 8] / 100
+labels = list(raw.iloc[0:10, 0])
 step = 6
 width = 0.35
-yLimLowLst = [0,0,0,0,0]
-yLimHighLst = [100,100,100,1,16]
-scale = [1,1,1,0,0]
-titleLst = ['Accuracy (%)','Sensitivity (%)','Specitivity (%)','AUROC','FP Per Hour']
-xGroup = ['CHBMIT\n01','CHBMIT\n05','SWEC\n03','SWEC\n05','SWEC\n06']
+yLimLowLst = [0, 0, 0, 0, 0]
+yLimHighLst = [100, 100, 100, 1, 16]
+titleLst = ['Accuracy (%)', 'Sensitivity (%)',
+            'Specitivity (%)', 'AUROC', 'FP (/hr)']
+nominal_bar_color = "#83e8f5"
+nominal_edge_color = "#03b1f0"
+QAT_bar_color = "#e48dc2"
+QAT_egde_color = "#f50577"
 
-for i in range(len(labels)):
-    lowres = list(data.iloc[:,i])
-    qat = list(data.iloc[:,i+step])
-    if scale[i]:
-        lowres = [z*100 for z in lowres]
-        qat = [z*100 for z in qat]
-    plt.bar(np.arange(len(list(lowres))), lowres, width, zorder=2, label='Without QAT', edgecolor = "black", linewidth=3, color=(242/255,172/255,142/255)) #color=(161/255,191/255,255/255)
-    plt.bar(np.arange(len(list(qat)))+width, qat, width, zorder=2, label='With QAT', edgecolor = "black", linewidth=3, color=(161/255,191/255,255/255)) #color=(242/255,172/255,142/255)
-    plt.ylim((yLimLowLst[i],yLimHighLst[i]))
-    plt.ylabel(titleLst[i],fontsize=40)
-    plt.xticks(np.arange(len(list(lowres)))+width*0.5, xGroup, color='black', rotation=0,fontsize='30', horizontalalignment='center')
-    plt.yticks(fontsize='35')
-    plt.grid(axis='y',zorder=0,linewidth=1.5,color='grey')
-
-    #plt.xticks(np.arange(len(list(lowres)))+width*1.6, xGroup, color='black', rotation=0, fontweight='bold', fontsize='17', horizontalalignment='right')
+plt.subplot(2, 5, 1)
+for i in range(5):
+    nominal_patient_data = list(data[:, i])
+    QAT_patient_data = list(data[:, i + 5])
+    # CHB-MIT
+    plt.subplot(2, 5, i + 1)
+    plt.bar(np.arange(5), nominal_patient_data[0:5],
+            width, zorder=2, label='Without QAT', color=nominal_bar_color, edgecolor=nominal_edge_color, linewidth=2)
+    plt.bar(np.arange(5) + width, QAT_patient_data[0:5],
+            width, zorder=2, label='With QAT', color=QAT_bar_color, edgecolor=QAT_egde_color, linewidth=2)
+    plt.ylim((yLimLowLst[i], yLimHighLst[i]))
+    plt.xlabel('Patient', fontdict=dict(weight='bold'), fontsize=20)
+    plt.ylabel(titleLst[i], fontdict=dict(weight='bold'), fontsize=20)
+    plt.xticks(np.arange(5) + 0.5 * width, labels[0:5])
+    plt.grid(axis='y')
+    plt.locator_params(axis='y', nbins=12)
+    # SWEC-ETHZ
+    plt.subplot(2, 5, i + 6)
+    plt.bar(np.arange(5), nominal_patient_data[5:10],
+            width, zorder=2, label='Without QAT', color=nominal_bar_color, edgecolor=nominal_edge_color, linewidth=2)
+    plt.bar(np.arange(5) + width, QAT_patient_data[5:10],
+            width, zorder=2, label='With QAT', color=QAT_bar_color, edgecolor=QAT_egde_color, linewidth=2)
+    plt.ylim((yLimLowLst[i], yLimHighLst[i]))
+    plt.xlabel('Patient', fontdict=dict(weight='bold'), fontsize=20)
+    plt.ylabel(titleLst[i], fontdict=dict(weight='bold'), fontsize=20)
+    plt.xticks(np.arange(5) + 0.5 * width, labels[5:10])
+    plt.grid(axis='y')
     plt.subplots_adjust(bottom=0.15)
-    plt.tight_layout()
-    plt.savefig(titleLst[i]+'.pdf')
-    plt.show()
 
-
-
-
-
-# men_means = [0.831503842,0.796520424,0.927179963,0.713821892,0.763493167]
-# women_means = [0.888035126,0.883509834,0.997217069,0.92393321,0.850359046]
-#
-# N=5
-# ind = np.arange(N)
-# width = 0.35
-# plt.bar(ind, men_means, width, label='Men')
-# plt.bar(ind + width, women_means, width,
-#     label='Women')
-#
-# plt.ylabel('Scores')
-# plt.title('Scores by group and gender')
-#
-# plt.xticks(ind + width / 2, ('G1', 'G2', 'G3', 'G4', 'G5'))
-# plt.legend(loc='best')
-# plt.show()
+plt.tight_layout()
+plt.savefig('QAT.pdf')
+plt.savefig('QAT.svg')
+plt.show()
