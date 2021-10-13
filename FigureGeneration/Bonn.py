@@ -140,7 +140,7 @@ plt.xlabel("Device Conductance Range (%)",
            fontsize=labelSize, fontdict=dict(weight='bold'))
 plt.ylabel("Accuracy (%)", fontsize=labelSize, fontdict=dict(weight='bold'))
 plt.locator_params(axis='y', nbins=6)
-plt.ylim((99.1, 99.4))
+plt.ylim((98, 100))
 plt.xticks([1.03, 1.05, 1.1, 1.15, 1.2])
 plt.xticks(rotation=90)
 
@@ -156,7 +156,7 @@ plt.xlabel("Source Resistance ($\Omega$)",
            fontsize=labelSize, fontdict=dict(weight='bold'))
 plt.ylabel("Accuracy (%)", fontsize=labelSize, fontdict=dict(weight='bold'))
 plt.locator_params(axis='y', nbins=6)
-plt.ylim((98.4, 99.2))
+plt.ylim((98.4, 100))
 plt.xticks([25, 30, 45, 40, 45, 50])
 plt.xticks(rotation=0)
 
@@ -172,11 +172,9 @@ plt.xlabel("Line Resistance ($\Omega$)",
            fontsize=labelSize, fontdict=dict(weight='bold'))
 plt.ylabel("Accuracy (%)", fontsize=labelSize, fontdict=dict(weight='bold'))
 plt.locator_params(axis='y', nbins=4)
-plt.ylim((97, 98.8))
+plt.ylim((97, 100))
 plt.xticks([3, 4, 5])
 plt.xticks(rotation=0)
-plt.yticks([97.0, 97.5, 98.0, 98.5, 99.0])
-
 
 plt.tight_layout()
 plt.savefig('Bonn.pdf')
