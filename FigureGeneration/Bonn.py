@@ -65,6 +65,8 @@ plt.figure(1)
 plt.subplot(2, 4, 1)
 plotdata = pd.DataFrame(weightResDict, index=data['Weight Res'][2:7 + 1]) * 100
 plotdata = plotdata.transpose().agg([np.mean, np.std]).transpose()
+print(plotdata)
+exit(0)
 plotdata.plot(kind="line", yerr='std', color=my_colors[0], zorder=2, legend=None,
               linewidth=5, ax=plt.gca(), capsize=7.5, marker='o', markersize=7.5, markeredgewidth=5)
 plt.grid(axis='both')

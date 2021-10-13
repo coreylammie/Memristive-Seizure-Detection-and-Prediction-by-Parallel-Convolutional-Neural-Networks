@@ -10,12 +10,12 @@ plt.rcParams["figure.figsize"] = (20, 10)
 plt.rcParams.update({'font.size': 16})
 plt.rcParams['axes.linewidth'] = 2
 
-my_colors = ["#ef127b", "#e87ab3", "#0d9cd0", "#1dc470", "#d6711f"]
+my_colors = ["#ef127b", "#e87ab3", "#0d9cd0",
+             "#d6711f", "#1dc470", "#1C7874", "#050A30"]
 
 lowLst = [2, 8, 14, 21, 33, 38, 44]
 highLst = [7 + 1, 13 + 1, 20 + 1, 32 + 1, 37 + 1, 43 + 1, 46 + 1]
-botLst = [10, 20, 40, 0.0, 0.0, 0.0, 0.0]
-topLst = [102, 102, 102, 102, 102, 102, 102]
+botLst = [10, 60, 50, 20, 80, 80, 80]
 capLst = [5, 5, 5, 5, 5, 5, 5]
 xTickLst = [['16', '12', '10', '8', '6', '4'], ['16', '12', '10', '8', '6', '4'], ['1', '2', '3', '4', '5', '10', '15'], ['0.5', '0.1', '0.2', '0.3',
                                                                                                                           '0.4', '0.5', '1.0', '1.5', '2.0', '2.5', '3.0', '5.0'], ['±3', '±5', '±10', '±15', '±20'], ['20', '25', '30', '35', '40', '45', '50'], ['3', '4', '5']]
@@ -34,7 +34,6 @@ plt.figure(1)
 plt.subplot(2, 4, 1)
 for i in range(len(lowLst)):
     offset = 0
-    # Manually swap plots to be in the correct order.
     if i == 1 or i == 2:
         if i == 1:
             plt.subplot(2, 4, 3)
@@ -43,14 +42,13 @@ for i in range(len(lowLst)):
     else:
         plt.subplot(2, 4, i + 1)
 
+    plotdata = None
     for j in range(len(dataset)):
         dataArr = []
         meanDict = {}
         stdDict = {}
-
         data = pd.read_excel('SimulationSummary.xlsx', dataset[j])
         data = pd.DataFrame(data)
-
         for seed in range(5, 9 + 1):
             if i == 3:  # For removing some stuckon/off
                 indices = [z for z in range(
@@ -62,37 +60,30 @@ for i in range(len(lowLst)):
                 dataArr.append(data['AC(' + str(seed) + ')']
                                [lowLst[i]:highLst[i]].tolist())
 
-        dataArr = np.array(dataArr)
-        meanArr = (np.mean(dataArr, axis=0) * 100).tolist()
-        stdArr = (np.std(dataArr, axis=0) * 100).tolist()
+        dataArr = np.array(dataArr) * 100
+        if j == 0:
+            plotdata = dataArr
+        else:
+            plotdata = np.vstack((plotdata, dataArr))
 
-        # Make sure error bar does not get above 100%
-        tempArr = []
-        for l in range(len(meanArr)):
-            if 100 - meanArr[l] < stdArr[l]:
-                tempArr.append(100 - meanArr[l])
-            else:
-                tempArr.append(stdArr[l])
-        stdArr = [stdArr, tempArr]
-
-        plt.bar(np.arange(len(list(meanArr))) + offset,
-                meanArr,
-                width,
-                label=dataset[j],
-                edgecolor="black",
-                linewidth=2,
-                color=my_colors[j],
-                yerr=stdArr,
-                error_kw=dict(lw=2.5, capsize=capLst[i], capthick=1.5),
-                zorder=1,)
-        offset += width
-    plt.ylim((botLst[i], topLst[i]))
+    plotdata = pd.DataFrame(plotdata)
+    mean = plotdata.mean()
+    std = plotdata.std()
+    plotdata = pd.DataFrame(columns=['mean', 'std'])
+    plotdata['mean'] = mean
+    plotdata['std'] = std
+    # Clipping logic
+    plotdata['std'][plotdata['mean'] + plotdata['std'] >
+                    100] = plotdata['std'] - (plotdata['std'] + plotdata['mean'] - 100)
+    plotdata.plot(kind="line", yerr='std', color=my_colors[i], zorder=2, legend=None,
+                  linewidth=5, ax=plt.gca(), capsize=7.5, marker='o', markersize=7.5, markeredgewidth=5)
     plt.title(titleLst[i], y=1.02, fontsize=18, fontdict=dict(weight='bold'))
     plt.grid(axis='both')
     plt.ylabel("Accuracy (%)", fontsize=18, fontdict=dict(weight='bold'))
-    plt.xticks(np.arange(len(list(meanArr))) + xTickOffLst[i] * width, [
-               xTickLst[i][z] for z in indices], color='black', rotation=rotationLst[i], horizontalalignment='right')
+    plt.xticks(np.arange(plotdata.shape[0]), [
+               xTickLst[i][z] for z in indices], color='black', rotation=rotationLst[i])
     plt.xlabel(xLabelLst[i], fontsize=18, fontdict=dict(weight='bold'))
+    plt.ylim([botLst[i], 100])
     plt.gca().set_axisbelow(True)
 
 plt.tight_layout()
