@@ -10,7 +10,7 @@ plt.rcParams["figure.figsize"] = (20, 10)
 plt.rcParams.update({'font.size': 16})
 plt.rcParams['axes.linewidth'] = 2
 
-my_colors = ["#ef127b", "#e87ab3", "#0d9cd0",
+my_colors = ["#ef127b", "#0d9cd0", "#e87ab3",
              "#d6711f", "#1dc470", "#1C7874", "#050A30"]
 
 lowLst = [2, 8, 14, 21, 33, 38, 44]
