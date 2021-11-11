@@ -65,8 +65,6 @@ plt.figure(1)
 plt.subplot(2, 4, 1)
 plotdata = pd.DataFrame(weightResDict, index=data['Weight Res'][2:7 + 1]) * 100
 plotdata = plotdata.transpose().agg([np.mean, np.std]).transpose()
-print(plotdata)
-exit(0)
 plotdata.plot(kind="line", yerr='std', color=my_colors[0], zorder=2, legend=None,
               linewidth=5, ax=plt.gca(), capsize=7.5, marker='o', markersize=7.5, markeredgewidth=5)
 plt.grid(axis='both')
@@ -105,7 +103,7 @@ plotdata.plot(kind="line", yerr='std', color=my_colors[2], zorder=2, legend=None
 plt.grid(axis='both')
 plt.title("Effect of ADC and DAC Resolution",
           fontsize=titleSize, fontdict=dict(weight='bold'))
-plt.xlabel("ACD and DAC Resolution (bits)", fontsize=labelSize,
+plt.xlabel("ADC and DAC Resolution (bits)", fontsize=labelSize,
            fontdict=dict(weight='bold'))
 plt.ylabel("Accuracy (%)", fontsize=labelSize, fontdict=dict(weight='bold'))
 plt.locator_params(axis='y', nbins=6)
