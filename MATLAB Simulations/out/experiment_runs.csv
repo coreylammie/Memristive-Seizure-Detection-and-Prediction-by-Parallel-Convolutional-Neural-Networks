@@ -1,6 +1,0 @@
-seed,R_min_range,R_max_range,percent_error,bit_res,input_bits,output_bits,stuck,R_source,R_line,R_min,R_max,predictions_file_path
-1,0.95,1.05,0.05,6,6,6,0.001,20,2,10000,100000,eeb66a80-d668-428e-ada5-29b8888f82dc.txt
-2,0.95,1.05,0.05,6,6,6,0.001,20,2,10000,100000,51abdffa-204e-4ba2-b0c5-e498bbfc7ba1.txt
-3,0.95,1.05,0.05,6,6,6,0.001,20,2,10000,100000,8791f1be-701d-4792-b649-214f38bac645.txt
-4,0.95,1.05,0.05,6,6,6,0.001,20,2,10000,100000,abff3846-499a-46d4-9b7c-63ea8a10073b.txt
-5,0.95,1.05,0.05,6,6,6,0.001,20,2,10000,100000,176a4b3a-f721-4dfb-a848-20799ef7b219.txt
