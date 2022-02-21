@@ -16,4 +16,4 @@ module load cuda/11.1.1
 module load gnu8/8.4.0
 module load mvapich2
 export CUBLAS_WORKSPACE_CONFIG=:16:8
-srun python3 /scratch/jcu/cl/TBioCAS/Memristive-Seizure-Detection-and-Prediction-by-Parallel-Convolutional-Neural-Networks/network_training/SeizurePredictionCHBMITAllMetricsPCAQAT.py
+srun python3 /scratch/jcu/cl/TBioCAS/Memristive-Seizure-Detection-and-Prediction-by-Parallel-Convolutional-Neural-Networks/network_training/CHBMIT.py
