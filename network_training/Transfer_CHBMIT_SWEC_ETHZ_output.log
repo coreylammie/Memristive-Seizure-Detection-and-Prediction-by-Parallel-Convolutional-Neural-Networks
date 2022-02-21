@@ -4,6 +4,15 @@ loaded as requested: "mvapich2"
 
 
 
-srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 437834.0 ON gpunode-0-16 CANCELLED AT 2022-02-21T16:15:29 ***
-slurmstepd: error: *** JOB 437834 ON gpunode-0-16 CANCELLED AT 2022-02-21T16:15:29 ***
+Using cuda device 
+
+--------------------------------
+('CHBMIT', 'SWEC_ETHZ')
+--------------------------------
+Patient 1
+Fold Number 0
+Traceback (most recent call last):
+  File "/scratch/jcu/cl/TBioCAS/Memristive-Seizure-Detection-and-Prediction-by-Parallel-Convolutional-Neural-Networks/network_training/Transfer_CHBMIT_SWEC_ETHZ.py", line 98, in <module>
+    network.load_state_dict(torch.load('{}_P{}F{}.pt'.format(pretrained_dataset,patients[pretrained_dataset][patient_idx],fold)))
+TypeError: list indices must be integers or slices, not str
+srun: error: gpunode-0-16: task 0: Exited with exit code 1

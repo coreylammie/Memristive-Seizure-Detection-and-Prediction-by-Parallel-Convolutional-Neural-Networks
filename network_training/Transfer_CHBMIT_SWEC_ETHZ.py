@@ -87,7 +87,7 @@ if dataType == 'features':
         loss_function = nn.BCEWithLogitsLoss()
 
         df = pd.DataFrame(columns=['Pretrained Patient', 'Evaluation Patient', 'Fold', 'Epoch', 'Loss', 'Train Accuracy', 'Test Accuracy'])
-        for patient_idx, patient in patients[evaluation_dataset]:
+        for patient_idx, patient in enumerate(patients[evaluation_dataset]):
             print('--------------------------------')
             print(f'Patient {patient}')
             for fold in range(0,numFold):
