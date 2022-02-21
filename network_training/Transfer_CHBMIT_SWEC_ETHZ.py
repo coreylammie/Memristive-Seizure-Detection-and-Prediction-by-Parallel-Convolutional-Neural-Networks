@@ -256,5 +256,5 @@ if dataType == 'features':
                     lossHist.append(loss)
                     trainAccHist.append(trainCorrect/trainTotal)
                     testAccHist.append(testCorrect/testTotal)
-                    df = df.append({'Pretrained Patient': patients[pretrained_dataset][patient_idx], 'Evaluation Patient': patient, 'Epoch': epoch, 'Loss': loss.cpu().item(), 'Train Accuracy': trainAccuracy * 100., 'Test Accuracy': testAccuracy * 100.}, ignore_index=True)
+                    df = df.append({'Pretrained Patient': patients[pretrained_dataset][patient_idx], 'Evaluation Patient': patient, 'Fold': fold, 'Epoch': epoch, 'Loss': loss.cpu().item(), 'Train Accuracy': trainAccuracy * 100., 'Test Accuracy': testAccuracy * 100.}, ignore_index=True)
                     df.to_csv('Transfer_%s_%s.csv' % (pretrained_dataset, evaluation_dataset), index=False)
