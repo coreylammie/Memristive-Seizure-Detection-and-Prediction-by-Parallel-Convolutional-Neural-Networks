@@ -4,3 +4,5 @@ loaded as requested: "mvapich2"
 
 
 
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 437842 ON gpunode-0-16 CANCELLED AT 2022-02-21T16:28:13 ***
