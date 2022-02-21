@@ -6,8 +6,8 @@
 #SBATCH -n 1
 #SBATCH -c 1
 #SBATCH --mem=15g
-#SBATCH -o /scratch/jcu/cl/TBioCAS/Memristive-Seizure-Detection-and-Prediction-by-Parallel-Convolutional-Neural-Networks/network_training/output.log
-#SBATCH -e /scratch/jcu/cl/TBioCAS/Memristive-Seizure-Detection-and-Prediction-by-Parallel-Convolutional-Neural-Networks/network_training/output.log
+#SBATCH -o /scratch/jcu/cl/TBioCAS/Memristive-Seizure-Detection-and-Prediction-by-Parallel-Convolutional-Neural-Networks/network_training/CHBMIT_output.log
+#SBATCH -e /scratch/jcu/cl/TBioCAS/Memristive-Seizure-Detection-and-Prediction-by-Parallel-Convolutional-Neural-Networks/network_training/CHBMIT_output.log
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:1
 module load anaconda/3.6

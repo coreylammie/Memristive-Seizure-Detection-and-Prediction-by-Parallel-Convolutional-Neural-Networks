@@ -40,7 +40,7 @@ rootPath = '/scratch/jcu/cl/TBioCAS/processed_data/'
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 seed = 42
 patients = ['01']
-dataset = 'CHBMIT'
+dataset = 'SWEC_ETHZ'
 dataType = 'features'
 numFold = 5
 bS = 32
@@ -171,7 +171,7 @@ for patient in patients:
                 testLabels = np.append(testLabels,label.reshape((-1,1)),axis=0)
 
             if testCorrect/testTotal > bestAcc:
-                torch.save(network.state_dict(),'CHBMIT_P{}F{}.pt'.format(patients[0],fold))
+                torch.save(network.state_dict(),'SWEC_ETHZ_P{}F{}.pt'.format(patients[0],fold))
 
             trainF1 = sklearn.metrics.f1_score(trainLabels,trainOutputs)
             trainAccuracy = trainCorrect/trainTotal
@@ -217,6 +217,6 @@ for patient in patients:
             trainAccHist.append(trainCorrect/trainTotal)
             testAccHist.append(testCorrect/testTotal)
             df = df.append({'Patient': patient, 'Fold': fold, 'Epoch': epoch, 'Loss': loss.cpu().item(), 'Train Accuracy': trainAccuracy * 100., 'Test Accuracy': testAccuracy * 100.}, ignore_index=True)
-            df.to_csv('CHBMIT.csv', index=False)
+            df.to_csv('SWEC_ETHZ.csv', index=False)
 
 
