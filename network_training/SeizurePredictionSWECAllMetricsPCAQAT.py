@@ -44,7 +44,7 @@ dataset = 'SWEC_ETHZ'
 dataType = 'features'
 numFold = 5
 bS = 32
-num_epoch = 5 # 100
+num_epoch = 100
 network_size = 32
 # -----------------------------------------------------------
 
