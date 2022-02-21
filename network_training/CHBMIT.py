@@ -23,7 +23,7 @@ from utils import foldretrieve
 rootPath = '/scratch/jcu/cl/TBioCAS/processed_data/'
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 seed = 42
-patients = ['01']
+patients = ['01', '02', '03', '05', '08']
 dataset = 'CHBMIT'
 dataType = 'features'
 numFold = 5
@@ -202,5 +202,3 @@ for patient in patients:
             testAccHist.append(testCorrect/testTotal)
             df = df.append({'Patient': patient, 'Fold': fold, 'Epoch': epoch, 'Loss': loss.cpu().item(), 'Train Accuracy': trainAccuracy * 100., 'Test Accuracy': testAccuracy * 100.}, ignore_index=True)
             df.to_csv('CHBMIT.csv', index=False)
-
-
