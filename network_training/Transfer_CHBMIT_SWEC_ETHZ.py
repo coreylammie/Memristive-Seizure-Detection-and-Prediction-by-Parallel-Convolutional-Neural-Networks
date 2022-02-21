@@ -42,12 +42,12 @@ torch.use_deterministic_algorithms(True)
 torch.backends.cudnn.deterministic = True
 os.environ['PYTHONHASHSEED'] = str(seed)
 
-if dataType == 'features':
-    allData = np.empty((0, 176))
-    rawLabel = np.empty((0,), dtype=int)
-
     dataset_permutations = permutations(datasets)
     for dataset_permutation in dataset_permutations:
+        if dataType == 'features':
+            allData = np.empty((0, 176))
+            rawLabel = np.empty((0,), dtype=int)
+
         print('--------------------------------')
         print(dataset_permutation)
         pretrained_dataset = dataset_permutation[0]
