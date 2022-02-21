@@ -210,6 +210,9 @@ if dataType == 'features':
                         testOutputs = np.append(testOutputs,outputs.reshape((-1,1)),axis=0)
                         testLabels = np.append(testLabels,label.reshape((-1,1)),axis=0)
 
+                    if testCorrect/testTotal > bestAcc:
+                        torch.save(network.state_dict(),'{}_{}_P{}F{}.pt'.format(pretrained_dataset, evaluation_dataset, patient, fold))
+
                     trainF1 = sklearn.metrics.f1_score(trainLabels,trainOutputs)
                     trainAccuracy = trainCorrect/trainTotal
                     trainTN, trainFP, trainFN, trainTP = trainCM.ravel()

@@ -155,7 +155,7 @@ for patient in patients:
                 testLabels = np.append(testLabels,label.reshape((-1,1)),axis=0)
 
             if testCorrect/testTotal > bestAcc:
-                torch.save(network.state_dict(),'SWEC_ETHZ_P{}F{}.pt'.format(patients[0],fold))
+                torch.save(network.state_dict(),'SWEC_ETHZ_P{}F{}.pt'.format(patient,fold))
 
             trainF1 = sklearn.metrics.f1_score(trainLabels,trainOutputs)
             trainAccuracy = trainCorrect/trainTotal
