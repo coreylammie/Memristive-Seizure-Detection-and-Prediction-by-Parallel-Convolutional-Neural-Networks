@@ -4,3 +4,2579 @@ loaded as requested: "mvapich2"
 
 
 
+Using cuda device 
+
+--------------------------------
+('CHBMIT', 'SWEC_ETHZ')
+--------------------------------
+Patient 01
+Fold Number 0
+Epoch: 0 Train Loss: 2.9802320611338473e-09
+Train Accuracy: 0.9721099434114794 Train Sensitivity: 0.9725646123260437 Train Specitivity: 0.9716399506781751 Train FP Count: 69.0 Train AUROC: 0.9721022815021094
+Test Accuracy: 0.9830234438156831 Test Sensitivity: 0.9704049844236761 Test Specitivity: 0.9966386554621849 Test FP Count: 2.0 Test AUROC: 0.9828771241830065
+
+
+Epoch: 1 Train Loss: 5.407594680786133
+Train Accuracy: 0.990501212611156 Train Sensitivity: 0.9904610492845787 Train Specitivity: 0.9905427631578947 Train FP Count: 23.0 Train AUROC: 0.9904952528969218
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.99836867862969 Test FP Count: 1.0 Test AUROC: 0.9992
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.9919159256265158 Train Sensitivity: 0.9924393155590927 Train Specitivity: 0.9913757700205339 Train FP Count: 21.0 Train AUROC: 0.9919204052299438
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.99836867862969 Test FP Count: 1.0 Test AUROC: 0.9992
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9973726758286177 Train Sensitivity: 0.9972178060413355 Train Specitivity: 0.9975328947368421 Train FP Count: 6.0 Train AUROC: 0.9973686038311846
+Test Accuracy: 0.9983831851253031 Test Sensitivity: 1.0 Test Specitivity: 0.996742671009772 Test FP Count: 2.0 Test AUROC: 0.9984
+
+
+Epoch: 4 Train Loss: 2.2923715114593506
+Train Accuracy: 0.9969684721099434 Train Sensitivity: 0.9976114649681529 Train Specitivity: 0.9963054187192119 Train FP Count: 9.0 Train AUROC: 0.996977689963793
+Test Accuracy: 0.9983831851253031 Test Sensitivity: 1.0 Test Specitivity: 0.996742671009772 Test FP Count: 2.0 Test AUROC: 0.9984
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.9931285367825384 Train Sensitivity: 0.993633107839236 Train Specitivity: 0.9926078028747434 Train FP Count: 18.0 Train AUROC: 0.9931333495124607
+Test Accuracy: 0.9975747776879548 Test Sensitivity: 1.0 Test Specitivity: 0.9951219512195122 Test FP Count: 3.0 Test AUROC: 0.9976
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9963621665319321 Train Sensitivity: 0.9960270162892332 Train Specitivity: 0.9967091731797614 Train FP Count: 8.0 Train AUROC: 0.9963544667057254
+Test Accuracy: 0.9983831851253031 Test Sensitivity: 1.0 Test Specitivity: 0.996742671009772 Test FP Count: 2.0 Test AUROC: 0.9984
+
+
+Epoch: 7 Train Loss: 0.5703600645065308
+Train Accuracy: 0.9963621665319321 Train Sensitivity: 0.9960270162892332 Train Specitivity: 0.9967091731797614 Train FP Count: 8.0 Train AUROC: 0.9963544667057254
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.99836867862969 Test FP Count: 1.0 Test AUROC: 0.9992
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9973726758286177 Train Sensitivity: 0.9972178060413355 Train Specitivity: 0.9975328947368421 Train FP Count: 6.0 Train AUROC: 0.9973686038311846
+Test Accuracy: 0.9983831851253031 Test Sensitivity: 1.0 Test Specitivity: 0.996742671009772 Test FP Count: 2.0 Test AUROC: 0.9984
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.9971705739692805 Train Sensitivity: 0.9976124154397135 Train Specitivity: 0.9967145790554415 Train FP Count: 8.0 Train AUROC: 0.9971764971208507
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.99836867862969 Test FP Count: 1.0 Test AUROC: 0.9992
+
+
+Fold Number 1
+Epoch: 0 Train Loss: 0.38041597604751587
+Train Accuracy: 0.9741309620048505 Train Sensitivity: 0.9741756058800158 Train Specitivity: 0.9740847387906212 Train FP Count: 63.0 Train AUROC: 0.9741171548595806
+Test Accuracy: 0.9886822958771221 Test Sensitivity: 0.9800307219662059 Test Specitivity: 0.9982935153583617 Test FP Count: 1.0 Test AUROC: 0.9883479621691502
+
+
+Epoch: 1 Train Loss: 0.20171049237251282
+Train Accuracy: 0.9913096200485044 Train Sensitivity: 0.9916467780429594 Train Specitivity: 0.9909613804437141 Train FP Count: 22.0 Train AUROC: 0.9913105828653235
+Test Accuracy: 0.9951495553759094 Test Sensitivity: 1.0 Test Specitivity: 0.9900662251655629 Test FP Count: 6.0 Test AUROC: 0.9953051643192488
+
+
+Epoch: 2 Train Loss: 0.0005564397433772683
+Train Accuracy: 0.9973726758286177 Train Sensitivity: 0.9980095541401274 Train Specitivity: 0.9967159277504105 Train FP Count: 8.0 Train AUROC: 0.9973820047246321
+Test Accuracy: 0.9975747776879548 Test Sensitivity: 1.0 Test Specitivity: 0.9950083194675541 Test FP Count: 3.0 Test AUROC: 0.9976525821596245
+
+
+Epoch: 3 Train Loss: 1.3824472262058407e-05
+Train Accuracy: 0.9953516572352465 Train Sensitivity: 0.9952305246422893 Train Specitivity: 0.9954769736842105 Train FP Count: 11.0 Train AUROC: 0.9953470300269898
+Test Accuracy: 0.9975747776879548 Test Sensitivity: 1.0 Test Specitivity: 0.9950083194675541 Test FP Count: 3.0 Test AUROC: 0.9976525821596245
+
+
+Epoch: 4 Train Loss: 0.003876173635944724
+Train Accuracy: 0.9963621665319321 Train Sensitivity: 0.9980055843637814 Train Specitivity: 0.9946743138058173 Train FP Count: 13.0 Train AUROC: 0.9963879689393438
+Test Accuracy: 0.9975747776879548 Test Sensitivity: 1.0 Test Specitivity: 0.9950083194675541 Test FP Count: 3.0 Test AUROC: 0.9976525821596245
+
+
+Epoch: 5 Train Loss: 1.0740361213684082
+Train Accuracy: 0.9913096200485044 Train Sensitivity: 0.9908657664813344 Train Specitivity: 0.9917695473251029 Train FP Count: 20.0 Train AUROC: 0.9912971819718761
+Test Accuracy: 0.9894907033144705 Test Sensitivity: 0.9875389408099688 Test Specitivity: 0.9915966386554622 Test FP Count: 5.0 Test AUROC: 0.9893986737220051
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9959579628132579 Train Sensitivity: 0.9968140183193946 Train Specitivity: 0.9950759130077965 Train FP Count: 12.0 Train AUROC: 0.9959702532850575
+Test Accuracy: 0.9975747776879548 Test Sensitivity: 1.0 Test Specitivity: 0.9950083194675541 Test FP Count: 3.0 Test AUROC: 0.9976525821596245
+
+
+Epoch: 7 Train Loss: 0.03642254322767258
+Train Accuracy: 0.9951495553759094 Train Sensitivity: 0.9952286282306163 Train Specitivity: 0.9950678175092479 Train FP Count: 12.0 Train AUROC: 0.9951482228699322
+Test Accuracy: 0.994341147938561 Test Sensitivity: 1.0 Test Specitivity: 0.9884297520661157 Test FP Count: 7.0 Test AUROC: 0.9945226917057903
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9937348423605498 Train Sensitivity: 0.9936406995230525 Train Specitivity: 0.9938322368421053 Train FP Count: 15.0 Train AUROC: 0.9937297709836337
+Test Accuracy: 0.9975747776879548 Test Sensitivity: 1.0 Test Specitivity: 0.9950083194675541 Test FP Count: 3.0 Test AUROC: 0.9976525821596245
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.9959579628132579 Train Sensitivity: 0.9968140183193946 Train Specitivity: 0.9950759130077965 Train FP Count: 12.0 Train AUROC: 0.9959702532850575
+Test Accuracy: 0.9975747776879548 Test Sensitivity: 1.0 Test Specitivity: 0.9950083194675541 Test FP Count: 3.0 Test AUROC: 0.9976525821596245
+
+
+Fold Number 2
+Epoch: 0 Train Loss: 0.6192721128463745
+Train Accuracy: 0.9731204527081649 Train Sensitivity: 0.9733704292527822 Train Specitivity: 0.9728618421052632 Train FP Count: 66.0 Train AUROC: 0.973109718180845
+Test Accuracy: 0.9967663702506063 Test Sensitivity: 1.0 Test Specitivity: 0.993517017828201 Test FP Count: 4.0 Test AUROC: 0.9967948717948718
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.990501212611156 Train Sensitivity: 0.9900714853057982 Train Specitivity: 0.9909465020576131 Train FP Count: 22.0 Train AUROC: 0.990488552450198
+Test Accuracy: 0.9983831851253031 Test Sensitivity: 1.0 Test Specitivity: 0.9967479674796748 Test FP Count: 2.0 Test AUROC: 0.9983974358974359
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.9955537590945837 Train Sensitivity: 0.9956262425447316 Train Specitivity: 0.9954788327168105 Train FP Count: 11.0 Train AUROC: 0.9955525376307709
+Test Accuracy: 0.9927243330638642 Test Sensitivity: 1.0 Test Specitivity: 0.9855305466237942 Test FP Count: 9.0 Test AUROC: 0.9927884615384616
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.996160064672595 Train Sensitivity: 0.9964200477326969 Train Specitivity: 0.9958915365653246 Train FP Count: 10.0 Train AUROC: 0.9961623599953914
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.998371335504886 Test FP Count: 1.0 Test AUROC: 0.999198717948718
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 0.9977768795472919 Train Sensitivity: 0.9984076433121019 Train Specitivity: 0.9971264367816092 Train FP Count: 7.0 Train AUROC: 0.9977863194854711
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.998371335504886 Test FP Count: 1.0 Test AUROC: 0.999198717948718
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.9971705739692805 Train Sensitivity: 0.9968216130313866 Train Specitivity: 0.9975318798848211 Train FP Count: 6.0 Train AUROC: 0.9971630962274033
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.998371335504886 Test FP Count: 1.0 Test AUROC: 0.999198717948718
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9987873888439773 Train Sensitivity: 0.9992041384799045 Train Specitivity: 0.9983572895277207 Train FP Count: 4.0 Train AUROC: 0.9987937561642066
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.998371335504886 Test FP Count: 1.0 Test AUROC: 0.999198717948718
+
+
+Epoch: 7 Train Loss: 5.772893928224221e-05
+Train Accuracy: 0.9987873888439773 Train Sensitivity: 0.9992041384799045 Train Specitivity: 0.9983572895277207 Train FP Count: 4.0 Train AUROC: 0.9987937561642066
+Test Accuracy: 0.9919159256265158 Test Sensitivity: 0.9842271293375394 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 0.9918433931484503
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9987873888439773 Train Sensitivity: 0.9988071570576541 Train Specitivity: 0.998766954377312 Train FP Count: 3.0 Train AUROC: 0.9987870557174832
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.998371335504886 Test FP Count: 1.0 Test AUROC: 0.999198717948718
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.9959579628132579 Train Sensitivity: 0.9960238568588469 Train Specitivity: 0.9958898479243732 Train FP Count: 10.0 Train AUROC: 0.99595685239161
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.998371335504886 Test FP Count: 1.0 Test AUROC: 0.999198717948718
+
+
+Fold Number 3
+Epoch: 0 Train Loss: 0.40321531891822815
+Train Accuracy: 0.9747372675828617 Train Sensitivity: 0.9799196787148594 Train Specitivity: 0.9694873881204231 Train FP Count: 75.0 Train AUROC: 0.974814083031609
+Test Accuracy: 0.9927243330638642 Test Sensitivity: 1.0 Test Specitivity: 0.9854604200323102 Test FP Count: 9.0 Test AUROC: 0.992822966507177
+
+
+Epoch: 1 Train Loss: 0.061812032014131546
+Train Accuracy: 0.99232012934519 Train Sensitivity: 0.9928372463191405 Train Specitivity: 0.9917864476386037 Train FP Count: 20.0 Train AUROC: 0.9923247199907828
+Test Accuracy: 0.994341147938561 Test Sensitivity: 1.0 Test Specitivity: 0.9886547811993517 Test FP Count: 7.0 Test AUROC: 0.9944178628389155
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.9902991107518189 Train Sensitivity: 0.990067540723083 Train Specitivity: 0.9905388728918141 Train FP Count: 23.0 Train AUROC: 0.9902897452931404
+Test Accuracy: 0.9967663702506063 Test Sensitivity: 1.0 Test Specitivity: 0.993485342019544 Test FP Count: 4.0 Test AUROC: 0.9968102073365231
+
+
+Epoch: 3 Train Loss: 1.2361594438552856
+Train Accuracy: 0.9957558609539208 Train Sensitivity: 0.9952343129467831 Train Specitivity: 0.9962962962962963 Train FP Count: 9.0 Train AUROC: 0.995744644341105
+Test Accuracy: 0.9975747776879548 Test Sensitivity: 1.0 Test Specitivity: 0.9951060358890701 Test FP Count: 3.0 Test AUROC: 0.9976076555023923
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 0.9983831851253031 Train Sensitivity: 0.9984095427435388 Train Specitivity: 0.9983559391697493 Train FP Count: 4.0 Train AUROC: 0.9983827409566439
+Test Accuracy: 0.9975747776879548 Test Sensitivity: 1.0 Test Specitivity: 0.9951060358890701 Test FP Count: 3.0 Test AUROC: 0.9976076555023923
+
+
+Epoch: 5 Train Loss: 1.4305074103049265e-07
+Train Accuracy: 0.9989894907033144 Train Sensitivity: 0.9992044550517104 Train Specitivity: 0.9987674609695973 Train FP Count: 3.0 Train AUROC: 0.9989925633212644
+Test Accuracy: 0.9975747776879548 Test Sensitivity: 1.0 Test Specitivity: 0.9951060358890701 Test FP Count: 3.0 Test AUROC: 0.9976076555023923
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9989894907033144 Train Sensitivity: 0.9992044550517104 Train Specitivity: 0.9987674609695973 Train FP Count: 3.0 Train AUROC: 0.9989925633212644
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.9983633387888707 Test FP Count: 1.0 Test AUROC: 0.9992025518341308
+
+
+Epoch: 7 Train Loss: 4.003427238785662e-05
+Train Accuracy: 0.9993936944219887 Train Sensitivity: 0.9996022275258553 Train Specitivity: 0.9991783073130649 Train FP Count: 2.0 Train AUROC: 0.9993968780821033
+Test Accuracy: 0.9975747776879548 Test Sensitivity: 1.0 Test Specitivity: 0.9951060358890701 Test FP Count: 3.0 Test AUROC: 0.9976076555023923
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9977768795472919 Train Sensitivity: 0.9972200158856235 Train Specitivity: 0.9983539094650206 Train FP Count: 4.0 Train AUROC: 0.9977662181453
+Test Accuracy: 0.9983831851253031 Test Sensitivity: 1.0 Test Specitivity: 0.9967320261437909 Test FP Count: 2.0 Test AUROC: 0.9984051036682615
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.996160064672595 Train Sensitivity: 0.9960254372019078 Train Specitivity: 0.9962993421052632 Train FP Count: 9.0 Train AUROC: 0.9961556595486677
+Test Accuracy: 0.9975747776879548 Test Sensitivity: 1.0 Test Specitivity: 0.9951060358890701 Test FP Count: 3.0 Test AUROC: 0.9976076555023923
+
+
+Fold Number 4
+Epoch: 0 Train Loss: 0.0
+Train Accuracy: 0.9747372675828617 Train Sensitivity: 0.976475279106858 Train Specitivity: 0.9729508196721312 Train FP Count: 66.0 Train AUROC: 0.9747537790110957
+Test Accuracy: 0.9967663702506063 Test Sensitivity: 1.0 Test Specitivity: 0.9935691318327974 Test FP Count: 4.0 Test AUROC: 0.9967689822294022
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.9967663702506063 Train Sensitivity: 0.997610513739546 Train Specitivity: 0.9958965941731637 Train FP Count: 10.0 Train AUROC: 0.9967788828067353
+Test Accuracy: 0.9975747776879548 Test Sensitivity: 1.0 Test Specitivity: 0.9951690821256038 Test FP Count: 3.0 Test AUROC: 0.9975767366720517
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.9959579628132579 Train Sensitivity: 0.9968140183193946 Train Specitivity: 0.9950759130077965 Train FP Count: 12.0 Train AUROC: 0.9959702532850575
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.9983844911147012 Test FP Count: 1.0 Test AUROC: 0.9991922455573505
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9951495553759094 Train Sensitivity: 0.9948351211760031 Train Specitivity: 0.995475113122172 Train FP Count: 11.0 Train AUROC: 0.9951415224232083
+Test Accuracy: 0.9959579628132579 Test Sensitivity: 1.0 Test Specitivity: 0.9919743178170144 Test FP Count: 5.0 Test AUROC: 0.9959612277867529
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 0.9939369442198869 Train Sensitivity: 0.9932512901945216 Train Specitivity: 0.9946480032935364 Train FP Count: 13.0 Train AUROC: 0.9939218776939677
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.9983844911147012 Test FP Count: 1.0 Test AUROC: 0.9991922455573505
+
+
+Epoch: 5 Train Loss: 0.822657585144043
+Train Accuracy: 0.9911075181891673 Train Sensitivity: 0.9912524850894632 Train Specitivity: 0.9909576654336211 Train FP Count: 22.0 Train AUROC: 0.9911050752615421
+Test Accuracy: 0.994341147938561 Test Sensitivity: 1.0 Test Specitivity: 0.9888 Test FP Count: 7.0 Test AUROC: 0.994345718901454
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9971705739692805 Train Sensitivity: 0.9980087614496217 Train Specitivity: 0.9963069347558473 Train FP Count: 9.0 Train AUROC: 0.9971831975675743
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.9983844911147012 Test FP Count: 1.0 Test AUROC: 0.9991922455573505
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 0.9965642683912692 Train Sensitivity: 0.9968178202068417 Train Specitivity: 0.9963023829087921 Train FP Count: 9.0 Train AUROC: 0.9965666747562304
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.9983844911147012 Test FP Count: 1.0 Test AUROC: 0.9991922455573505
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.997978981406629 Train Sensitivity: 0.9984082769598089 Train Specitivity: 0.9975359342915812 Train FP Count: 6.0 Train AUROC: 0.9979851266425287
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.9983844911147012 Test FP Count: 1.0 Test AUROC: 0.9991922455573505
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.9985852869846402 Train Sensitivity: 0.9984101748807631 Train Specitivity: 0.998766447368421 Train FP Count: 3.0 Train AUROC: 0.9985815481137018
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.9983844911147012 Test FP Count: 1.0 Test AUROC: 0.9991922455573505
+
+
+--------------------------------
+Patient 02
+Fold Number 0
+Epoch: 0 Train Loss: 0.0
+Train Accuracy: 0.9547291835084882 Train Sensitivity: 0.9492264974216581 Train Specitivity: 0.9604449938195303 Train FP Count: 96.0 Train AUROC: 0.9546883064663045
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.9983766233766234 Test FP Count: 1.0 Test AUROC: 0.9991961414790997
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.998181083265966 Train Sensitivity: 1.0 Train Specitivity: 0.9963533225283631 Train FP Count: 9.0 Train AUROC: 0.9981920449979911
+Test Accuracy: 0.9983831851253031 Test Sensitivity: 1.0 Test Specitivity: 0.9967585089141004 Test FP Count: 2.0 Test AUROC: 0.9983922829581994
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.9993936944219887 Train Sensitivity: 1.0 Train Specitivity: 0.9987814784727863 Train FP Count: 3.0 Train AUROC: 0.9993973483326637
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.9983766233766234 Test FP Count: 1.0 Test AUROC: 0.9991961414790997
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9997978981406629 Train Sensitivity: 1.0 Train Specitivity: 0.9995934959349594 Train FP Count: 1.0 Train AUROC: 0.9997991161108879
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 0.9997978981406629 Train Sensitivity: 1.0 Train Specitivity: 0.9995934959349594 Train FP Count: 1.0 Train AUROC: 0.9997991161108879
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9997978981406629 Train Sensitivity: 1.0 Train Specitivity: 0.9995934959349594 Train FP Count: 1.0 Train AUROC: 0.9997991161108879
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Fold Number 1
+Epoch: 0 Train Loss: 0.0
+Train Accuracy: 0.9692805173807599 Train Sensitivity: 0.9664670658682635 Train Specitivity: 0.9721653704461727 Train FP Count: 68.0 Train AUROC: 0.9692597816729519
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.9983948635634029 Test FP Count: 1.0 Test AUROC: 0.9991869918699188
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.9973726758286177 Train Sensitivity: 0.99798873692679 Train Specitivity: 0.9967506092607636 Train FP Count: 8.0 Train AUROC: 0.9973762554426135
+Test Accuracy: 0.9983831851253031 Test Sensitivity: 1.0 Test Specitivity: 0.9967948717948718 Test FP Count: 2.0 Test AUROC: 0.9983739837398373
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.9975747776879548 Train Sensitivity: 0.997989545637314 Train Specitivity: 0.9971556277935798 Train FP Count: 7.0 Train AUROC: 0.9975771393317256
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9995957962813258 Train Sensitivity: 0.9995982322217758 Train Specitivity: 0.9995933306222041 Train FP Count: 1.0 Train AUROC: 0.99959578142199
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Fold Number 2
+Epoch: 0 Train Loss: 0.0
+Train Accuracy: 0.9749393694421988 Train Sensitivity: 0.9743281187324508 Train Specitivity: 0.9755600814663951 Train FP Count: 60.0 Train AUROC: 0.9749335465638072
+Test Accuracy: 0.9983831851253031 Test Sensitivity: 1.0 Test Specitivity: 0.9968652037617555 Test FP Count: 2.0 Test AUROC: 0.9983361064891847
+
+
+Epoch: 1 Train Loss: 20.896812438964844
+Train Accuracy: 0.9975747776879548 Train Sensitivity: 0.9967910148415564 Train Specitivity: 0.9983706720977596 Train FP Count: 4.0 Train AUROC: 0.9975697869323682
+Test Accuracy: 0.9886822958771221 Test Sensitivity: 0.9787928221859706 Test Specitivity: 0.9983974358974359 Test FP Count: 1.0 Test AUROC: 0.9889479274584289
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.9985852869846402 Train Sensitivity: 0.999195494770716 Train Specitivity: 0.9979691307879772 Train FP Count: 5.0 Train AUROC: 0.9985889111766436
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9993936944219887 Train Sensitivity: 1.0 Train Specitivity: 0.9987814784727863 Train FP Count: 3.0 Train AUROC: 0.9993973483326637
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 0.9997978981406629 Train Sensitivity: 0.9995983935742971 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 0.999796665311102
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Fold Number 3
+Epoch: 0 Train Loss: 0.0
+Train Accuracy: 0.969482619240097 Train Sensitivity: 0.9694779116465864 Train Specitivity: 0.9694873881204231 Train FP Count: 75.0 Train AUROC: 0.9694802719603507
+Test Accuracy: 0.9991915925626516 Test Sensitivity: 1.0 Test Specitivity: 0.9982964224872232 Test FP Count: 1.0 Test AUROC: 0.999231950844854
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.9969684721099434 Train Sensitivity: 0.997586484312148 Train Specitivity: 0.996344435418359 Train FP Count: 9.0 Train AUROC: 0.9969720368646035
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.9985852869846402 Train Sensitivity: 0.9987942122186495 Train Specitivity: 0.9983739837398374 Train FP Count: 4.0 Train AUROC: 0.9985864603768578
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Fold Number 4
+Epoch: 0 Train Loss: 0.0
+Train Accuracy: 0.9668552950687146 Train Sensitivity: 0.9629629629629629 Train Specitivity: 0.9708658186294624 Train FP Count: 71.0 Train AUROC: 0.9668271178055342
+Test Accuracy: 0.9983831851253031 Test Sensitivity: 1.0 Test Specitivity: 0.9966216216216216 Test FP Count: 2.0 Test AUROC: 0.9984544049459041
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.9989894907033144 Train Sensitivity: 1.0 Train Specitivity: 0.9979707792207793 Train FP Count: 5.0 Train AUROC: 0.9989955805544395
+Test Accuracy: 0.9983831851253031 Test Sensitivity: 1.0 Test Specitivity: 0.9966216216216216 Test FP Count: 2.0 Test AUROC: 0.9984544049459041
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.9983831851253031 Train Sensitivity: 0.9983929288871033 Train Specitivity: 0.9983733224888166 Train FP Count: 4.0 Train AUROC: 0.99838312568796
+Test Accuracy: 0.9983831851253031 Test Sensitivity: 1.0 Test Specitivity: 0.9966216216216216 Test FP Count: 2.0 Test AUROC: 0.9984544049459041
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9995957962813258 Train Sensitivity: 1.0 Train Specitivity: 0.9991873222267371 Train FP Count: 2.0 Train AUROC: 0.9995982322217758
+Test Accuracy: 0.9983831851253031 Test Sensitivity: 1.0 Test Specitivity: 0.9966216216216216 Test FP Count: 2.0 Test AUROC: 0.9984544049459041
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 1.0 Train Sensitivity: 1.0 Train Specitivity: 1.0 Train FP Count: 0.0 Train AUROC: 1.0
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+--------------------------------
+Patient 03
+Fold Number 0
+Epoch: 0 Train Loss: 2.495938531410502e-07
+Train Accuracy: 0.9159322820037106 Train Sensitivity: 0.9054163298302345 Train Specitivity: 0.9238754325259516 Train FP Count: 374.0 Train AUROC: 0.9140300866519234
+Test Accuracy: 0.9782003710575139 Test Sensitivity: 0.9619852164730729 Test Specitivity: 0.9909015715467329 Test FP Count: 11.0 Test AUROC: 0.9794479972718035
+
+
+Epoch: 1 Train Loss: 0.07014269381761551
+Train Accuracy: 0.9642857142857143 Train Sensitivity: 0.9624730021598272 Train Specitivity: 0.9656504065040651 Train FP Count: 169.0 Train AUROC: 0.963157433543309
+Test Accuracy: 0.9596474953617811 Test Sensitivity: 0.9860302677532014 Test Specitivity: 0.9421742482652274 Test FP Count: 75.0 Test AUROC: 0.9544653121780922
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.973678107606679 Train Sensitivity: 0.9702333065164923 Train Specitivity: 0.9763023493360572 Train FP Count: 116.0 Train AUROC: 0.9731173662021353
+Test Accuracy: 0.9865491651205937 Test Sensitivity: 0.9869138495092693 Test Specitivity: 0.9862792574656981 Test FP Count: 17.0 Test AUROC: 0.9859186744340573
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9830705009276438 Train Sensitivity: 0.9817400644468314 Train Specitivity: 0.9840816326530613 Train FP Count: 78.0 Train AUROC: 0.9826024712940175
+Test Accuracy: 0.9981447124304267 Test Sensitivity: 1.0 Test Specitivity: 0.9967689822294022 Test FP Count: 4.0 Test AUROC: 0.9978308026030369
+
+
+Epoch: 4 Train Loss: 0.03154757246375084
+Train Accuracy: 0.9958256029684601 Train Sensitivity: 0.9959763948497854 Train Specitivity: 0.9957107843137255 Train FP Count: 21.0 Train AUROC: 0.9956542598111863
+Test Accuracy: 0.9990723562152134 Test Sensitivity: 1.0 Test Specitivity: 0.9983818770226537 Test FP Count: 2.0 Test AUROC: 0.9989154013015185
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.9987244897959183 Train Sensitivity: 0.9994633753689295 Train Specitivity: 0.9981621400857668 Train FP Count: 9.0 Train AUROC: 0.9985903590835554
+Test Accuracy: 0.9990723562152134 Test Sensitivity: 1.0 Test Specitivity: 0.9983818770226537 Test FP Count: 2.0 Test AUROC: 0.9989154013015185
+
+
+Epoch: 6 Train Loss: 0.010210387408733368
+Train Accuracy: 0.9984925788497218 Train Sensitivity: 0.9991950630533941 Train Specitivity: 0.9979579334286298 Train FP Count: 10.0 Train AUROC: 0.9983542049349207
+Test Accuracy: 0.9990723562152134 Test Sensitivity: 1.0 Test Specitivity: 0.9983818770226537 Test FP Count: 2.0 Test AUROC: 0.9989154013015185
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 0.9907235621521335 Train Sensitivity: 0.9903381642512077 Train Specitivity: 0.9910167415271539 Train FP Count: 44.0 Train AUROC: 0.9904272133700929
+Test Accuracy: 0.9939703153988868 Test Sensitivity: 1.0 Test Specitivity: 0.9895749799518845 Test FP Count: 13.0 Test AUROC: 0.9929501084598699
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9793599257884972 Train Sensitivity: 0.9756554307116105 Train Specitivity: 0.9821940237413017 Train FP Count: 87.0 Train AUROC: 0.9790455911137692
+Test Accuracy: 0.9921150278293135 Test Sensitivity: 1.0 Test Specitivity: 0.9864108713029577 Test FP Count: 17.0 Test AUROC: 0.9907809110629067
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.9917671614100185 Train Sensitivity: 0.9922063961300726 Train Specitivity: 0.9914338160310014 Train FP Count: 42.0 Train AUROC: 0.991410769111125
+Test Accuracy: 0.9925788497217068 Test Sensitivity: 1.0 Test Specitivity: 0.9872 Test FP Count: 16.0 Test AUROC: 0.9913232104121474
+
+
+Fold Number 1
+Epoch: 0 Train Loss: 0.0487818717956543
+Train Accuracy: 0.9292671614100185 Train Sensitivity: 0.9192163177670424 Train Specitivity: 0.9369130257247856 Train FP Count: 309.0 Train AUROC: 0.9278463639818919
+Test Accuracy: 0.9865491651205937 Test Sensitivity: 0.9746963562753036 Test Specitivity: 0.9965753424657534 Test FP Count: 4.0 Test AUROC: 0.9874187115083718
+
+
+Epoch: 1 Train Loss: 9.444970783079043e-05
+Train Accuracy: 0.9885204081632653 Train Sensitivity: 0.9881815739994628 Train Specitivity: 0.988777800448888 Train FP Count: 55.0 Train AUROC: 0.9881362662013684
+Test Accuracy: 0.987012987012987 Test Sensitivity: 0.9895724713242962 Test Specitivity: 0.9849624060150376 Test FP Count: 18.0 Test AUROC: 0.9864876500635349
+
+
+Epoch: 2 Train Loss: 0.1375252604484558
+Train Accuracy: 0.9846938775510204 Train Sensitivity: 0.9828418230563003 Train Specitivity: 0.9861054352268084 Train FP Count: 68.0 Train AUROC: 0.9843505158478493
+Test Accuracy: 0.9874768089053804 Test Sensitivity: 0.9747474747474747 Test Specitivity: 0.9982847341337907 Test FP Count: 2.0 Test AUROC: 0.9884528376717637
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9768089053803339 Train Sensitivity: 0.9747447608812466 Train Specitivity: 0.9783761729906161 Train FP Count: 106.0 Train AUROC: 0.9761946541097504
+Test Accuracy: 0.9962894248608535 Test Sensitivity: 1.0 Test Specitivity: 0.9933166248955723 Test FP Count: 8.0 Test AUROC: 0.9958634953464323
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 0.9946660482374768 Train Sensitivity: 0.9951664876476907 Train Specitivity: 0.9942857142857143 Train FP Count: 28.0 Train AUROC: 0.9944101787257534
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.9973330241187384 Train Sensitivity: 0.9978535014757177 Train Specitivity: 0.9969369001429447 Train FP Count: 15.0 Train AUROC: 0.9971734341917472
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9951298701298701 Train Sensitivity: 0.9946409431939979 Train Specitivity: 0.9955028618152085 Train FP Count: 22.0 Train AUROC: 0.9950091077075411
+Test Accuracy: 0.9995361781076066 Test Sensitivity: 1.0 Test Specitivity: 0.9991596638655462 Test FP Count: 1.0 Test AUROC: 0.999482936918304
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 0.9981447124304267 Train Sensitivity: 0.9978575254418853 Train Specitivity: 0.9983640081799591 Train FP Count: 8.0 Train AUROC: 0.9981107668109223
+Test Accuracy: 0.9990723562152134 Test Sensitivity: 1.0 Test Specitivity: 0.998320738874895 Test FP Count: 2.0 Test AUROC: 0.9989658738366081
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9906076066790352 Train Sensitivity: 0.9908626713249127 Train Specitivity: 0.9904140322251682 Train FP Count: 47.0 Train AUROC: 0.9902299983679513
+Test Accuracy: 0.9930426716141002 Test Sensitivity: 0.9897119341563786 Test Specitivity: 0.995777027027027 Test FP Count: 5.0 Test AUROC: 0.9932094701255825
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.9923469387755102 Train Sensitivity: 0.9930107526881721 Train Specitivity: 0.9918433931484503 Train FP Count: 40.0 Train AUROC: 0.991985326897147
+Test Accuracy: 0.9930426716141002 Test Sensitivity: 0.9867075664621677 Test Specitivity: 0.99830220713073 Test FP Count: 2.0 Test AUROC: 0.993499095030889
+
+
+Fold Number 2
+Epoch: 0 Train Loss: 2.2351734685344127e-08
+Train Accuracy: 0.9537337662337663 Train Sensitivity: 0.9517745868328367 Train Specitivity: 0.9551996756537604 Train FP Count: 221.0 Train AUROC: 0.9522066611680867
+Test Accuracy: 0.9953617810760668 Test Sensitivity: 1.0 Test Specitivity: 0.9920191540303273 Test FP Count: 10.0 Test AUROC: 0.9945235487404163
+
+
+Epoch: 1 Train Loss: 13.47265911102295
+Train Accuracy: 0.975417439703154 Train Sensitivity: 0.9738966630785791 Train Specitivity: 0.9765688671556643 Train FP Count: 115.0 Train AUROC: 0.9746827637045532
+Test Accuracy: 0.9800556586270872 Test Sensitivity: 0.9667381974248928 Test Specitivity: 0.9901960784313726 Test FP Count: 12.0 Test AUROC: 0.9809584274345976
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.974721706864564 Train Sensitivity: 0.9738544474393531 Train Specitivity: 0.9753764753764754 Train FP Count: 121.0 Train AUROC: 0.9738793357452602
+Test Accuracy: 0.988404452690167 Test Sensitivity: 0.978448275862069 Test Specitivity: 0.995928338762215 Test FP Count: 5.0 Test AUROC: 0.9892167220773682
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9952458256029685 Train Sensitivity: 0.9954386906359002 Train Specitivity: 0.9950990402287114 Train FP Count: 24.0 Train AUROC: 0.9950480468540345
+Test Accuracy: 0.9976808905380334 Test Sensitivity: 1.0 Test Specitivity: 0.9959935897435898 Test FP Count: 5.0 Test AUROC: 0.9972617743702081
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 0.9954777365491652 Train Sensitivity: 0.9959731543624161 Train Specitivity: 0.9951010410287814 Train FP Count: 24.0 Train AUROC: 0.9952525458315397
+Test Accuracy: 0.9976808905380334 Test Sensitivity: 1.0 Test Specitivity: 0.9959935897435898 Test FP Count: 5.0 Test AUROC: 0.9972617743702081
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.997564935064935 Train Sensitivity: 0.9978546527219093 Train Specitivity: 0.9973442288049029 Train FP Count: 13.0 Train AUROC: 0.9974412435115114
+Test Accuracy: 0.9972170686456401 Test Sensitivity: 1.0 Test Specitivity: 0.9951961569255404 Test FP Count: 6.0 Test AUROC: 0.9967141292442497
+
+
+Epoch: 6 Train Loss: 0.8739628195762634
+Train Accuracy: 0.9982606679035251 Train Sensitivity: 0.9983918520503886 Train Specitivity: 0.9981606376456161 Train FP Count: 9.0 Train AUROC: 0.9981813611285452
+Test Accuracy: 0.9976808905380334 Test Sensitivity: 1.0 Test Specitivity: 0.9959935897435898 Test FP Count: 5.0 Test AUROC: 0.9972617743702081
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 0.9981447124304267 Train Sensitivity: 0.9978575254418853 Train Specitivity: 0.9983640081799591 Train FP Count: 8.0 Train AUROC: 0.9981107668109223
+Test Accuracy: 0.9976808905380334 Test Sensitivity: 1.0 Test Specitivity: 0.9959935897435898 Test FP Count: 5.0 Test AUROC: 0.9972617743702081
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9983766233766234 Train Sensitivity: 0.9983922829581994 Train Specitivity: 0.9983646770237122 Train FP Count: 8.0 Train AUROC: 0.9983152657884273
+Test Accuracy: 0.9990723562152134 Test Sensitivity: 1.0 Test Specitivity: 0.9983935742971888 Test FP Count: 2.0 Test AUROC: 0.9989047097480832
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.984925788497217 Train Sensitivity: 0.9838882921589689 Train Specitivity: 0.9857142857142858 Train FP Count: 70.0 Train AUROC: 0.9844917044830951
+Test Accuracy: 0.9902597402597403 Test Sensitivity: 1.0 Test Specitivity: 0.9833860759493671 Test FP Count: 21.0 Test AUROC: 0.988499452354874
+
+
+Fold Number 3
+Epoch: 0 Train Loss: 0.28934577107429504
+Train Accuracy: 0.9503710575139147 Train Sensitivity: 0.9424518201284796 Train Specitivity: 0.9564238952536824 Train FP Count: 213.0 Train AUROC: 0.9494946673632995
+Test Accuracy: 0.9684601113172542 Test Sensitivity: 0.9390243902439024 Test Specitivity: 0.9931740614334471 Test FP Count: 8.0 Test AUROC: 0.9711983505848691
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.9763450834879406 Train Sensitivity: 0.973952738990333 Train Specitivity: 0.9781632653061224 Train FP Count: 107.0 Train AUROC: 0.9757540009836105
+Test Accuracy: 0.9897959183673469 Test Sensitivity: 1.0 Test Specitivity: 0.9823434991974318 Test FP Count: 22.0 Test AUROC: 0.9881974248927039
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.984577922077922 Train Sensitivity: 0.9823198499866059 Train Specitivity: 0.9863013698630136 Train FP Count: 67.0 Train AUROC: 0.9842799215302263
+Test Accuracy: 0.9907235621521335 Test Sensitivity: 1.0 Test Specitivity: 0.9839228295819936 Test FP Count: 20.0 Test AUROC: 0.9892703862660944
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9929267161410018 Train Sensitivity: 0.9924912845266828 Train Specitivity: 0.9932584269662922 Train FP Count: 33.0 Train AUROC: 0.992718160538817
+Test Accuracy: 0.99860853432282 Test Sensitivity: 1.0 Test Specitivity: 0.9975550122249389 Test FP Count: 3.0 Test AUROC: 0.9983905579399142
+
+
+Epoch: 4 Train Loss: 9.571016311645508
+Train Accuracy: 0.9921150278293135 Train Sensitivity: 0.9916845493562232 Train Specitivity: 0.9924428104575164 Train FP Count: 37.0 Train AUROC: 0.9918757934330306
+Test Accuracy: 0.9972170686456401 Test Sensitivity: 1.0 Test Specitivity: 0.9951219512195122 Test FP Count: 6.0 Test AUROC: 0.9967811158798283
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.9843460111317254 Train Sensitivity: 0.9828280118057419 Train Specitivity: 0.9855013273432713 Train FP Count: 71.0 Train AUROC: 0.9839488018682028
+Test Accuracy: 0.9962894248608535 Test Sensitivity: 1.0 Test Specitivity: 0.9935064935064936 Test FP Count: 8.0 Test AUROC: 0.9957081545064378
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9919990723562152 Train Sensitivity: 0.9914186108876374 Train Specitivity: 0.99244126659857 Train FP Count: 37.0 Train AUROC: 0.9917735439442782
+Test Accuracy: 0.9962894248608535 Test Sensitivity: 1.0 Test Specitivity: 0.9935064935064936 Test FP Count: 8.0 Test AUROC: 0.9957081545064378
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 0.9958256029684601 Train Sensitivity: 0.9954448017148981 Train Specitivity: 0.9961161079313164 Train FP Count: 19.0 Train AUROC: 0.9957175701534455
+Test Accuracy: 0.9995361781076066 Test Sensitivity: 1.0 Test Specitivity: 0.9991836734693877 Test FP Count: 1.0 Test AUROC: 0.9994635193133048
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9982606679035251 Train Sensitivity: 0.9978580990629183 Train Specitivity: 0.9985682143587645 Train FP Count: 7.0 Train AUROC: 0.9982446714708043
+Test Accuracy: 0.9995361781076066 Test Sensitivity: 1.0 Test Specitivity: 0.9991836734693877 Test FP Count: 1.0 Test AUROC: 0.9994635193133048
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.9984925788497218 Train Sensitivity: 0.9986598767086572 Train Specitivity: 0.9983650112405478 Train FP Count: 8.0 Train AUROC: 0.9984175152771799
+Test Accuracy: 0.9958256029684601 Test Sensitivity: 0.9904357066950054 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 0.9963235294117647
+
+
+Fold Number 4
+Epoch: 0 Train Loss: 0.0
+Train Accuracy: 0.9516465677179963 Train Sensitivity: 0.947638326585695 Train Specitivity: 0.9546655824354544 Train FP Count: 223.0 Train AUROC: 0.9503028600282815
+Test Accuracy: 0.985621521335807 Test Sensitivity: 0.9737638748738647 Test Specitivity: 0.9957081545064378 Test FP Count: 5.0 Test AUROC: 0.9864614662471097
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.9836502782931354 Train Sensitivity: 0.9825409615901155 Train Specitivity: 0.9844929606202816 Train FP Count: 76.0 Train AUROC: 0.9831770290800393
+Test Accuracy: 0.9902597402597403 Test Sensitivity: 0.9836901121304791 Test Specitivity: 0.9957446808510638 Test FP Count: 5.0 Test AUROC: 0.9906773178491334
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.9788961038961039 Train Sensitivity: 0.9794816414686826 Train Specitivity: 0.9784552845528456 Train FP Count: 106.0 Train AUROC: 0.9780351449072964
+Test Accuracy: 0.9972170686456401 Test Sensitivity: 1.0 Test Specitivity: 0.9949664429530202 Test FP Count: 6.0 Test AUROC: 0.9969072164948454
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9932745825602969 Train Sensitivity: 0.9930257510729614 Train Specitivity: 0.9934640522875817 Train FP Count: 32.0 Train AUROC: 0.9930565641762042
+Test Accuracy: 0.9990723562152134 Test Sensitivity: 1.0 Test Specitivity: 0.9983164983164983 Test FP Count: 2.0 Test AUROC: 0.9989690721649485
+
+
+Epoch: 4 Train Loss: 0.9762512445449829
+Train Accuracy: 0.9964053803339518 Train Sensitivity: 0.997313994090787 Train Specitivity: 0.9957151601713936 Train FP Count: 21.0 Train AUROC: 0.9961655072549491
+Test Accuracy: 0.9921150278293135 Test Sensitivity: 0.983756345177665 Test Specitivity: 0.9991460290350128 Test FP Count: 1.0 Test AUROC: 0.9927391735192365
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.9914192949907236 Train Sensitivity: 0.992200107584723 Train Specitivity: 0.9908275580921321 Train FP Count: 45.0 Train AUROC: 0.9910090551314785
+Test Accuracy: 0.9786641929499073 Test Sensitivity: 0.9565217391304348 Test Specitivity: 0.9982517482517482 Test FP Count: 2.0 Test AUROC: 0.9804193251160446
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9918831168831169 Train Sensitivity: 0.9927380311995697 Train Specitivity: 0.9912352221769262 Train FP Count: 43.0 Train AUROC: 0.9914813634287479
+Test Accuracy: 0.9990723562152134 Test Sensitivity: 1.0 Test Specitivity: 0.9983164983164983 Test FP Count: 2.0 Test AUROC: 0.9989690721649485
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 0.9902597402597403 Train Sensitivity: 0.9900644468313641 Train Specitivity: 0.9904081632653061 Train FP Count: 47.0 Train AUROC: 0.9899232499016936
+Test Accuracy: 0.9953617810760668 Test Sensitivity: 1.0 Test Specitivity: 0.9916387959866221 Test FP Count: 10.0 Test AUROC: 0.9948453608247423
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9973330241187384 Train Sensitivity: 0.9978535014757177 Train Specitivity: 0.9969369001429447 Train FP Count: 15.0 Train AUROC: 0.9971734341917472
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.9981447124304267 Train Sensitivity: 0.9978575254418853 Train Specitivity: 0.9983640081799591 Train FP Count: 8.0 Train AUROC: 0.9981107668109223
+Test Accuracy: 1.0 Test Sensitivity: 1.0 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 1.0
+
+
+--------------------------------
+Patient 05
+Fold Number 0
+Epoch: 0 Train Loss: 3.7844979763031006
+Train Accuracy: 0.649582560296846 Train Sensitivity: 0.6016837674296238 Train Specitivity: 0.6873315363881402 Train FP Count: 1508.0 Train AUROC: 0.6445562888466723
+Test Accuracy: 0.6873840445269017 Test Sensitivity: 0.7870722433460076 Test Specitivity: 0.6552147239263804 Test FP Count: 562.0 Test AUROC: 0.664632536815782
+
+
+Epoch: 1 Train Loss: 5.007497787475586
+Train Accuracy: 0.700487012987013 Train Sensitivity: 0.6640498105035192 Train Specitivity: 0.727789046653144 Train FP Count: 1342.0 Train AUROC: 0.6946938934757099
+Test Accuracy: 0.7091836734693877 Test Sensitivity: 0.7354925775978407 Test Specitivity: 0.6954063604240283 Test FP Count: 431.0 Test AUROC: 0.696149972214504
+
+
+Epoch: 2 Train Loss: 2.5959582328796387
+Train Accuracy: 0.6978200371057514 Train Sensitivity: 0.6551004435168275 Train Specitivity: 0.7319974953036944 Train FP Count: 1284.0 Train AUROC: 0.6939486976329603
+Test Accuracy: 0.7282003710575139 Test Sensitivity: 0.7663934426229508 Test Specitivity: 0.7085674157303371 Test FP Count: 415.0 Test AUROC: 0.7149399138649625
+
+
+Epoch: 3 Train Loss: 1.1460731029510498
+Train Accuracy: 0.7271567717996289 Train Sensitivity: 0.6874674986999479 Train Specitivity: 0.759104227710339 Train FP Count: 1151.0 Train AUROC: 0.723896686984733
+Test Accuracy: 0.672077922077922 Test Sensitivity: 0.9352750809061489 Test Specitivity: 0.6280454791553871 Test FP Count: 687.0 Test AUROC: 0.6395787024173382
+
+
+Epoch: 4 Train Loss: 3.2144649028778076
+Train Accuracy: 0.748956400742115 Train Sensitivity: 0.716986155484558 Train Specitivity: 0.7736236647493837 Train FP Count: 1102.0 Train AUROC: 0.7447447636711775
+Test Accuracy: 0.7843228200371057 Test Sensitivity: 0.8305304010349288 Test Specitivity: 0.7584960231381056 Test FP Count: 334.0 Test AUROC: 0.7733849680466797
+
+
+Epoch: 5 Train Loss: 4.501106262207031
+Train Accuracy: 0.7341141001855288 Train Sensitivity: 0.69700944386149 Train Specitivity: 0.7635078969243557 Train FP Count: 1138.0 Train AUROC: 0.730475898931876
+Test Accuracy: 0.7968460111317254 Test Sensitivity: 0.7581573896353166 Test Specitivity: 0.8330341113105925 Test FP Count: 186.0 Test AUROC: 0.7979334537371492
+
+
+Epoch: 6 Train Loss: 1.8606643676757812
+Train Accuracy: 0.7620593692022264 Train Sensitivity: 0.7289204097714737 Train Specitivity: 0.7882499481004774 Train FP Count: 1020.0 Train AUROC: 0.7587582270161254
+Test Accuracy: 0.6178107606679035 Test Sensitivity: 0.5997375328083989 Test Specitivity: 0.6276901004304161 Test FP Count: 519.0 Test AUROC: 0.6048815643234232
+
+
+Epoch: 7 Train Loss: 5.448339939117432
+Train Accuracy: 0.761943413729128 Train Sensitivity: 0.7310344827586207 Train Specitivity: 0.7859497321796457 Train FP Count: 1039.0 Train AUROC: 0.758118673113226
+Test Accuracy: 0.7365491651205937 Test Sensitivity: 0.6601255886970173 Test Specitivity: 0.8469387755102041 Test FP Count: 135.0 Test AUROC: 0.7473655876632398
+
+
+Epoch: 8 Train Loss: 3.0290565490722656
+Train Accuracy: 0.7458256029684601 Train Sensitivity: 0.7096521056761705 Train Specitivity: 0.7746302853572172 Train FP Count: 1082.0 Train AUROC: 0.742513377810991
+Test Accuracy: 0.7351576994434137 Test Sensitivity: 0.6537585421412301 Test Specitivity: 0.8629320619785459 Test FP Count: 115.0 Test AUROC: 0.7478657265907196
+
+
+Epoch: 9 Train Loss: 13.232343673706055
+Train Accuracy: 0.7772495361781077 Train Sensitivity: 0.7460609243697479 Train Specitivity: 0.8019102990033222 Train FP Count: 954.0 Train AUROC: 0.7741840510682741
+Test Accuracy: 0.7833951762523191 Test Sensitivity: 0.9206611570247933 Test Specitivity: 0.7298517085751128 Test FP Count: 419.0 Test AUROC: 0.7650093776048902
+
+
+Fold Number 1
+Epoch: 0 Train Loss: 2.9775753021240234
+Train Accuracy: 0.6371753246753247 Train Sensitivity: 0.584775967413442 Train Specitivity: 0.6810051107325383 Train FP Count: 1498.0 Train AUROC: 0.6337595025225014
+Test Accuracy: 0.6781076066790352 Test Sensitivity: 0.8696969696969697 Test Specitivity: 0.6434830230010953 Test FP Count: 651.0 Test AUROC: 0.6353331862853222
+
+
+Epoch: 1 Train Loss: 4.735511779785156
+Train Accuracy: 0.6916743970315399 Train Sensitivity: 0.6481481481481481 Train Specitivity: 0.7265135699373695 Train FP Count: 1310.0 Train AUROC: 0.687727527828548
+Test Accuracy: 0.7040816326530612 Test Sensitivity: 0.6425855513307985 Test Specitivity: 0.7626811594202898 Test FP Count: 262.0 Test AUROC: 0.7059897556552214
+
+
+Epoch: 2 Train Loss: 9.766987800598145
+Train Accuracy: 0.6988636363636364 Train Sensitivity: 0.6567242281527996 Train Specitivity: 0.7324031653477717 Train FP Count: 1285.0 Train AUROC: 0.694852356385485
+Test Accuracy: 0.6544526901669759 Test Sensitivity: 0.5664143152099105 Test Specitivity: 0.8364153627311522 Test FP Count: 115.0 Test AUROC: 0.6800786706859789
+
+
+Epoch: 3 Train Loss: 4.215943813323975
+Train Accuracy: 0.7299397031539888 Train Sensitivity: 0.6910844629822732 Train Specitivity: 0.7610693400167085 Train FP Count: 1144.0 Train AUROC: 0.7265791519233136
+Test Accuracy: 0.800556586270872 Test Sensitivity: 0.9810606060606061 Test Specitivity: 0.742014742014742 Test FP Count: 420.0 Test AUROC: 0.7720143126730878
+
+
+Epoch: 4 Train Loss: 6.925017833709717
+Train Accuracy: 0.7262291280148423 Train Sensitivity: 0.6859439834024896 Train Specitivity: 0.7588087248322147 Train FP Count: 1150.0 Train AUROC: 0.7230965693380272
+Test Accuracy: 0.7611317254174397 Test Sensitivity: 0.7242841993637328 Test Specitivity: 0.7897774113767518 Test FP Count: 255.0 Test AUROC: 0.7573401465578512
+
+
+Epoch: 5 Train Loss: 1.9611060619354248
+Train Accuracy: 0.7517393320964749 Train Sensitivity: 0.7151404786680541 Train Specitivity: 0.7811715481171548 Train FP Count: 1046.0 Train AUROC: 0.7488095774022286
+Test Accuracy: 0.8191094619666048 Test Sensitivity: 0.8120728929384966 Test Specitivity: 0.823943661971831 Test FP Count: 225.0 Test AUROC: 0.8123299757370782
+
+
+Epoch: 6 Train Loss: 8.498970985412598
+Train Accuracy: 0.7764378478664193 Train Sensitivity: 0.7483373237563181 Train Specitivity: 0.7981500513874614 Train FP Count: 982.0 Train AUROC: 0.7726693497318435
+Test Accuracy: 0.8000927643784786 Test Sensitivity: 0.794425087108014 Test Specitivity: 0.8038610038610039 Test FP Count: 254.0 Test AUROC: 0.7919454451878538
+
+
+Epoch: 7 Train Loss: 7.901089668273926
+Train Accuracy: 0.7686688311688312 Train Sensitivity: 0.7372166578808645 Train Specitivity: 0.7933747412008282 Train FP Count: 998.0 Train AUROC: 0.7652807164444284
+Test Accuracy: 0.7736549165120594 Test Sensitivity: 0.7737226277372263 Test Specitivity: 0.7736131934032984 Test FP Count: 302.0 Test AUROC: 0.7626645099625027
+
+
+Epoch: 8 Train Loss: 6.540457248687744
+Train Accuracy: 0.760899814471243 Train Sensitivity: 0.726773096048155 Train Specitivity: 0.7880491359566937 Train FP Count: 1018.0 Train AUROC: 0.757779238357628
+Test Accuracy: 0.8153988868274582 Test Sensitivity: 0.8400503778337531 Test Specitivity: 0.8010279001468429 Test FP Count: 271.0 Test AUROC: 0.8034090630590888
+
+
+Epoch: 9 Train Loss: 12.57813549041748
+Train Accuracy: 0.7743506493506493 Train Sensitivity: 0.7434816960758494 Train Specitivity: 0.7986326911124922 Train FP Count: 972.0 Train AUROC: 0.7710877218255648
+Test Accuracy: 0.7717996289424861 Test Sensitivity: 0.7169260700389105 Test Specitivity: 0.8218085106382979 Test FP Count: 201.0 Test AUROC: 0.7733990147783251
+
+
+Fold Number 2
+Epoch: 0 Train Loss: 3.062453508377075
+Train Accuracy: 0.6152597402597403 Train Sensitivity: 0.5613268192337362 Train Specitivity: 0.6595564941921859 Train FP Count: 1612.0 Train AUROC: 0.6109741567402259
+Test Accuracy: 0.6052875695732839 Test Sensitivity: 0.5448818897637795 Test Specitivity: 0.6918735891647856 Test FP Count: 273.0 Test AUROC: 0.6158959902202616
+
+
+Epoch: 1 Train Loss: 3.7287518978118896
+Train Accuracy: 0.6941094619666048 Train Sensitivity: 0.6508474576271186 Train Specitivity: 0.7287533931927334 Train FP Count: 1299.0 Train AUROC: 0.6902122142490569
+Test Accuracy: 0.725417439703154 Test Sensitivity: 0.7586685159500693 Test Specitivity: 0.7087108013937282 Test FP Count: 418.0 Test AUROC: 0.7103718301771054
+
+
+Epoch: 2 Train Loss: 1.944231390953064
+Train Accuracy: 0.7021103896103896 Train Sensitivity: 0.6617414248021108 Train Specitivity: 0.7337608605709557 Train FP Count: 1287.0 Train AUROC: 0.6976950849487247
+Test Accuracy: 0.6335807050092764 Test Sensitivity: 0.6373626373626373 Test Specitivity: 0.6319947333772219 Test FP Count: 559.0 Test AUROC: 0.613385364325707
+
+
+Epoch: 3 Train Loss: 1.0889021158218384
+Train Accuracy: 0.7308673469387755 Train Sensitivity: 0.6937434279705573 Train Specitivity: 0.7601659751037344 Train FP Count: 1156.0 Train AUROC: 0.7270689463717095
+Test Accuracy: 0.7824675324675324 Test Sensitivity: 0.7398452611218569 Test Specitivity: 0.82174688057041 Test FP Count: 200.0 Test AUROC: 0.7834427463315106
+
+
+Epoch: 4 Train Loss: 4.597799777984619
+Train Accuracy: 0.7364332096474954 Train Sensitivity: 0.6981770833333333 Train Specitivity: 0.7671404682274248 Train FP Count: 1114.0 Train AUROC: 0.7332237898445683
+Test Accuracy: 0.8070500927643784 Test Sensitivity: 0.891583452211127 Test Specitivity: 0.7663230240549829 Test FP Count: 340.0 Test AUROC: 0.7919282355141976
+
+
+Epoch: 5 Train Loss: 8.341127395629883
+Train Accuracy: 0.7201994434137291 Train Sensitivity: 0.6803235908141962 Train Specitivity: 0.7520868113522537 Train FP Count: 1188.0 Train AUROC: 0.7166404062412778
+Test Accuracy: 0.7476808905380334 Test Sensitivity: 0.6779374471682164 Test Specitivity: 0.8324768756423433 Test FP Count: 163.0 Test AUROC: 0.7555944192845303
+
+
+Epoch: 6 Train Loss: 5.570591449737549
+Train Accuracy: 0.7614795918367347 Train Sensitivity: 0.7271301620491375 Train Specitivity: 0.7888703626511047 Train FP Count: 1013.0 Train AUROC: 0.7584379998859547
+Test Accuracy: 0.7166048237476809 Test Sensitivity: 0.6357361963190185 Test Specitivity: 0.8403755868544601 Test FP Count: 136.0 Test AUROC: 0.7301214201502635
+
+
+Epoch: 7 Train Loss: 1.3586516380310059
+Train Accuracy: 0.739448051948052 Train Sensitivity: 0.6983598154792414 Train Specitivity: 0.7734011012282931 Train FP Count: 1070.0 Train AUROC: 0.7371571513891015
+Test Accuracy: 0.7824675324675324 Test Sensitivity: 0.7755555555555556 Test Specitivity: 0.7874203821656051 Test FP Count: 267.0 Test AUROC: 0.7768553442702827
+
+
+Epoch: 8 Train Loss: 3.8195576667785645
+Train Accuracy: 0.7596243042671614 Train Sensitivity: 0.7309549356223176 Train Specitivity: 0.7814542483660131 Train FP Count: 1070.0 Train AUROC: 0.7551733038016092
+Test Accuracy: 0.5932282003710575 Test Sensitivity: 0.5252293577981652 Test Specitivity: 0.8810679611650486 Test FP Count: 49.0 Test AUROC: 0.6270043460670052
+
+
+Epoch: 9 Train Loss: 2.4232935905456543
+Train Accuracy: 0.7678571428571429 Train Sensitivity: 0.7388755662136957 Train Specitivity: 0.7901868199548348 Train FP Count: 1022.0 Train AUROC: 0.7638788599073831
+Test Accuracy: 0.712430426716141 Test Sensitivity: 0.6387771520514883 Test Specitivity: 0.8127053669222344 Test FP Count: 171.0 Test AUROC: 0.7229019024375388
+
+
+Fold Number 3
+Epoch: 0 Train Loss: 1.4052294492721558
+Train Accuracy: 0.6631493506493507 Train Sensitivity: 0.6163702928870293 Train Specitivity: 0.7004166666666667 Train FP Count: 1438.0 Train AUROC: 0.6586453822167401
+Test Accuracy: 0.7059369202226345 Test Sensitivity: 0.6654929577464789 Test Specitivity: 0.7323619631901841 Test FP Count: 349.0 Test AUROC: 0.6945784617551768
+
+
+Epoch: 1 Train Loss: 2.304622173309326
+Train Accuracy: 0.7031539888682746 Train Sensitivity: 0.6646227672620635 Train Specitivity: 0.7328134619331007 Train FP Count: 1302.0 Train AUROC: 0.6982037869034007
+Test Accuracy: 0.6521335807050093 Test Sensitivity: 0.8640350877192983 Test Specitivity: 0.6270746887966805 Test FP Count: 719.0 Test AUROC: 0.5950327510917031
+
+
+Epoch: 2 Train Loss: 4.296444416046143
+Train Accuracy: 0.7132421150278293 Train Sensitivity: 0.6754246284501062 Train Specitivity: 0.7425864909390445 Train FP Count: 1250.0 Train AUROC: 0.7086788455016642
+Test Accuracy: 0.7022263450834879 Test Sensitivity: 0.6302281368821293 Test Specitivity: 0.7708333333333334 Test FP Count: 253.0 Test AUROC: 0.7050447246091
+
+
+Epoch: 3 Train Loss: 2.1267857551574707
+Train Accuracy: 0.7519712430426716 Train Sensitivity: 0.7210357714895889 Train Specitivity: 0.7757277572775728 Train FP Count: 1094.0 Train AUROC: 0.7476625220212425
+Test Accuracy: 0.7704081632653061 Test Sensitivity: 0.7444831591173054 Test Specitivity: 0.7876447876447876 Test FP Count: 275.0 Test AUROC: 0.7611811522749683
+
+
+Epoch: 4 Train Loss: 0.8667693734169006
+Train Accuracy: 0.7705241187384044 Train Sensitivity: 0.7482230727173319 Train Specitivity: 0.7869512686266613 Train FP Count: 1058.0 Train AUROC: 0.7652447021467522
+Test Accuracy: 0.724025974025974 Test Sensitivity: 0.7473035439137135 Test Specitivity: 0.7140013271400133 Test FP Count: 431.0 Test AUROC: 0.698608959008311
+
+
+Epoch: 5 Train Loss: 7.689176082611084
+Train Accuracy: 0.75139146567718 Train Sensitivity: 0.7210174029451137 Train Specitivity: 0.7745960319083657 Train FP Count: 1102.0 Train AUROC: 0.7469191268933766
+Test Accuracy: 0.6062152133580705 Test Sensitivity: 0.5205143906919779 Test Specitivity: 0.8738049713193117 Test FP Count: 66.0 Test AUROC: 0.6482479926750246
+
+
+Epoch: 6 Train Loss: 8.533968925476074
+Train Accuracy: 0.7392161410018553 Train Sensitivity: 0.706574024585783 Train Specitivity: 0.7642359688652192 Train FP Count: 1151.0 Train AUROC: 0.73466496198991
+Test Accuracy: 0.6702226345083488 Test Sensitivity: 0.5734767025089605 Test Specitivity: 0.8475689881734559 Test FP Count: 116.0 Test AUROC: 0.696761867868714
+
+
+Epoch: 7 Train Loss: 4.731621742248535
+Train Accuracy: 0.7422309833024119 Train Sensitivity: 0.7058669460450497 Train Specitivity: 0.7711194340407823 Train FP Count: 1100.0 Train AUROC: 0.7387958019333676
+Test Accuracy: 0.7360853432282004 Test Sensitivity: 0.8137432188065099 Test Specitivity: 0.7092950717404866 Test FP Count: 466.0 Test AUROC: 0.7041009297084097
+
+
+Epoch: 8 Train Loss: 5.302319526672363
+Train Accuracy: 0.7539424860853432 Train Sensitivity: 0.7262645388152557 Train Specitivity: 0.7747107773492998 Train FP Count: 1110.0 Train AUROC: 0.7489713416226241
+Test Accuracy: 0.6317254174397031 Test Sensitivity: 0.5416098226466576 Test Specitivity: 0.8231884057971014 Test FP Count: 122.0 Test AUROC: 0.662438371601634
+
+
+Epoch: 9 Train Loss: 6.43389368057251
+Train Accuracy: 0.7467532467532467 Train Sensitivity: 0.710808688824915 Train Specitivity: 0.7753487403706018 Train FP Count: 1079.0 Train AUROC: 0.7434263402570821
+Test Accuracy: 0.8385899814471243 Test Sensitivity: 0.8697916666666666 Test Specitivity: 0.8213256484149856 Test FP Count: 248.0 Test AUROC: 0.8243062403155373
+
+
+Fold Number 4
+Epoch: 0 Train Loss: 3.857233762741089
+Train Accuracy: 0.6444805194805194 Train Sensitivity: 0.5935815147625161 Train Specitivity: 0.686403045041235 Train FP Count: 1483.0 Train AUROC: 0.640705760186794
+Test Accuracy: 0.5412801484230055 Test Sensitivity: 0.4371069182389937 Test Specitivity: 0.5848684210526316 Test FP Count: 631.0 Test AUROC: 0.5093707847127937
+
+
+Epoch: 1 Train Loss: 2.5288796424865723
+Train Accuracy: 0.6956168831168831 Train Sensitivity: 0.6551724137931034 Train Specitivity: 0.727029254223321 Train FP Count: 1325.0 Train AUROC: 0.6908247574286993
+Test Accuracy: 0.7620593692022264 Test Sensitivity: 0.7088607594936709 Test Specitivity: 0.8038079470198676 Test FP Count: 237.0 Test AUROC: 0.7589713662625285
+
+
+Epoch: 2 Train Loss: 5.403791904449463
+Train Accuracy: 0.7094155844155844 Train Sensitivity: 0.6661510698633668 Train Specitivity: 0.7447839831401475 Train FP Count: 1211.0 Train AUROC: 0.706362225803644
+Test Accuracy: 0.6841372912801484 Test Sensitivity: 0.6623931623931624 Test Specitivity: 0.6946354883081155 Test FP Count: 444.0 Test AUROC: 0.6607475101960877
+
+
+Epoch: 3 Train Loss: 2.6934492588043213
+Train Accuracy: 0.7206632653061225 Train Sensitivity: 0.6809399477806789 Train Specitivity: 0.7523988318731748 Train FP Count: 1187.0 Train AUROC: 0.7170827818644001
+Test Accuracy: 0.5946196660482375 Test Sensitivity: 0.5109580463368817 Test Specitivity: 0.8336314847942755 Test FP Count: 93.0 Test AUROC: 0.6356933207354416
+
+
+Epoch: 4 Train Loss: 18.03447151184082
+Train Accuracy: 0.7494202226345084 Train Sensitivity: 0.7176345231752796 Train Specitivity: 0.7739219712525668 Train FP Count: 1101.0 Train AUROC: 0.7451871392942998
+Test Accuracy: 0.7050092764378478 Test Sensitivity: 0.6472491909385113 Test Specitivity: 0.7485760781122864 Test FP Count: 309.0 Test AUROC: 0.6989183280798007
+
+
+Epoch: 5 Train Loss: 4.529539585113525
+Train Accuracy: 0.7408395176252319 Train Sensitivity: 0.7070063694267515 Train Specitivity: 0.7670922570016474 Train FP Count: 1131.0 Train AUROC: 0.7366787614683029
+Test Accuracy: 0.6057513914656771 Test Sensitivity: 0.518266253869969 Test Specitivity: 0.866913123844732 Test FP Count: 72.0 Test AUROC: 0.6484473627795819
+
+
+Epoch: 6 Train Loss: 5.9235382080078125
+Train Accuracy: 0.7611317254174397 Train Sensitivity: 0.7305341482859421 Train Specitivity: 0.7848179386957416 Train FP Count: 1046.0 Train AUROC: 0.7571964069735685
+Test Accuracy: 0.7295918367346939 Test Sensitivity: 0.6434859154929577 Test Specitivity: 0.8254901960784313 Test FP Count: 178.0 Test AUROC: 0.7397004736560265
+
+
+Epoch: 7 Train Loss: 39.14134979248047
+Train Accuracy: 0.7472170686456401 Train Sensitivity: 0.7119978997112103 Train Specitivity: 0.7750778816199377 Train FP Count: 1083.0 Train AUROC: 0.7437276598809727
+Test Accuracy: 0.7101113172541744 Test Sensitivity: 0.6510638297872341 Test Specitivity: 0.7557565789473685 Test FP Count: 297.0 Test AUROC: 0.7051180258362646
+
+
+Epoch: 8 Train Loss: 4.236670017242432
+Train Accuracy: 0.7701762523191095 Train Sensitivity: 0.742185412770505 Train Specitivity: 0.791641057160418 Train FP Count: 1017.0 Train AUROC: 0.7660907380229951
+Test Accuracy: 0.7564935064935064 Test Sensitivity: 0.696319018404908 Test Specitivity: 0.8064516129032258 Test FP Count: 228.0 Test AUROC: 0.7555016528116324
+
+
+Epoch: 9 Train Loss: 2.4343676567077637
+Train Accuracy: 0.7713358070500927 Train Sensitivity: 0.7400579404793258 Train Specitivity: 0.7959395069401285 Train FP Count: 985.0 Train AUROC: 0.7680289074762681
+Test Accuracy: 0.8051948051948052 Test Sensitivity: 0.8569343065693431 Test Specitivity: 0.7811012916383413 Test FP Count: 322.0 Test AUROC: 0.7835879818936184
+
+
+--------------------------------
+Patient 06
+Fold Number 0
+Epoch: 0 Train Loss: 58.96480941772461
+Train Accuracy: 0.8303798934445217 Train Sensitivity: 0.8436871376168501 Train Specitivity: 0.8176250425314733 Train FP Count: 1608.0 Train AUROC: 0.8305555071071176
+Test Accuracy: 0.8848737549223998 Test Sensitivity: 0.8731665228645384 Test Specitivity: 0.8984492246123061 Test FP Count: 203.0 Test AUROC: 0.8840880623406089
+
+
+Epoch: 1 Train Loss: 1.7232624292373657
+Train Accuracy: 0.8844104702339588 Train Sensitivity: 0.8914305620065025 Train Specitivity: 0.8774260628465804 Train FP Count: 1061.0 Train AUROC: 0.8844816015640408
+Test Accuracy: 0.8860319666435025 Test Sensitivity: 0.8840194776449757 Test Specitivity: 0.8882410106899903 Test FP Count: 230.0 Test AUROC: 0.8856815979615119
+
+
+Epoch: 2 Train Loss: 0.3042047917842865
+Train Accuracy: 0.8818044938614779 Train Sensitivity: 0.8877822814128546 Train Specitivity: 0.8758253214409822 Train FP Count: 1072.0 Train AUROC: 0.8818592009084574
+Test Accuracy: 0.8959925874449849 Test Sensitivity: 0.9181561618062088 Test Specitivity: 0.8744865358283889 Test FP Count: 275.0 Test AUROC: 0.896630951588057
+
+
+Epoch: 3 Train Loss: 1.0303858518600464
+Train Accuracy: 0.8836576326152421 Train Sensitivity: 0.8911754447157307 Train Specitivity: 0.8761970693434867 Train FP Count: 1073.0 Train AUROC: 0.8837363289315617
+Test Accuracy: 0.8959925874449849 Test Sensitivity: 0.89937106918239 Test Specitivity: 0.8923959827833573 Test FP Count: 225.0 Test AUROC: 0.8958950934915768
+
+
+Epoch: 4 Train Loss: 0.7035068273544312
+Train Accuracy: 0.891128098216354 Train Sensitivity: 0.8972428174235403 Train Specitivity: 0.885016211208893 Train FP Count: 993.0 Train AUROC: 0.891186251209832
+Test Accuracy: 0.9052582812138059 Test Sensitivity: 0.9324452901998097 Test Specitivity: 0.8794582392776523 Test FP Count: 267.0 Test AUROC: 0.9060825922830508
+
+
+Epoch: 5 Train Loss: 1.321341872215271
+Train Accuracy: 0.8856265925411165 Train Sensitivity: 0.8931519590745263 Train Specitivity: 0.8781585323641399 Train FP Count: 1056.0 Train AUROC: 0.8857055745786484
+Test Accuracy: 0.920778318276581 Test Sensitivity: 0.9604298974108452 Test Specitivity: 0.885022026431718 Test FP Count: 261.0 Test AUROC: 0.9220229974454445
+
+
+Epoch: 6 Train Loss: 0.23723208904266357
+Train Accuracy: 0.8859161454713922 Train Sensitivity: 0.8946815955213436 Train Specitivity: 0.8772716816195077 Train FP Count: 1067.0 Train AUROC: 0.8860140062794541
+Test Accuracy: 0.9182302524901552 Test Sensitivity: 0.9504807692307692 Test Specitivity: 0.8882431828341529 Test FP Count: 250.0 Test AUROC: 0.9192295297168503
+
+
+Epoch: 7 Train Loss: 1.1280816793441772
+Train Accuracy: 0.8851633078526755 Train Sensitivity: 0.8935104275894209 Train Specitivity: 0.8769142199194012 Train FP Count: 1069.0 Train AUROC: 0.8852547804968234
+Test Accuracy: 0.9006254343293955 Test Sensitivity: 0.9517587939698492 Test Specitivity: 0.8568972926514826 Test FP Count: 333.0 Test AUROC: 0.9022692359751893
+
+
+Epoch: 8 Train Loss: 1.7291450500488281
+Train Accuracy: 0.8784456798702803 Train Sensitivity: 0.8872040125976904 Train Specitivity: 0.8698102357676826 Train FP Count: 1132.0 Train AUROC: 0.8785431542759563
+Test Accuracy: 0.9295807273569608 Test Sensitivity: 0.9511966213045518 Test Specitivity: 0.9085086916742909 Test FP Count: 200.0 Test AUROC: 0.9302161596586478
+
+
+Epoch: 9 Train Loss: 1.6876085996627808
+Train Accuracy: 0.891591382904795 Train Sensitivity: 0.9025562851782364 Train Specitivity: 0.8808924485125859 Train FP Count: 1041.0 Train AUROC: 0.8917221595075826
+Test Accuracy: 0.9117442668519805 Test Sensitivity: 0.954679802955665 Test Specitivity: 0.8736335811106253 Test FP Count: 289.0 Test AUROC: 0.9131049344388035
+
+
+Fold Number 1
+Epoch: 0 Train Loss: 2.5434861183166504
+Train Accuracy: 0.825225851285615 Train Sensitivity: 0.8414517669531996 Train Specitivity: 0.8099415204678363 Train FP Count: 1690.0 Train AUROC: 0.8254530413439889
+Test Accuracy: 0.8820940467917535 Test Sensitivity: 0.8854359925788498 Test Specitivity: 0.8787598334104582 Test FP Count: 262.0 Test AUROC: 0.8821102150133742
+
+
+Epoch: 1 Train Loss: 1.3810365200042725
+Train Accuracy: 0.8571924947880473 Train Sensitivity: 0.8692017894984695 Train Specitivity: 0.8455664463186688 Train FP Count: 1355.0 Train AUROC: 0.8573420000284431
+Test Accuracy: 0.872133425990271 Test Sensitivity: 0.894685519258898 Test Specitivity: 0.851721094439541 Test FP Count: 336.0 Test AUROC: 0.8722901175926161
+
+
+Epoch: 2 Train Loss: 0.8158079385757446
+Train Accuracy: 0.8625781792911744 Train Sensitivity: 0.8741036793229106 Train Specitivity: 0.8513868279876726 Train FP Count: 1302.0 Train AUROC: 0.8627193965155228
+Test Accuracy: 0.861477878156127 Test Sensitivity: 0.8775804128660586 Test Specitivity: 0.8464637421665174 Test FP Count: 343.0 Test AUROC: 0.8615912844180448
+
+
+Epoch: 3 Train Loss: 0.8660858273506165
+Train Accuracy: 0.8675584896919157 Train Sensitivity: 0.8780030469940232 Train Specitivity: 0.8573554665140241 Train FP Count: 1246.0 Train AUROC: 0.8676822905276625
+Test Accuracy: 0.8839471855455178 Test Sensitivity: 0.8781702898550725 Test Specitivity: 0.889995258416311 Test FP Count: 232.0 Test AUROC: 0.8838936579489955
+
+
+Epoch: 4 Train Loss: 1.1180076599121094
+Train Accuracy: 0.8735232800555942 Train Sensitivity: 0.8831852198316184 Train Specitivity: 0.8640431390546122 Train FP Count: 1185.0 Train AUROC: 0.8736346909658989
+Test Accuracy: 0.9142923326384063 Test Sensitivity: 0.9717129387113672 Test Specitivity: 0.8687707641196013 Test FP Count: 316.0 Test AUROC: 0.914640931056376
+
+
+Epoch: 5 Train Loss: 0.6144700050354004
+Train Accuracy: 0.8855107713690062 Train Sensitivity: 0.8953338790784704 Train Specitivity: 0.8758747275438797 Train FP Count: 1082.0 Train AUROC: 0.8856246194747873
+Test Accuracy: 0.8853370396108409 Test Sensitivity: 0.9177467597208375 Test Specitivity: 0.857204673301601 Test FP Count: 330.0 Test AUROC: 0.8855545415012687
+
+
+Epoch: 6 Train Loss: 4.35734224319458
+Train Accuracy: 0.8709173036831133 Train Sensitivity: 0.8818491141616802 Train Specitivity: 0.8602630074328188 Train FP Count: 1222.0 Train AUROC: 0.8710485685007099
+Test Accuracy: 0.847347695158675 Test Sensitivity: 0.8776223776223776 Test Specitivity: 0.8211663066954643 Test FP Count: 414.0 Test AUROC: 0.847569288979572
+
+
+Epoch: 7 Train Loss: 2.2006545066833496
+Train Accuracy: 0.8899698864952513 Train Sensitivity: 0.8998830409356725 Train Specitivity: 0.8802477632484514 Train FP Count: 1044.0 Train AUROC: 0.8900850793330501
+Test Accuracy: 0.9270326615705351 Test Sensitivity: 0.9589515331355094 Test Specitivity: 0.8989106753812636 Test FP Count: 232.0 Test AUROC: 0.9272300978371596
+
+
+Epoch: 8 Train Loss: 3.325690984725952
+Train Accuracy: 0.8930970581422284 Train Sensitivity: 0.9027582982702197 Train Specitivity: 0.8836088154269972 Train FP Count: 1014.0 Train AUROC: 0.8932085188274953
+Test Accuracy: 0.8318276580959 Test Sensitivity: 0.9750164365548981 Test Specitivity: 0.753934191702432 Test FP Count: 688.0 Test AUROC: 0.8326939926155289
+
+
+Epoch: 9 Train Loss: 0.8723582625389099
+Train Accuracy: 0.8913018299745193 Train Sensitivity: 0.8983857856230403 Train Specitivity: 0.8842555157675869 Train FP Count: 1002.0 Train AUROC: 0.8913746589863519
+Test Accuracy: 0.8874218207088256 Test Sensitivity: 0.9131927415399705 Test Specitivity: 0.8643546971027217 Test FP Count: 309.0 Test AUROC: 0.8875951230380303
+
+
+Fold Number 2
+Epoch: 0 Train Loss: 32.7288932800293
+Train Accuracy: 0.8294533240676396 Train Sensitivity: 0.8446983220278472 Train Specitivity: 0.8150028200789622 Train FP Count: 1640.0 Train AUROC: 0.8296622908335586
+Test Accuracy: 0.8466527681260134 Test Sensitivity: 0.8094665062174088 Test Specitivity: 0.8974780701754386 Test FP Count: 187.0 Test AUROC: 0.8451437203669346
+
+
+Epoch: 1 Train Loss: 0.26508232951164246
+Train Accuracy: 0.8672689367616401 Train Sensitivity: 0.8750290900628346 Train Specitivity: 0.8595803550841595 Train FP Count: 1218.0 Train AUROC: 0.8673501384715988
+Test Accuracy: 0.8939078063470002 Test Sensitivity: 0.9149643705463183 Test Specitivity: 0.8738698010849909 Test FP Count: 279.0 Test AUROC: 0.8943577999381571
+
+
+Epoch: 2 Train Loss: 0.2539619207382202
+Train Accuracy: 0.8772295575631225 Train Sensitivity: 0.8851256983240223 Train Specitivity: 0.8694098662978331 Train FP Count: 1133.0 Train AUROC: 0.877313600001288
+Test Accuracy: 0.902246930738939 Test Sensitivity: 0.9518499746578813 Test Specitivity: 0.860494880546075 Test FP Count: 327.0 Test AUROC: 0.9033598098330242
+
+
+Epoch: 3 Train Loss: 0.6554450392723083
+Train Accuracy: 0.8798934445216585 Train Sensitivity: 0.8887981330221704 Train Specitivity: 0.8711197976546332 Train FP Count: 1121.0 Train AUROC: 0.879993221988984
+Test Accuracy: 0.8862636089877229 Test Sensitivity: 0.9577991452991453 Test Specitivity: 0.8314928425357874 Test FP Count: 412.0 Test AUROC: 0.8878733122036694
+
+
+Epoch: 4 Train Loss: 5.142571449279785
+Train Accuracy: 0.8798934445216585 Train Sensitivity: 0.891631405735778 Train Specitivity: 0.8684931506849315 Train FP Count: 1152.0 Train AUROC: 0.8800364767544543
+Test Accuracy: 0.8955293027565439 Test Sensitivity: 0.904147465437788 Test Specitivity: 0.8868188169538892 Test FP Count: 243.0 Test AUROC: 0.8956555349412493
+
+
+Epoch: 5 Train Loss: 0.9043843150138855
+Train Accuracy: 0.8821519573778087 Train Sensitivity: 0.8923094931522885 Train Specitivity: 0.8722063037249284 Train FP Count: 1115.0 Train AUROC: 0.8822708993368765
+Test Accuracy: 0.9043317118369237 Test Sensitivity: 0.9341085271317829 Test Specitivity: 0.8770528184642699 Test FP Count: 277.0 Test AUROC: 0.9049912389198103
+
+
+Epoch: 6 Train Loss: 1.6363201141357422
+Train Accuracy: 0.8863794301598332 Train Sensitivity: 0.8966284242566144 Train Specitivity: 0.8763465505386202 Train FP Count: 1079.0 Train AUROC: 0.8864996832366585
+Test Accuracy: 0.9038684271484827 Test Sensitivity: 0.8935795954265612 Test Specitivity: 0.9153206069505629 Test FP Count: 173.0 Test AUROC: 0.9034793083900227
+
+
+Epoch: 7 Train Loss: 2.041318893432617
+Train Accuracy: 0.8849895760945101 Train Sensitivity: 0.8934731934731934 Train Specitivity: 0.8766114180478821 Train FP Count: 1072.0 Train AUROC: 0.8850831165004855
+Test Accuracy: 0.9119759091962011 Test Sensitivity: 0.9368118717089516 Test Specitivity: 0.8886894075403949 Test FP Count: 248.0 Test AUROC: 0.912514172335601
+
+
+Epoch: 8 Train Loss: 3.4557366371154785
+Train Accuracy: 0.8900277970813064 Train Sensitivity: 0.8981255093724532 Train Specitivity: 0.8820140569189999 Train FP Count: 1024.0 Train AUROC: 0.8901157896798745
+Test Accuracy: 0.9233263840630067 Test Sensitivity: 0.9337962962962963 Test Specitivity: 0.9128419100602689 Test FP Count: 188.0 Test AUROC: 0.923515447845805
+
+
+Epoch: 9 Train Loss: 1.9401546716690063
+Train Accuracy: 0.888058837155432 Train Sensitivity: 0.8977206312098188 Train Specitivity: 0.8785722483645128 Train FP Count: 1058.0 Train AUROC: 0.8881702643880457
+Test Accuracy: 0.9205466759323604 Test Sensitivity: 0.9559255631733594 Test Specitivity: 0.8887912087912088 Test FP Count: 253.0 Test AUROC: 0.9213235673057103
+
+
+Fold Number 3
+Epoch: 0 Train Loss: 444.4886779785156
+Train Accuracy: 0.8353602038452629 Train Sensitivity: 0.8493540357947138 Train Specitivity: 0.821990714528366 Train FP Count: 1572.0 Train AUROC: 0.8355463074195608
+Test Accuracy: 0.861477878156127 Test Sensitivity: 0.8176932616783795 Test Specitivity: 0.9172813487881981 Test FP Count: 157.0 Test AUROC: 0.8621777712903316
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.8836576326152421 Train Sensitivity: 0.8963364353869714 Train Specitivity: 0.8713976534912861 Train FP Count: 1129.0 Train AUROC: 0.8838144665724114
+Test Accuracy: 0.9089645587213343 Test Sensitivity: 0.9687836383207751 Test Specitivity: 0.8637657584383895 Test FP Count: 335.0 Test AUROC: 0.9082551083272336
+
+
+Epoch: 2 Train Loss: 0.22131632268428802
+Train Accuracy: 0.8983669214732453 Train Sensitivity: 0.908410340390689 Train Specitivity: 0.8885193256107352 Train FP Count: 972.0 Train AUROC: 0.8984840304854864
+Test Accuracy: 0.8790826963168867 Test Sensitivity: 0.8916949975716367 Test Specitivity: 0.8675819309123117 Test FP Count: 299.0 Test AUROC: 0.8788766724552814
+
+
+Epoch: 3 Train Loss: 0.5502198338508606
+Train Accuracy: 0.8963979615473708 Train Sensitivity: 0.9056625802685347 Train Specitivity: 0.8872802481902792 Train FP Count: 981.0 Train AUROC: 0.8965036223182783
+Test Accuracy: 0.9041000694927033 Test Sensitivity: 0.896726602120793 Test Specitivity: 0.9115456238361266 Test FP Count: 190.0 Test AUROC: 0.9041744569685547
+
+
+Epoch: 4 Train Loss: 0.12484528124332428
+Train Accuracy: 0.8954134815844337 Train Sensitivity: 0.9026486988847584 Train Specitivity: 0.8882217090069284 Train FP Count: 968.0 Train AUROC: 0.8954890002219088
+Test Accuracy: 0.9036367848042622 Test Sensitivity: 0.9056158565361019 Test Specitivity: 0.9017288444040037 Test FP Count: 216.0 Test AUROC: 0.9035850056991738
+
+
+Epoch: 5 Train Loss: 0.03345787897706032
+Train Accuracy: 0.8984248320593005 Train Sensitivity: 0.9053865799860692 Train Specitivity: 0.8914952623064479 Train FP Count: 939.0 Train AUROC: 0.8984966017371135
+Test Accuracy: 0.9219365299976836 Test Sensitivity: 0.9687174139728885 Test Specitivity: 0.8845352230095873 Test FP Count: 277.0 Test AUROC: 0.921379951358464
+
+
+Epoch: 6 Train Loss: 2.0947670936584473
+Train Accuracy: 0.8999305072967339 Train Sensitivity: 0.907937616387337 Train Specitivity: 0.8920009220839097 Train FP Count: 937.0 Train AUROC: 0.9000178439324055
+Test Accuracy: 0.8802409080379894 Test Sensitivity: 0.8654019873532068 Test Specitivity: 0.8958630527817404 Test FP Count: 219.0 Test AUROC: 0.8804259676252584
+
+
+Epoch: 7 Train Loss: 1.0728495121002197
+Train Accuracy: 0.9007412555015056 Train Sensitivity: 0.9057301293900185 Train Specitivity: 0.8957268927078496 Train FP Count: 898.0 Train AUROC: 0.9007840597066028
+Test Accuracy: 0.8832522585128562 Test Sensitivity: 0.8559580969009166 Test Specitivity: 0.914116485686081 Test FP Count: 174.0 Test AUROC: 0.8836318870382971
+
+
+Epoch: 8 Train Loss: 1.3591307401657104
+Train Accuracy: 0.9013782719481122 Train Sensitivity: 0.9096308373122162 Train Specitivity: 0.8932150673885497 Train FP Count: 927.0 Train AUROC: 0.9014693069604485
+Test Accuracy: 0.9244845957841094 Test Sensitivity: 0.9329822881761608 Test Specitivity: 0.9165170556552962 Test FP Count: 186.0 Test AUROC: 0.9243596210854405
+
+
+Epoch: 9 Train Loss: 1.1020101308822632
+Train Accuracy: 0.9037526059763725 Train Sensitivity: 0.9113953488372093 Train Specitivity: 0.8961698200276881 Train FP Count: 900.0 Train AUROC: 0.9038349159872778
+Test Accuracy: 0.887190178364605 Test Sensitivity: 0.8390946502057613 Test Specitivity: 0.9491255961844197 Test FP Count: 96.0 Test AUROC: 0.8879208641278332
+
+
+Fold Number 4
+Epoch: 0 Train Loss: 0.40516170859336853
+Train Accuracy: 0.8192610609219365 Train Sensitivity: 0.8354233846888809 Train Specitivity: 0.8040472175379426 Train FP Count: 1743.0 Train AUROC: 0.8194894783856312
+Test Accuracy: 0.8670372944174195 Test Sensitivity: 0.9057156814851002 Test Specitivity: 0.83215859030837 Test FP Count: 381.0 Test AUROC: 0.8684154368863186
+
+
+Epoch: 1 Train Loss: 2.195253849029541
+Train Accuracy: 0.8540653231410702 Train Sensitivity: 0.8656786638438014 Train Specitivity: 0.8428017339721652 Train FP Count: 1378.0 Train AUROC: 0.8542087933288917
+Test Accuracy: 0.8450312717164697 Test Sensitivity: 0.8232865400495458 Test Specitivity: 0.8728232189973615 Test FP Count: 241.0 Test AUROC: 0.8432992282846257
+
+
+Epoch: 2 Train Loss: 1.0999139547348022
+Train Accuracy: 0.8647787815612694 Train Sensitivity: 0.8771351160325127 Train Specitivity: 0.8528306185214717 Train FP Count: 1292.0 Train AUROC: 0.8649328759562269
+Test Accuracy: 0.8267315265230484 Test Sensitivity: 0.8614487117160914 Test Specitivity: 0.7951327433628319 Test FP Count: 463.0 Test AUROC: 0.8279767776208989
+
+
+Epoch: 3 Train Loss: 1.2545238733291626
+Train Accuracy: 0.8688904331711836 Train Sensitivity: 0.8785079513564079 Train Specitivity: 0.859453877925654 Train FP Count: 1225.0 Train AUROC: 0.8690011717962829
+Test Accuracy: 0.9129024785730832 Test Sensitivity: 0.9403126480341071 Test Specitivity: 0.886672710788758 Test FP Count: 250.0 Test AUROC: 0.9138122223726541
+
+
+Epoch: 4 Train Loss: 0.8873408436775208
+Train Accuracy: 0.876997915218902 Train Sensitivity: 0.8874179943767573 Train Specitivity: 0.8668117269812186 Train FP Count: 1163.0 Train AUROC: 0.8771209928632321
+Test Accuracy: 0.847347695158675 Test Sensitivity: 0.8781190019193857 Test Specitivity: 0.8186296462158531 Test FP Count: 405.0 Test AUROC: 0.8483969337691559
+
+
+Epoch: 5 Train Loss: 2.4007279872894287
+Train Accuracy: 0.8723071577484364 Train Sensitivity: 0.8824493619014167 Train Specitivity: 0.8623811160765441 Train FP Count: 1201.0 Train AUROC: 0.872426066416458
+Test Accuracy: 0.9170720407690526 Test Sensitivity: 0.9466920514040933 Test Specitivity: 0.8889891696750902 Test FP Count: 246.0 Test AUROC: 0.9180692287359211
+
+
+Epoch: 6 Train Loss: 0.5286747813224792
+Train Accuracy: 0.8901436182534167 Train Sensitivity: 0.9008555021680534 Train Specitivity: 0.8796794504865484 Train FP Count: 1051.0 Train AUROC: 0.8902706964795397
+Test Accuracy: 0.8983090108871902 Test Sensitivity: 0.9791889007470651 Test Specitivity: 0.8362668849774867 Test FP Count: 400.0 Test AUROC: 0.9011485471507134
+
+
+Epoch: 7 Train Loss: 1.5300546884536743
+Train Accuracy: 0.885858234885337 Train Sensitivity: 0.894485251253352 Train Specitivity: 0.877344379242895 Train FP Count: 1066.0 Train AUROC: 0.8859539943173111
+Test Accuracy: 0.8441047023395877 Test Sensitivity: 0.9930555555555556 Test Specitivity: 0.7577753384559093 Test FP Count: 662.0 Test AUROC: 0.8492598753134892
+
+
+Epoch: 8 Train Loss: 1.3176512718200684
+Train Accuracy: 0.8835997220291869 Train Sensitivity: 0.8928070994862214 Train Specitivity: 0.8745404411764706 Train FP Count: 1092.0 Train AUROC: 0.8837042232697223
+Test Accuracy: 0.9078063470002317 Test Sensitivity: 0.8815953469048609 Test Specitivity: 0.9408376963350785 Test FP Count: 113.0 Test AUROC: 0.9062765539072523
+
+
+Epoch: 9 Train Loss: 0.011406469158828259
+Train Accuracy: 0.8974403520963632 Train Sensitivity: 0.9068083615555296 Train Specitivity: 0.8882251579551982 Train FP Count: 973.0 Train AUROC: 0.897547559446457
+Test Accuracy: 0.9263377345378735 Test Sensitivity: 0.9728663048840651 Test Specitivity: 0.8851528384279476 Test FP Count: 263.0 Test AUROC: 0.9279548575517862
+
+
+--------------------------------
+('SWEC_ETHZ', 'CHBMIT')
+--------------------------------
+Patient 01
+Fold Number 0
+Epoch: 0 Train Loss: 4.967337608337402
+Train Accuracy: 0.7984357848518112 Train Sensitivity: 0.5069069069069069 Train Specitivity: 0.8847590254312645 Train FP Count: 648.0 Train AUROC: 0.7120171163620286
+Test Accuracy: 0.8759604829857299 Test Sensitivity: 0.7898832684824902 Test Specitivity: 0.8900958466453675 Test FP Count: 172.0 Test AUROC: 0.7520073715733703
+
+
+Epoch: 1 Train Loss: 6.083556175231934
+Train Accuracy: 0.8391877058177827 Train Sensitivity: 0.6095890410958904 Train Specitivity: 0.8967055593685656 Train FP Count: 602.0 Train AUROC: 0.749085530004052
+Test Accuracy: 0.8424807903402854 Test Sensitivity: 0.658273381294964 Test Specitivity: 0.8756476683937824 Test FP Count: 192.0 Test AUROC: 0.7111734623358673
+
+
+Epoch: 2 Train Loss: 2.504879951477051
+Train Accuracy: 0.8485181119648738 Train Sensitivity: 0.6264667535853976 Train Specitivity: 0.9077163712200208 Train FP Count: 531.0 Train AUROC: 0.7726202965158555
+Test Accuracy: 0.8874862788144896 Test Sensitivity: 0.8035714285714286 Test Specitivity: 0.9027237354085603 Test FP Count: 150.0 Test AUROC: 0.7809951624049758
+
+
+Epoch: 3 Train Loss: 1.8670966625213623
+Train Accuracy: 0.8544182217343579 Train Sensitivity: 0.6420566908371786 Train Specitivity: 0.9102408594697626 Train FP Count: 518.0 Train AUROC: 0.7795648565988931
+Test Accuracy: 0.8293084522502744 Test Sensitivity: 0.5879120879120879 Test Specitivity: 0.8895747599451304 Test FP Count: 161.0 Test AUROC: 0.7335019580741764
+
+
+Epoch: 4 Train Loss: 0.6846766471862793
+Train Accuracy: 0.8483809001097695 Train Sensitivity: 0.6254050550874919 Train Specitivity: 0.9082680591818973 Train FP Count: 527.0 Train AUROC: 0.7735294471365108
+Test Accuracy: 0.8841931942919868 Test Sensitivity: 0.8796296296296297 Test Specitivity: 0.8848069738480697 Test FP Count: 185.0 Test AUROC: 0.7443492282884129
+
+
+Epoch: 5 Train Loss: 0.34588736295700073
+Train Accuracy: 0.8633369923161361 Train Sensitivity: 0.6712707182320442 Train Specitivity: 0.910958904109589 Train FP Count: 520.0 Train AUROC: 0.7846744634831824
+Test Accuracy: 0.8666300768386389 Test Sensitivity: 0.6683673469387755 Test Specitivity: 0.920979020979021 Test FP Count: 113.0 Test AUROC: 0.8044128081087306
+
+
+Epoch: 6 Train Loss: 0.27128300070762634
+Train Accuracy: 0.8703347969264544 Train Sensitivity: 0.6895356895356896 Train Specitivity: 0.9149700598802395 Train FP Count: 497.0 Train AUROC: 0.7947976972193082
+Test Accuracy: 0.862788144895719 Test Sensitivity: 0.642369020501139 Test Specitivity: 0.9327548806941431 Test FP Count: 93.0 Test AUROC: 0.8217498272287491
+
+
+Epoch: 7 Train Loss: 0.28575122356414795
+Train Accuracy: 0.8644346871569704 Train Sensitivity: 0.6728395061728395 Train Specitivity: 0.9123499142367066 Train FP Count: 511.0 Train AUROC: 0.787604282883453
+Test Accuracy: 0.8819978046103183 Test Sensitivity: 0.773972602739726 Test Specitivity: 0.9026143790849673 Test FP Count: 149.0 Test AUROC: 0.7785275282193044
+
+
+Epoch: 8 Train Loss: 0.985916793346405
+Train Accuracy: 0.8663556531284303 Train Sensitivity: 0.682909604519774 Train Specitivity: 0.9105926430517711 Train FP Count: 525.0 Train AUROC: 0.7853280528126081
+Test Accuracy: 0.8814489571899012 Test Sensitivity: 0.71900826446281 Test Specitivity: 0.9218642906100069 Test FP Count: 114.0 Test AUROC: 0.8127546648237732
+
+
+Epoch: 9 Train Loss: 1.132067322731018
+Train Accuracy: 0.8493413830954994 Train Sensitivity: 0.6327493261455526 Train Specitivity: 0.9047208821502413 Train FP Count: 553.0 Train AUROC: 0.7676631012975575
+Test Accuracy: 0.8534577387486278 Test Sensitivity: 0.610204081632653 Test Specitivity: 0.9429429429429429 Test FP Count: 76.0 Test AUROC: 0.8326680488366737
+
+
+Fold Number 1
+Epoch: 0 Train Loss: 1000.4200439453125
+Train Accuracy: 0.8470087815587267 Train Sensitivity: 0.6435643564356436 Train Specitivity: 0.8917154811715481 Train FP Count: 647.0 Train AUROC: 0.7428042728922785
+Test Accuracy: 0.8798024149286499 Test Sensitivity: 0.9583333333333334 Test Specitivity: 0.871825876662636 Test FP Count: 212.0 Test AUROC: 0.7134022354327751
+
+
+Epoch: 1 Train Loss: 107.53597259521484
+Train Accuracy: 0.8743139407244785 Train Sensitivity: 0.7326332794830371 Train Specitivity: 0.903305785123967 Train FP Count: 585.0 Train AUROC: 0.7754002482991876
+Test Accuracy: 0.893523600439078 Test Sensitivity: 0.7564469914040115 Test Specitivity: 0.9260013577732519 Test FP Count: 109.0 Test AUROC: 0.8245568266549733
+
+
+Epoch: 2 Train Loss: 303.0938720703125
+Train Accuracy: 0.8726673984632273 Train Sensitivity: 0.7104477611940299 Train Specitivity: 0.9092131809011432 Train FP Count: 540.0 Train AUROC: 0.7855634929886008
+Test Accuracy: 0.9077936333699231 Test Sensitivity: 0.847457627118644 Test Specitivity: 0.9194499017681729 Test FP Count: 123.0 Test AUROC: 0.8195926931210764
+
+
+Epoch: 3 Train Loss: 202.93429565429688
+Train Accuracy: 0.8708836443468716 Train Sensitivity: 0.6997824510514866 Train Specitivity: 0.9108140125232695 Train FP Count: 527.0 Train AUROC: 0.7876771351972425
+Test Accuracy: 0.8918770581778266 Test Sensitivity: 1.0 Test Specitivity: 0.8803159173754557 Test FP Count: 197.0 Test AUROC: 0.7359249329758712
+
+
+Epoch: 4 Train Loss: 5.48837947845459
+Train Accuracy: 0.8656695938529089 Train Sensitivity: 0.675564681724846 Train Specitivity: 0.9133344774326412 Train FP Count: 505.0 Train AUROC: 0.7898738059158856
+Test Accuracy: 0.9083424807903403 Test Sensitivity: 0.7845303867403315 Test Specitivity: 0.939041095890411 Test FP Count: 89.0 Test AUROC: 0.8537819370667024
+
+
+Epoch: 5 Train Loss: 83.1380615234375
+Train Accuracy: 0.8788419319429198 Train Sensitivity: 0.7170349251603706 Train Specitivity: 0.9174171622769753 Train FP Count: 486.0 Train AUROC: 0.8028836102183812
+Test Accuracy: 0.814489571899012 Test Sensitivity: 0.5334608030592735 Test Specitivity: 0.9276366435719784 Test FP Count: 94.0 Test AUROC: 0.7897986408302297
+
+
+Epoch: 6 Train Loss: 3.086383581161499
+Train Accuracy: 0.8748627881448957 Train Sensitivity: 0.6941097724230254 Train Specitivity: 0.9214704867103901 Train FP Count: 455.0 Train AUROC: 0.8080963667279087
+Test Accuracy: 0.9116355653128431 Test Sensitivity: 0.8251533742331288 Test Specitivity: 0.93048128342246 Test FP Count: 104.0 Test AUROC: 0.8409210752723982
+
+
+Epoch: 7 Train Loss: 0.30910998582839966
+Train Accuracy: 0.8862513721185511 Train Sensitivity: 0.7403915881073242 Train Specitivity: 0.9202910814012524 Train FP Count: 471.0 Train AUROC: 0.81127480910381
+Test Accuracy: 0.9072447859495061 Test Sensitivity: 0.8053892215568862 Test Specitivity: 0.9301075268817204 Test FP Count: 104.0 Test AUROC: 0.8381605507727434
+
+
+Epoch: 8 Train Loss: 7.67580509185791
+Train Accuracy: 0.8905049396267838 Train Sensitivity: 0.7510853835021708 Train Specitivity: 0.9231290213342364 Train FP Count: 454.0 Train AUROC: 0.818179589510747
+Test Accuracy: 0.9127332601536773 Test Sensitivity: 0.8590604026845637 Test Specitivity: 0.9232283464566929 Test FP Count: 117.0 Test AUROC: 0.8286707852508063
+
+
+Epoch: 9 Train Loss: 0.3825640082359314
+Train Accuracy: 0.8907793633369924 Train Sensitivity: 0.7525399129172714 Train Specitivity: 0.9230118443316413 Train FP Count: 455.0 Train AUROC: 0.818103268039158
+Test Accuracy: 0.9028540065861691 Test Sensitivity: 0.7768361581920904 Test Specitivity: 0.9332425068119891 Test FP Count: 98.0 Test AUROC: 0.8413725283407065
+
+
+Fold Number 2
+Epoch: 0 Train Loss: 30.745941162109375
+Train Accuracy: 0.818331503841932 Train Sensitivity: 0.5549738219895288 Train Specitivity: 0.8881944444444444 Train FP Count: 644.0 Train AUROC: 0.7255211600123594
+Test Accuracy: 0.8776070252469813 Test Sensitivity: 0.8535564853556485 Test Specitivity: 0.881238155401137 Test FP Count: 188.0 Test AUROC: 0.7479663193948909
+
+
+Epoch: 1 Train Loss: 58.97488021850586
+Train Accuracy: 0.8752744237102086 Train Sensitivity: 0.7144959529065489 Train Specitivity: 0.9121268342047563 Train FP Count: 521.0 Train AUROC: 0.791930785213802
+Test Accuracy: 0.8743139407244785 Test Sensitivity: 0.770764119601329 Test Specitivity: 0.8948060486522025 Test FP Count: 160.0 Test AUROC: 0.7717924932210646
+
+
+Epoch: 2 Train Loss: 30.519699096679688
+Train Accuracy: 0.875 Train Sensitivity: 0.7163067758749069 Train Specitivity: 0.9108494533221194 Train FP Count: 530.0 Train AUROC: 0.7895185641572168
+Test Accuracy: 0.8825466520307355 Test Sensitivity: 0.8739495798319328 Test Specitivity: 0.8838383838383839 Test FP Count: 184.0 Test AUROC: 0.7548166119594691
+
+
+Epoch: 3 Train Loss: 43.64720916748047
+Train Accuracy: 0.8762349066959385 Train Sensitivity: 0.7156432748538012 Train Specitivity: 0.9133445945945946 Train FP Count: 513.0 Train AUROC: 0.7945254839706408
+Test Accuracy: 0.8798024149286499 Test Sensitivity: 0.8168498168498168 Test Specitivity: 0.8908973531310523 Test FP Count: 169.0 Test AUROC: 0.7669562580276865
+
+
+Epoch: 4 Train Loss: 8.332880973815918
+Train Accuracy: 0.8876234906695939 Train Sensitivity: 0.7531978931527464 Train Specitivity: 0.9176036247692566 Train FP Count: 491.0 Train AUROC: 0.807160387953604
+Test Accuracy: 0.8913282107574094 Test Sensitivity: 0.8211920529801324 Test Specitivity: 0.9052631578947369 Test FP Count: 144.0 Test AUROC: 0.797445411731126
+
+
+Epoch: 5 Train Loss: 2.1880741119384766
+Train Accuracy: 0.8889956092206367 Train Sensitivity: 0.7487254187909687 Train Specitivity: 0.9215553677092139 Train FP Count: 464.0 Train AUROC: 0.8147421166858164
+Test Accuracy: 0.9072447859495061 Test Sensitivity: 0.8348348348348348 Test Specitivity: 0.9234385493619879 Test FP Count: 114.0 Test AUROC: 0.8353610675039247
+
+
+Epoch: 6 Train Loss: 2.0339033603668213
+Train Accuracy: 0.8911909989023051 Train Sensitivity: 0.7512580877066858 Train Specitivity: 0.9241987451246396 Train FP Count: 447.0 Train AUROC: 0.8203529012335399
+Test Accuracy: 0.8765093304061471 Test Sensitivity: 0.7325905292479109 Test Specitivity: 0.911825017088175 Test FP Count: 129.0 Test AUROC: 0.8018927501070359
+
+
+Epoch: 7 Train Loss: 0.452987402677536
+Train Accuracy: 0.8835071350164654 Train Sensitivity: 0.7304659498207885 Train Specitivity: 0.919735279144748 Train FP Count: 473.0 Train AUROC: 0.809051772785891
+Test Accuracy: 0.893523600439078 Test Sensitivity: 0.8322147651006712 Test Specitivity: 0.905511811023622 Test FP Count: 144.0 Test AUROC: 0.7988440131297274
+
+
+Epoch: 8 Train Loss: 0.17686423659324646
+Train Accuracy: 0.8803512623490669 Train Sensitivity: 0.7167832167832168 Train Specitivity: 0.9202799590303858 Train FP Count: 467.0 Train AUROC: 0.8085607713186685
+Test Accuracy: 0.9028540065861691 Test Sensitivity: 0.8267477203647416 Test Specitivity: 0.9196249162759544 Test FP Count: 120.0 Test AUROC: 0.8270087055801342
+
+
+Epoch: 9 Train Loss: 0.24350601434707642
+Train Accuracy: 0.8910537870472008 Train Sensitivity: 0.7592867756315007 Train Specitivity: 0.9209020531807472 Train FP Count: 470.0 Train AUROC: 0.8145429870281251
+Test Accuracy: 0.8995609220636663 Test Sensitivity: 0.8471760797342193 Test Specitivity: 0.9099276791584484 Test FP Count: 137.0 Test AUROC: 0.8091711859569002
+
+
+Fold Number 3
+Epoch: 0 Train Loss: 9.638203620910645
+Train Accuracy: 0.8125686059275521 Train Sensitivity: 0.5386029411764706 Train Specitivity: 0.8916195190947667 Train FP Count: 613.0 Train AUROC: 0.7296124534439024
+Test Accuracy: 0.9171240395170143 Test Sensitivity: 0.8092307692307692 Test Specitivity: 0.9405477621910487 Test FP Count: 89.0 Test AUROC: 0.8524911100803957
+
+
+Epoch: 1 Train Loss: 13.517013549804688
+Train Accuracy: 0.8745883644346871 Train Sensitivity: 0.7097242380261248 Train Specitivity: 0.9130287648054145 Train FP Count: 514.0 Train AUROC: 0.7932414330304528
+Test Accuracy: 0.8995609220636663 Test Sensitivity: 0.7682539682539683 Test Specitivity: 0.927007299270073 Test FP Count: 110.0 Test AUROC: 0.818920068027211
+
+
+Epoch: 2 Train Loss: 3.0682268142700195
+Train Accuracy: 0.8700603732162459 Train Sensitivity: 0.6931254429482636 Train Specitivity: 0.912540411774715 Train FP Count: 514.0 Train AUROC: 0.7903946421401836
+Test Accuracy: 0.9023051591657519 Test Sensitivity: 0.793918918918919 Test Specitivity: 0.9233289646133683 Test FP Count: 117.0 Test AUROC: 0.8130585188620902
+
+
+Epoch: 3 Train Loss: 0.8973636627197266
+Train Accuracy: 0.8824094401756312 Train Sensitivity: 0.7299058653149891 Train Specitivity: 0.9180633147113594 Train FP Count: 484.0 Train AUROC: 0.8056242448799856
+Test Accuracy: 0.9193194291986828 Test Sensitivity: 0.8451178451178452 Test Specitivity: 0.9337704918032786 Test FP Count: 101.0 Test AUROC: 0.8408878324056894
+
+
+Epoch: 4 Train Loss: 1.8048624992370605
+Train Accuracy: 0.8784302963776071 Train Sensitivity: 0.7164285714285714 Train Specitivity: 0.9169497282608695 Train FP Count: 489.0 Train AUROC: 0.8018782482880862
+Test Accuracy: 0.8946212952799122 Test Sensitivity: 0.8389830508474576 Test Specitivity: 0.9029003783102144 Test FP Count: 154.0 Test AUROC: 0.7683248299319727
+
+
+Epoch: 5 Train Loss: 0.6996160745620728
+Train Accuracy: 0.8758232711306256 Train Sensitivity: 0.7056762438682551 Train Specitivity: 0.9172496161064665 Train FP Count: 485.0 Train AUROC: 0.8012346038776857
+Test Accuracy: 0.9050493962678375 Test Sensitivity: 0.8140350877192982 Test Specitivity: 0.9219258295380611 Test FP Count: 120.0 Test AUROC: 0.8115182436611008
+
+
+Epoch: 6 Train Loss: 0.43670281767845154
+Train Accuracy: 0.8806256860592755 Train Sensitivity: 0.7171787709497207 Train Specitivity: 0.920594262295082 Train FP Count: 465.0 Train AUROC: 0.8092310126055318
+Test Accuracy: 0.8523600439077936 Test Sensitivity: 0.5932584269662922 Test Specitivity: 0.9360929557007989 Test FP Count: 88.0 Test AUROC: 0.8134353741496599
+
+
+Epoch: 7 Train Loss: 0.3447057604789734
+Train Accuracy: 0.8791163556531284 Train Sensitivity: 0.7228300510576222 Train Specitivity: 0.9153287138752746 Train FP Count: 501.0 Train AUROC: 0.7993233292073483
+Test Accuracy: 0.9116355653128431 Test Sensitivity: 0.7956656346749226 Test Specitivity: 0.9366244162775184 Test FP Count: 95.0 Test AUROC: 0.8426078385899813
+
+
+Epoch: 8 Train Loss: 3.3239145278930664
+Train Accuracy: 0.8704720087815587 Train Sensitivity: 0.6926863572433193 Train Specitivity: 0.9135697238322537 Train FP Count: 507.0 Train AUROC: 0.7923954210817482
+Test Accuracy: 0.7634467618002195 Test Sensitivity: 0.4398782343987823 Test Specitivity: 0.9459227467811159 Test FP Count: 63.0 Test AUROC: 0.7853412956091528
+
+
+Epoch: 9 Train Loss: 1.0799009799957275
+Train Accuracy: 0.8678649835345774 Train Sensitivity: 0.6776359973136333 Train Specitivity: 0.9167097775478531 Train FP Count: 483.0 Train AUROC: 0.7967288617276962
+Test Accuracy: 0.9017563117453348 Test Sensitivity: 0.736986301369863 Test Specitivity: 0.9430336307481125 Test FP Count: 83.0 Test AUROC: 0.8494492115027829
+
+
+Fold Number 4
+Epoch: 0 Train Loss: 3.5538947582244873
+Train Accuracy: 0.8136663007683864 Train Sensitivity: 0.5429487179487179 Train Specitivity: 0.8873952513966481 Train FP Count: 645.0 Train AUROC: 0.7223392484786586
+Test Accuracy: 0.8732162458836443 Test Sensitivity: 0.7868852459016393 Test Specitivity: 0.8905735003295979 Test FP Count: 166.0 Test AUROC: 0.7726145250619243
+
+
+Epoch: 1 Train Loss: 0.519906759262085
+Train Accuracy: 0.8545554335894622 Train Sensitivity: 0.6471389645776566 Train Specitivity: 0.906872852233677 Train FP Count: 542.0 Train AUROC: 0.7736786209218893
+Test Accuracy: 0.8781558726673985 Test Sensitivity: 0.7513661202185792 Test Specitivity: 0.9100274725274725 Test FP Count: 131.0 Test AUROC: 0.8065371823773343
+
+
+Epoch: 2 Train Loss: 0.7093163728713989
+Train Accuracy: 0.846185510428101 Train Sensitivity: 0.6208469055374592 Train Specitivity: 0.9063097514340345 Train FP Count: 539.0 Train AUROC: 0.7691629338528744
+Test Accuracy: 0.6432491767288694 Test Sensitivity: 0.34517766497461927 Test Specitivity: 0.8704061895551257 Test FP Count: 134.0 Test AUROC: 0.6527719796276197
+
+
+Epoch: 3 Train Loss: 0.7865996360778809
+Train Accuracy: 0.8552414928649835 Train Sensitivity: 0.6491467576791808 Train Specitivity: 0.907092563970462 Train FP Count: 541.0 Train AUROC: 0.7743588071277778
+Test Accuracy: 0.6218441273326015 Test Sensitivity: 0.3456924754634678 Test Specitivity: 0.901657458563536 Test FP Count: 89.0 Test AUROC: 0.6785296818902897
+
+
+Epoch: 4 Train Loss: 0.8909538984298706
+Train Accuracy: 0.8534577387486278 Train Sensitivity: 0.6346886912325286 Train Specitivity: 0.9137206860343017 Train FP Count: 493.0 Train AUROC: 0.7851823481850291
+Test Accuracy: 0.8035126234906695 Test Sensitivity: 0.5452830188679245 Test Specitivity: 0.9094427244582043 Test FP Count: 117.0 Test AUROC: 0.7708124599927639
+
+
+Epoch: 5 Train Loss: 0.17635926604270935
+Train Accuracy: 0.8634742041712404 Train Sensitivity: 0.6666666666666666 Train Specitivity: 0.9140934966361911 Train FP Count: 498.0 Train AUROC: 0.7902355234357799
+Test Accuracy: 0.8874862788144896 Test Sensitivity: 0.7342657342657343 Test Specitivity: 0.9346733668341709 Test FP Count: 91.0 Test AUROC: 0.8476767971946231
+
+
+Epoch: 6 Train Loss: 0.36815330386161804
+Train Accuracy: 0.8626509330406147 Train Sensitivity: 0.6696613683483068 Train Specitivity: 0.9104605375791817 Train FP Count: 523.0 Train AUROC: 0.7834965687716591
+Test Accuracy: 0.9110867178924259 Test Sensitivity: 0.9656488549618321 Test Specitivity: 0.9019230769230769 Test FP Count: 153.0 Test AUROC: 0.8083983885781081
+
+
+Epoch: 7 Train Loss: 0.62069171667099
+Train Accuracy: 0.8835071350164654 Train Sensitivity: 0.7358767424798239 Train Specitivity: 0.9174683544303798 Train FP Count: 489.0 Train AUROC: 0.8050701047408123
+Test Accuracy: 0.8809001097694841 Test Sensitivity: 0.7213114754098361 Test Specitivity: 0.9297491039426523 Test FP Count: 98.0 Test AUROC: 0.8372905708162868
+
+
+Epoch: 8 Train Loss: 0.3886182904243469
+Train Accuracy: 0.8719813391877058 Train Sensitivity: 0.6950453593859037 Train Specitivity: 0.9152860802732707 Train FP Count: 496.0 Train AUROC: 0.7960817481594962
+Test Accuracy: 0.9072447859495061 Test Sensitivity: 0.7828162291169452 Test Specitivity: 0.9444048467569494 Test FP Count: 78.0 Test AUROC: 0.8718081183379254
+
+
+Epoch: 9 Train Loss: 0.6205568909645081
+Train Accuracy: 0.866218441273326 Train Sensitivity: 0.6863734679163662 Train Specitivity: 0.9084900864260295 Train FP Count: 540.0 Train AUROC: 0.7815089726297326
+Test Accuracy: 0.9083424807903403 Test Sensitivity: 0.8943894389438944 Test Specitivity: 0.9111257406188282 Test FP Count: 135.0 Test AUROC: 0.8224444073362834
+
+
+--------------------------------
+Patient 02
+Fold Number 0
+Epoch: 0 Train Loss: 0.0
+Train Accuracy: 0.9098258706467661 Train Sensitivity: 0.9617524339360223 Train Specitivity: 0.47058823529411764 Train FP Count: 90.0 Train AUROC: 0.7657463981292902
+Test Accuracy: 0.9527363184079602 Test Sensitivity: 0.9756756756756757 Test Specitivity: 0.6875 Test FP Count: 10.0 Test AUROC: 0.8413616207286323
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.9533582089552238 Train Sensitivity: 0.972936400541272 Train Specitivity: 0.7307692307692307 Train FP Count: 35.0 Train AUROC: 0.8399713358980161
+Test Accuracy: 0.9527363184079602 Test Sensitivity: 0.9731182795698925 Test Specitivity: 0.7 Test FP Count: 9.0 Test AUROC: 0.8265802973654466
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.9589552238805971 Train Sensitivity: 0.975016880486158 Train Specitivity: 0.7716535433070866 Train FP Count: 29.0 Train AUROC: 0.8531191068869275
+Test Accuracy: 0.9502487562189055 Test Sensitivity: 0.9861495844875346 Test Specitivity: 0.6341463414634146 Test FP Count: 15.0 Test AUROC: 0.8991392052864968
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9639303482587065 Train Sensitivity: 0.979011509817197 Train Specitivity: 0.7938931297709924 Train FP Count: 27.0 Train AUROC: 0.8760202157350834
+Test Accuracy: 0.9527363184079602 Test Sensitivity: 0.9861878453038674 Test Specitivity: 0.65 Test FP Count: 14.0 Test AUROC: 0.9004869141813755
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 0.9639303482587065 Train Sensitivity: 0.9796610169491525 Train Specitivity: 0.7894736842105263 Train FP Count: 28.0 Train AUROC: 0.8793844761258204
+Test Accuracy: 0.9626865671641791 Test Sensitivity: 0.9836956521739131 Test Specitivity: 0.7352941176470589 Test FP Count: 9.0 Test AUROC: 0.8910964263977045
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.9676616915422885 Train Sensitivity: 0.9797434166103984 Train Specitivity: 0.8267716535433071 Train FP Count: 22.0 Train AUROC: 0.8814211360036206
+Test Accuracy: 0.9577114427860697 Test Sensitivity: 0.9836065573770492 Test Specitivity: 0.6944444444444444 Test FP Count: 11.0 Test AUROC: 0.8884010086079471
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9601990049751243 Train Sensitivity: 0.978275627970129 Train Specitivity: 0.762962962962963 Train FP Count: 32.0 Train AUROC: 0.8706192954665459
+Test Accuracy: 0.9626865671641791 Test Sensitivity: 0.9917127071823204 Test Specitivity: 0.7 Test FP Count: 12.0 Test AUROC: 0.9354403964872618
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 0.9670398009950248 Train Sensitivity: 0.9790823211875843 Train Specitivity: 0.8253968253968254 Train FP Count: 22.0 Train AUROC: 0.8777174322999169
+Test Accuracy: 0.9651741293532339 Test Sensitivity: 0.9811320754716981 Test Specitivity: 0.7741935483870968 Test FP Count: 7.0 Test AUROC: 0.8776628119293974
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9657960199004975 Train Sensitivity: 0.9803523035230353 Train Specitivity: 0.803030303030303 Train FP Count: 26.0 Train AUROC: 0.8837670664554576
+Test Accuracy: 0.9701492537313433 Test Sensitivity: 0.9917808219178083 Test Specitivity: 0.7567567567567568 Test FP Count: 9.0 Test AUROC: 0.939483523171898
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.9751243781094527 Train Sensitivity: 0.9837947332883187 Train Specitivity: 0.8740157480314961 Train FP Count: 16.0 Train AUROC: 0.9056800181036434
+Test Accuracy: 0.9626865671641791 Test Sensitivity: 0.9759358288770054 Test Specitivity: 0.7857142857142857 Test FP Count: 6.0 Test AUROC: 0.8467524563081472
+
+
+Fold Number 1
+Epoch: 0 Train Loss: 0.0
+Train Accuracy: 0.9197761194029851 Train Sensitivity: 0.9615384615384616 Train Specitivity: 0.5197368421052632 Train FP Count: 73.0 Train AUROC: 0.767813230746021
+Test Accuracy: 0.9552238805970149 Test Sensitivity: 0.9782016348773842 Test Specitivity: 0.7142857142857143 Test FP Count: 10.0 Test AUROC: 0.8652377432865238
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.9558457711442786 Train Sensitivity: 0.9788251366120219 Train Specitivity: 0.7222222222222222 Train FP Count: 40.0 Train AUROC: 0.8716074526665157
+Test Accuracy: 0.9577114427860697 Test Sensitivity: 0.9756756756756757 Test Specitivity: 0.75 Test FP Count: 8.0 Test AUROC: 0.8527962552352796
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.960820895522388 Train Sensitivity: 0.9809004092769441 Train Specitivity: 0.7535211267605634 Train FP Count: 35.0 Train AUROC: 0.8844157803424606
+Test Accuracy: 0.9701492537313433 Test Sensitivity: 0.976 Test Specitivity: 0.8888888888888888 Test FP Count: 3.0 Test AUROC: 0.8595713229859571
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9601990049751243 Train Sensitivity: 0.9802317655078391 Train Specitivity: 0.75177304964539 Train FP Count: 35.0 Train AUROC: 0.8807120766387568
+Test Accuracy: 0.9651741293532339 Test Sensitivity: 0.9863013698630136 Test Specitivity: 0.7567567567567568 Test FP Count: 9.0 Test AUROC: 0.9120473022912048
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 0.957089552238806 Train Sensitivity: 0.9775510204081632 Train Specitivity: 0.7391304347826086 Train FP Count: 36.0 Train AUROC: 0.8655578185109754
+Test Accuracy: 0.9676616915422885 Test Sensitivity: 0.9759358288770054 Test Specitivity: 0.8571428571428571 Test FP Count: 4.0 Test AUROC: 0.8582163094358216
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.9633084577114428 Train Sensitivity: 0.9809523809523809 Train Specitivity: 0.7753623188405797 Train FP Count: 31.0 Train AUROC: 0.8857735535943276
+Test Accuracy: 0.9701492537313433 Test Sensitivity: 0.9785522788203753 Test Specitivity: 0.8620689655172413 Test FP Count: 4.0 Test AUROC: 0.8733678245873369
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9614427860696517 Train Sensitivity: 0.9809134287661895 Train Specitivity: 0.7588652482269503 Train FP Count: 34.0 Train AUROC: 0.8847552236554274
+Test Accuracy: 0.9701492537313433 Test Sensitivity: 0.9785522788203753 Test Specitivity: 0.8620689655172413 Test FP Count: 4.0 Test AUROC: 0.8733678245873369
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 0.9601990049751243 Train Sensitivity: 0.9808873720136518 Train Specitivity: 0.7482517482517482 Train FP Count: 36.0 Train AUROC: 0.8840763370294938
+Test Accuracy: 0.9651741293532339 Test Sensitivity: 0.9863013698630136 Test Specitivity: 0.7567567567567568 Test FP Count: 9.0 Test AUROC: 0.9120473022912048
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9589552238805971 Train Sensitivity: 0.9815195071868583 Train Specitivity: 0.7346938775510204 Train FP Count: 39.0 Train AUROC: 0.8867617107942974
+Test Accuracy: 0.9701492537313433 Test Sensitivity: 0.9785522788203753 Test Specitivity: 0.8620689655172413 Test FP Count: 4.0 Test AUROC: 0.8733678245873369
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.9651741293532339 Train Sensitivity: 0.9823008849557522 Train Specitivity: 0.7841726618705036 Train FP Count: 30.0 Train AUROC: 0.8935204043147016
+Test Accuracy: 0.9626865671641791 Test Sensitivity: 0.9862637362637363 Test Specitivity: 0.7368421052631579 Test FP Count: 10.0 Test AUROC: 0.9106922887410693
+
+
+Fold Number 2
+Epoch: 0 Train Loss: 0.0
+Train Accuracy: 0.9322139303482587 Train Sensitivity: 0.9671232876712329 Train Specitivity: 0.5878378378378378 Train FP Count: 61.0 Train AUROC: 0.8015161801312514
+Test Accuracy: 0.945273631840796 Test Sensitivity: 0.9858757062146892 Test Specitivity: 0.6458333333333334 Test FP Count: 17.0 Test AUROC: 0.9073315118397085
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.9577114427860697 Train Sensitivity: 0.975626269465132 Train Specitivity: 0.7557251908396947 Train FP Count: 32.0 Train AUROC: 0.8558044806517312
+Test Accuracy: 0.9527363184079602 Test Sensitivity: 0.977961432506887 Test Specitivity: 0.717948717948718 Test FP Count: 11.0 Test AUROC: 0.8738615664845173
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.9601990049751243 Train Sensitivity: 0.9789259007477906 Train Specitivity: 0.7591240875912408 Train FP Count: 33.0 Train AUROC: 0.8739835558572829
+Test Accuracy: 0.9651741293532339 Test Sensitivity: 0.9808743169398907 Test Specitivity: 0.8055555555555556 Test FP Count: 7.0 Test AUROC: 0.8932149362477232
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9601990049751243 Train Sensitivity: 0.9795779441797141 Train Specitivity: 0.7553956834532374 Train FP Count: 34.0 Train AUROC: 0.8773478162480199
+Test Accuracy: 0.9626865671641791 Test Sensitivity: 0.975609756097561 Test Specitivity: 0.8181818181818182 Test FP Count: 6.0 Test AUROC: 0.8668032786885246
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 0.9589552238805971 Train Sensitivity: 0.976303317535545 Train Specitivity: 0.7633587786259542 Train FP Count: 31.0 Train AUROC: 0.8598476276684016
+Test Accuracy: 0.9626865671641791 Test Sensitivity: 0.9834710743801653 Test Specitivity: 0.7692307692307693 Test FP Count: 9.0 Test AUROC: 0.9043715846994534
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.9676616915422885 Train Sensitivity: 0.9797434166103984 Train Specitivity: 0.8267716535433071 Train FP Count: 22.0 Train AUROC: 0.8814211360036206
+Test Accuracy: 0.9626865671641791 Test Sensitivity: 0.9834710743801653 Test Specitivity: 0.7692307692307693 Test FP Count: 9.0 Test AUROC: 0.9043715846994534
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9626865671641791 Train Sensitivity: 0.9815950920245399 Train Specitivity: 0.7659574468085106 Train FP Count: 33.0 Train AUROC: 0.8887983706720978
+Test Accuracy: 0.9676616915422885 Test Sensitivity: 0.9835616438356164 Test Specitivity: 0.8108108108108109 Test FP Count: 7.0 Test AUROC: 0.9071038251366121
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 0.957089552238806 Train Sensitivity: 0.9788540245566166 Train Specitivity: 0.7323943661971831 Train FP Count: 38.0 Train AUROC: 0.8722863392924493
+Test Accuracy: 0.9427860696517413 Test Sensitivity: 0.9858356940509915 Test Specitivity: 0.6326530612244898 Test FP Count: 18.0 Test AUROC: 0.9059653916211294
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9558457711442786 Train Sensitivity: 0.9788251366120219 Train Specitivity: 0.7222222222222222 Train FP Count: 40.0 Train AUROC: 0.8716074526665157
+Test Accuracy: 0.945273631840796 Test Sensitivity: 0.9858757062146892 Test Specitivity: 0.6458333333333334 Test FP Count: 17.0 Test AUROC: 0.9073315118397085
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.9676616915422885 Train Sensitivity: 0.9816949152542372 Train Specitivity: 0.8120300751879699 Train FP Count: 25.0 Train AUROC: 0.8915139171758316
+Test Accuracy: 0.9502487562189055 Test Sensitivity: 0.9942857142857143 Test Specitivity: 0.6538461538461539 Test FP Count: 18.0 Test AUROC: 0.947632058287796
+
+
+Fold Number 3
+Epoch: 0 Train Loss: 0.0
+Train Accuracy: 0.931592039800995 Train Sensitivity: 0.9645535105657805 Train Specitivity: 0.5886524822695035 Train FP Count: 58.0 Train AUROC: 0.7877196952553368
+Test Accuracy: 0.9676616915422885 Test Sensitivity: 0.9862637362637363 Test Specitivity: 0.7894736842105263 Test FP Count: 8.0 Test AUROC: 0.9176722460101208
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.9508706467661692 Train Sensitivity: 0.9800275482093664 Train Specitivity: 0.6794871794871795 Train FP Count: 50.0 Train AUROC: 0.8756204269442559
+Test Accuracy: 0.9701492537313433 Test Sensitivity: 0.9733333333333334 Test Specitivity: 0.9259259259259259 Test FP Count: 2.0 Test AUROC: 0.8544180615025302
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.9633084577114428 Train Sensitivity: 0.9777027027027027 Train Specitivity: 0.796875 Train FP Count: 26.0 Train AUROC: 0.8689522516406426
+Test Accuracy: 0.9676616915422885 Test Sensitivity: 0.9657894736842105 Test Specitivity: 1.0 Test FP Count: 0.0 Test AUROC: 0.8142857142857143
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9645522388059702 Train Sensitivity: 0.9783783783783784 Train Specitivity: 0.8046875 Train FP Count: 25.0 Train AUROC: 0.8729953986573131
+Test Accuracy: 0.972636815920398 Test Sensitivity: 0.9759358288770054 Test Specitivity: 0.9285714285714286 Test FP Count: 2.0 Test AUROC: 0.8687037757882445
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 0.9676616915422885 Train Sensitivity: 0.9823489477257298 Train Specitivity: 0.8074074074074075 Train FP Count: 26.0 Train AUROC: 0.8948781775665686
+Test Accuracy: 0.972636815920398 Test Sensitivity: 0.9759358288770054 Test Specitivity: 0.9285714285714286 Test FP Count: 2.0 Test AUROC: 0.8687037757882445
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.9670398009950248 Train Sensitivity: 0.9816824966078698 Train Specitivity: 0.8059701492537313 Train FP Count: 26.0 Train AUROC: 0.891174473862865
+Test Accuracy: 0.9751243781094527 Test Sensitivity: 0.976 Test Specitivity: 0.9629629629629629 Test FP Count: 1.0 Test AUROC: 0.8700661736084079
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9583333333333334 Train Sensitivity: 0.978882833787466 Train Specitivity: 0.7428571428571429 Train FP Count: 36.0 Train AUROC: 0.8729652259183828
+Test Accuracy: 0.9776119402985075 Test Sensitivity: 0.9837837837837838 Test Specitivity: 0.90625 Test FP Count: 3.0 Test AUROC: 0.9101985208252238
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 0.9645522388059702 Train Sensitivity: 0.9796747967479674 Train Specitivity: 0.7954545454545454 Train FP Count: 27.0 Train AUROC: 0.8797239194387871
+Test Accuracy: 0.9751243781094527 Test Sensitivity: 0.9811320754716981 Test Specitivity: 0.9032258064516129 Test FP Count: 3.0 Test AUROC: 0.8959128065395096
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9682835820895522 Train Sensitivity: 0.9817073170731707 Train Specitivity: 0.8181818181818182 Train FP Count: 24.0 Train AUROC: 0.8918533604887984
+Test Accuracy: 0.9800995024875622 Test Sensitivity: 0.9838274932614556 Test Specitivity: 0.9354838709677419 Test FP Count: 2.0 Test AUROC: 0.9115609186453872
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.9657960199004975 Train Sensitivity: 0.9823129251700681 Train Specitivity: 0.7898550724637681 Train FP Count: 29.0 Train AUROC: 0.8938598476276683
+Test Accuracy: 0.9825870646766169 Test Sensitivity: 0.9838709677419355 Test Specitivity: 0.9666666666666667 Test FP Count: 1.0 Test AUROC: 0.9129233164655507
+
+
+Fold Number 4
+Epoch: 0 Train Loss: 0.0
+Train Accuracy: 0.9309701492537313 Train Sensitivity: 0.9645293315143247 Train Specitivity: 0.5845070422535211 Train FP Count: 59.0 Train AUROC: 0.78738025194237
+Test Accuracy: 0.9626865671641791 Test Sensitivity: 0.976063829787234 Test Specitivity: 0.7692307692307693 Test FP Count: 6.0 Test AUROC: 0.8367846907645373
+
+
+Epoch: 1 Train Loss: 0.0
+Train Accuracy: 0.9552238805970149 Train Sensitivity: 0.9781569965870307 Train Specitivity: 0.7202797202797203 Train FP Count: 40.0 Train AUROC: 0.867903748962812
+Test Accuracy: 0.9701492537313433 Test Sensitivity: 0.9762532981530343 Test Specitivity: 0.8695652173913043 Test FP Count: 3.0 Test AUROC: 0.840806138485717
+
+
+Epoch: 2 Train Loss: 0.0
+Train Accuracy: 0.960820895522388 Train Sensitivity: 0.9789402173913043 Train Specitivity: 0.7647058823529411 Train FP Count: 32.0 Train AUROC: 0.8743229991702497
+Test Accuracy: 0.972636815920398 Test Sensitivity: 0.9788359788359788 Test Specitivity: 0.875 Test FP Count: 3.0 Test AUROC: 0.8580475177960617
+
+
+Epoch: 3 Train Loss: 0.0
+Train Accuracy: 0.9620646766169154 Train Sensitivity: 0.9789687924016283 Train Specitivity: 0.7761194029850746 Train FP Count: 30.0 Train AUROC: 0.8750018857961832
+Test Accuracy: 0.972636815920398 Test Sensitivity: 0.9788359788359788 Test Specitivity: 0.875 Test FP Count: 3.0 Test AUROC: 0.8580475177960617
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 0.9670398009950248 Train Sensitivity: 0.977792732166891 Train Specitivity: 0.8360655737704918 Train FP Count: 20.0 Train AUROC: 0.870988911518443
+Test Accuracy: 0.9626865671641791 Test Sensitivity: 0.9786096256684492 Test Specitivity: 0.75 Test FP Count: 7.0 Test AUROC: 0.8526855875011556
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.9620646766169154 Train Sensitivity: 0.9796195652173914 Train Specitivity: 0.7720588235294118 Train FP Count: 31.0 Train AUROC: 0.8783661461869201
+Test Accuracy: 0.972636815920398 Test Sensitivity: 0.9788359788359788 Test Specitivity: 0.875 Test FP Count: 3.0 Test AUROC: 0.8580475177960617
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.9595771144278606 Train Sensitivity: 0.9776119402985075 Train Specitivity: 0.7611940298507462 Train FP Count: 32.0 Train AUROC: 0.8669155917628423
+Test Accuracy: 0.9676616915422885 Test Sensitivity: 0.9838709677419355 Test Specitivity: 0.7666666666666667 Test FP Count: 7.0 Test AUROC: 0.8871683461218453
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 0.9657960199004975 Train Sensitivity: 0.9810040705563093 Train Specitivity: 0.7985074626865671 Train FP Count: 27.0 Train AUROC: 0.8871313268461944
+Test Accuracy: 0.972636815920398 Test Sensitivity: 0.9788359788359788 Test Specitivity: 0.875 Test FP Count: 3.0 Test AUROC: 0.8580475177960617
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.9670398009950248 Train Sensitivity: 0.9823369565217391 Train Specitivity: 0.8014705882352942 Train FP Count: 27.0 Train AUROC: 0.8945387342536019
+Test Accuracy: 0.9651741293532339 Test Sensitivity: 0.9838274932614556 Test Specitivity: 0.7419354838709677 Test FP Count: 8.0 Test AUROC: 0.8858278635481187
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.9701492537313433 Train Sensitivity: 0.982396750169262 Train Specitivity: 0.8320610687022901 Train FP Count: 22.0 Train AUROC: 0.8962359508184354
+Test Accuracy: 0.9676616915422885 Test Sensitivity: 0.9838709677419355 Test Specitivity: 0.7666666666666667 Test FP Count: 7.0 Test AUROC: 0.8871683461218453
+
+
+--------------------------------
+Patient 03
+Fold Number 0
+Epoch: 0 Train Loss: 2043.4696044921875
+Train Accuracy: 0.7973995271867612 Train Sensitivity: 0.3746130030959752 Train Specitivity: 0.8736049107142857 Train FP Count: 906.0 Train AUROC: 0.6169578622816032
+Test Accuracy: 0.6799054373522458 Test Sensitivity: 0.3056872037914692 Test Specitivity: 0.9284028324154209 Test FP Count: 91.0 Test AUROC: 0.7037158423841617
+
+
+Epoch: 1 Train Loss: 1531.5838623046875
+Train Accuracy: 0.8355791962174941 Train Sensitivity: 0.4995850622406639 Train Specitivity: 0.8913852515506547 Train FP Count: 788.0 Train AUROC: 0.6739017838063354
+Test Accuracy: 0.6931442080378251 Test Sensitivity: 0.32142857142857145 Test Specitivity: 0.9380392156862745 Test FP Count: 79.0 Test AUROC: 0.725437830786554
+
+
+Epoch: 2 Train Loss: 1317.586181640625
+Train Accuracy: 0.8436170212765958 Train Sensitivity: 0.5269509251810137 Train Specitivity: 0.8981571290009699 Train FP Count: 735.0 Train AUROC: 0.6940273523755253
+Test Accuracy: 0.8893617021276595 Test Sensitivity: 0.8010471204188482 Test Specitivity: 0.8981288981288982 Test FP Count: 196.0 Test AUROC: 0.7084389308394473
+
+
+Epoch: 3 Train Loss: 478.39654541015625
+Train Accuracy: 0.8549645390070922 Train Sensitivity: 0.5736224028906955 Train Specitivity: 0.8973208214334285 Train FP Count: 755.0 Train AUROC: 0.695036785281817
+Test Accuracy: 0.8695035460992908 Test Sensitivity: 0.5933503836317136 Test Specitivity: 0.9321345707656613 Test FP Count: 117.0 Test AUROC: 0.7873612359532332
+
+
+Epoch: 4 Train Loss: 495.03924560546875
+Train Accuracy: 0.8643026004728133 Train Sensitivity: 0.6154580152671756 Train Specitivity: 0.899487317862925 Train FP Count: 745.0 Train AUROC: 0.7035136812756302
+Test Accuracy: 0.8770685579196218 Test Sensitivity: 0.7050691244239631 Test Specitivity: 0.8967334035827187 Test FP Count: 196.0 Test AUROC: 0.7010776624362764
+
+
+Epoch: 5 Train Loss: 268.3146667480469
+Train Accuracy: 0.8689125295508274 Train Sensitivity: 0.6406406406406406 Train Specitivity: 0.8994772818657016 Train FP Count: 750.0 Train AUROC: 0.7048268598699541
+Test Accuracy: 0.8851063829787233 Test Sensitivity: 0.6586826347305389 Test Specitivity: 0.9275687815833801 Test FP Count: 129.0 Test AUROC: 0.7829099157275115
+
+
+Epoch: 6 Train Loss: 113.82298278808594
+Train Accuracy: 0.8729314420803782 Train Sensitivity: 0.6518804243008679 Train Specitivity: 0.9038124747406708 Train FP Count: 714.0 Train AUROC: 0.7176350574420237
+Test Accuracy: 0.8912529550827423 Test Sensitivity: 0.670487106017192 Test Specitivity: 0.934881087202718 Test FP Count: 115.0 Test AUROC: 0.802684096609955
+
+
+Epoch: 7 Train Loss: 2.445966958999634
+Train Accuracy: 0.8648936170212767 Train Sensitivity: 0.601312551271534 Train Specitivity: 0.9092666758734982 Train FP Count: 657.0 Train AUROC: 0.729298484833067
+Test Accuracy: 0.8978723404255319 Test Sensitivity: 0.7490636704119851 Test Specitivity: 0.9193722943722944 Test FP Count: 149.0 Test AUROC: 0.7675635288658422
+
+
+Epoch: 8 Train Loss: 6.143685340881348
+Train Accuracy: 0.8563829787234043 Train Sensitivity: 0.5657400450788881 Train Specitivity: 0.9106466545097489 Train FP Count: 637.0 Train AUROC: 0.7299863645151772
+Test Accuracy: 0.8278959810874704 Test Sensitivity: 0.48427672955974843 Test Specitivity: 0.927960927960928 Test FP Count: 118.0 Test AUROC: 0.7612966346169447
+
+
+Epoch: 9 Train Loss: 7.626082420349121
+Train Accuracy: 0.8640661938534279 Train Sensitivity: 0.5946372239747634 Train Specitivity: 0.9115684093437152 Train FP Count: 636.0 Train AUROC: 0.7348722436477975
+Test Accuracy: 0.8226950354609929 Test Sensitivity: 0.4730290456431535 Test Specitivity: 0.9259032455603184 Test FP Count: 121.0 Test AUROC: 0.7547336346850896
+
+
+Fold Number 1
+Epoch: 0 Train Loss: 4214.6474609375
+Train Accuracy: 0.7970449172576832 Train Sensitivity: 0.3749043611323642 Train Specitivity: 0.8741786662938628 Train FP Count: 900.0 Train AUROC: 0.6184796434422477
+Test Accuracy: 0.8742316784869977 Test Sensitivity: 0.7218934911242604 Test Specitivity: 0.8874614594039054 Test FP Count: 219.0 Test AUROC: 0.6656387308367525
+
+
+Epoch: 1 Train Loss: 1241.1021728515625
+Train Accuracy: 0.8346335697399527 Train Sensitivity: 0.49645390070921985 Train Specitivity: 0.8943123348630232 Train FP Count: 760.0 Train AUROC: 0.681427757369776
+Test Accuracy: 0.8794326241134752 Test Sensitivity: 0.9479166666666666 Test Specitivity: 0.8761763249133234 Test FP Count: 250.0 Test AUROC: 0.6320218403991179
+
+
+Epoch: 2 Train Loss: 465.89105224609375
+Train Accuracy: 0.8520094562647754 Train Sensitivity: 0.5611702127659575 Train Specitivity: 0.8967539552645936 Train FP Count: 757.0 Train AUROC: 0.6926907695908336
+Test Accuracy: 0.8808510638297873 Test Sensitivity: 0.7031963470319634 Test Specitivity: 0.9013713080168776 Test FP Count: 187.0 Test AUROC: 0.7074862712295886
+
+
+Epoch: 3 Train Loss: 324.32470703125
+Train Accuracy: 0.8466903073286052 Train Sensitivity: 0.5384615384615384 Train Specitivity: 0.898083023031306 Train FP Count: 739.0 Train AUROC: 0.6947101441901641
+Test Accuracy: 0.8950354609929078 Test Sensitivity: 0.8051282051282052 Test Specitivity: 0.9041666666666667 Test FP Count: 184.0 Test AUROC: 0.7194950192913607
+
+
+Epoch: 4 Train Loss: 59.78481674194336
+Train Accuracy: 0.8473995271867613 Train Sensitivity: 0.5385814497272019 Train Specitivity: 0.9026055454925457 Train FP Count: 699.0 Train AUROC: 0.7066941072318949
+Test Accuracy: 0.8921985815602836 Test Sensitivity: 0.775609756097561 Test Specitivity: 0.9047120418848168 Test FP Count: 182.0 Test AUROC: 0.7201727791792162
+
+
+Epoch: 5 Train Loss: 2.355034351348877
+Train Accuracy: 0.8565011820330969 Train Sensitivity: 0.5722495894909688 Train Specitivity: 0.9043082021541011 Train FP Count: 693.0 Train AUROC: 0.7138735970205448
+Test Accuracy: 0.8761229314420804 Test Sensitivity: 0.6724890829694323 Test Specitivity: 0.9008483563096501 Test FP Count: 187.0 Test AUROC: 0.704667781939848
+
+
+Epoch: 6 Train Loss: 9.497054100036621
+Train Accuracy: 0.8646572104018913 Train Sensitivity: 0.5996745321399511 Train Specitivity: 0.9096943714562301 Train FP Count: 653.0 Train AUROC: 0.73031300560683
+Test Accuracy: 0.849645390070922 Test Sensitivity: 0.532033426183844 Test Specitivity: 0.9145785876993167 Test FP Count: 150.0 Test AUROC: 0.7327080309587491
+
+
+Epoch: 7 Train Loss: 2.4880166053771973
+Train Accuracy: 0.8578014184397164 Train Sensitivity: 0.5733333333333334 Train Specitivity: 0.9082811412665275 Train FP Count: 659.0 Train AUROC: 0.7244772216173313
+Test Accuracy: 0.8127659574468085 Test Sensitivity: 0.4376417233560091 Test Specitivity: 0.9115890083632019 Test FP Count: 148.0 Test AUROC: 0.7130926679604717
+
+
+Epoch: 8 Train Loss: 5.635528564453125
+Train Accuracy: 0.8608747044917258 Train Sensitivity: 0.5855421686746988 Train Specitivity: 0.9083853083853084 Train FP Count: 661.0 Train AUROC: 0.7257379951767017
+Test Accuracy: 0.8884160756501182 Test Sensitivity: 0.7586206896551724 Test Specitivity: 0.9021966527196653 Test FP Count: 187.0 Test AUROC: 0.7119958540931738
+
+
+Epoch: 9 Train Loss: 4.554556369781494
+Train Accuracy: 0.8608747044917258 Train Sensitivity: 0.5849960095770151 Train Specitivity: 0.9088386291105869 Train FP Count: 657.0 Train AUROC: 0.7268939586661646
+Test Accuracy: 0.8477541371158392 Test Sensitivity: 0.5568862275449101 Test Specitivity: 0.8726899383983573 Test FP Count: 248.0 Test AUROC: 0.6155068156195552
+
+
+Fold Number 2
+Epoch: 0 Train Loss: 5393.16796875
+Train Accuracy: 0.7939716312056737 Train Sensitivity: 0.3675918979744936 Train Specitivity: 0.8737196576399607 Train FP Count: 900.0 Train AUROC: 0.6166408881381458
+Test Accuracy: 0.8491725768321513 Test Sensitivity: 0.5663265306122449 Test Specitivity: 0.8780614903595623 Test FP Count: 234.0 Test AUROC: 0.6368582657823632
+
+
+Epoch: 1 Train Loss: 1606.333251953125
+Train Accuracy: 0.8270685579196217 Train Sensitivity: 0.47241118669690096 Train Specitivity: 0.89281210592686 Train FP Count: 765.0 Train AUROC: 0.6754566361055426
+Test Accuracy: 0.8231678486997636 Test Sensitivity: 0.44802867383512546 Test Specitivity: 0.8801742919389978 Test FP Count: 220.0 Test AUROC: 0.637656595431098
+
+
+Epoch: 2 Train Loss: 1277.943603515625
+Train Accuracy: 0.840307328605201 Train Sensitivity: 0.5157894736842106 Train Specitivity: 0.8957785467128028 Train FP Count: 753.0 Train AUROC: 0.6868453186531397
+Test Accuracy: 0.8690307328605201 Test Sensitivity: 0.6619047619047619 Test Specitivity: 0.8918635170603675 Test FP Count: 206.0 Test AUROC: 0.6813927781871776
+
+
+Epoch: 3 Train Loss: 1025.556396484375
+Train Accuracy: 0.8549645390070922 Train Sensitivity: 0.5714285714285714 Train Specitivity: 0.8991665528077606 Train FP Count: 738.0 Train AUROC: 0.6999496301120348
+Test Accuracy: 0.8600472813238771 Test Sensitivity: 0.5660377358490566 Test Specitivity: 0.9225917431192661 Test FP Count: 135.0 Test AUROC: 0.758867600098256
+
+
+Epoch: 4 Train Loss: 881.1593627929688
+Train Accuracy: 0.8553191489361702 Train Sensitivity: 0.5699831365935919 Train Specitivity: 0.9018421776189167 Train FP Count: 714.0 Train AUROC: 0.7070975751223632
+Test Accuracy: 0.7966903073286052 Test Sensitivity: 0.4265975820379965 Test Specitivity: 0.9361979166666666 Test FP Count: 98.0 Test AUROC: 0.7641857037582904
+
+
+Epoch: 5 Train Loss: 537.5004272460938
+Train Accuracy: 0.857565011820331 Train Sensitivity: 0.578589634664401 Train Specitivity: 0.9026500068653027 Train FP Count: 709.0 Train AUROC: 0.7098862352833434
+Test Accuracy: 0.8973995271867612 Test Sensitivity: 0.7442748091603053 Test Specitivity: 0.9190501888828926 Test FP Count: 150.0 Test AUROC: 0.7636821419798575
+
+
+Epoch: 6 Train Loss: 276.264892578125
+Train Accuracy: 0.8490543735224586 Train Sensitivity: 0.5429657794676807 Train Specitivity: 0.9053883834849545 Train FP Count: 676.0 Train AUROC: 0.7143309963062082
+Test Accuracy: 0.5872340425531914 Test Sensitivity: 0.2642857142857143 Test Specitivity: 0.9507537688442211 Test FP Count: 49.0 Test AUROC: 0.6962171456644558
+
+
+Epoch: 7 Train Loss: 32.89607620239258
+Train Accuracy: 0.8569739952718676 Train Sensitivity: 0.572 Train Specitivity: 0.9063800277392511 Train FP Count: 675.0 Train AUROC: 0.7193583181545287
+Test Accuracy: 0.8921985815602836 Test Sensitivity: 0.6905537459283387 Test Specitivity: 0.9264380530973452 Test FP Count: 133.0 Test AUROC: 0.7804102186195039
+
+
+Epoch: 8 Train Loss: 8.669492721557617
+Train Accuracy: 0.868676122931442 Train Sensitivity: 0.6120481927710844 Train Specitivity: 0.9129591129591129 Train FP Count: 628.0 Train AUROC: 0.7399423035828762
+Test Accuracy: 0.8865248226950354 Test Sensitivity: 0.7441860465116279 Test Specitivity: 0.9026315789473685 Test FP Count: 185.0 Test AUROC: 0.7163473348071727
+
+
+Epoch: 9 Train Loss: 11.145172119140625
+Train Accuracy: 0.8563829787234043 Train Sensitivity: 0.5672559569561876 Train Specitivity: 0.9089258276295572 Train FP Count: 652.0 Train AUROC: 0.7256515014296907
+Test Accuracy: 0.851063829787234 Test Sensitivity: 0.5396825396825397 Test Specitivity: 0.918825561312608 Test FP Count: 141.0 Test AUROC: 0.7464996315401622
+
+
+Fold Number 3
+Epoch: 0 Train Loss: 5729.3125
+Train Accuracy: 0.7949172576832151 Train Sensitivity: 0.3672055427251732 Train Specitivity: 0.8725038402457758 Train FP Count: 913.0 Train AUROC: 0.6134497776601915
+Test Accuracy: 0.8581560283687943 Test Sensitivity: 0.6053639846743295 Test Specitivity: 0.8937432578209277 Test FP Count: 197.0 Test AUROC: 0.693273847631242
+
+
+Epoch: 1 Train Loss: 1162.7738037109375
+Train Accuracy: 0.8263593380614658 Train Sensitivity: 0.47014361300075586 Train Specitivity: 0.8923917612442203 Train FP Count: 768.0 Train AUROC: 0.674165335341345
+Test Accuracy: 0.6226950354609929 Test Sensitivity: 0.295852534562212 Test Specitivity: 0.9669902912621359 Test FP Count: 34.0 Test AUROC: 0.7350672215108836
+
+
+Epoch: 2 Train Loss: 662.3568725585938
+Train Accuracy: 0.8312056737588652 Train Sensitivity: 0.48510971786833856 Train Specitivity: 0.8926781737193764 Train FP Count: 771.0 Train AUROC: 0.6761979383961007
+Test Accuracy: 0.8657210401891253 Test Sensitivity: 0.589873417721519 Test Specitivity: 0.9290697674418604 Test FP Count: 122.0 Test AUROC: 0.7821462868117798
+
+
+Epoch: 3 Train Loss: 392.0697021484375
+Train Accuracy: 0.8476359338061465 Train Sensitivity: 0.5386381025248661 Train Specitivity: 0.9040961834195442 Train FP Count: 686.0 Train AUROC: 0.7105924312883498
+Test Accuracy: 0.8728132387706856 Test Sensitivity: 0.7756410256410257 Test Specitivity: 0.8805513016845329 Test FP Count: 234.0 Test AUROC: 0.6604793533930857
+
+
+Epoch: 4 Train Loss: 44.98786544799805
+Train Accuracy: 0.8696217494089834 Train Sensitivity: 0.621301775147929 Train Specitivity: 0.9099903806513673 Train FP Count: 655.0 Train AUROC: 0.7327053208918014
+Test Accuracy: 0.8534278959810875 Test Sensitivity: 0.5517241379310345 Test Specitivity: 0.9315476190476191 Test FP Count: 115.0 Test AUROC: 0.7826304417413572
+
+
+Epoch: 5 Train Loss: 23.904447555541992
+Train Accuracy: 0.8631205673758865 Train Sensitivity: 0.5984719864176571 Train Specitivity: 0.9059324361439165 Train FP Count: 685.0 Train AUROC: 0.7201459200390747
+Test Accuracy: 0.8137115839243498 Test Sensitivity: 0.4654867256637168 Test Specitivity: 0.9406451612903226 Test FP Count: 92.0 Test AUROC: 0.784627080665813
+
+
+Epoch: 6 Train Loss: 9.627534866333008
+Train Accuracy: 0.8676122931442081 Train Sensitivity: 0.616580310880829 Train Specitivity: 0.9074226239386469 Train FP Count: 676.0 Train AUROC: 0.7254342494886693
+Test Accuracy: 0.7617021276595745 Test Sensitivity: 0.3889716840536513 Test Specitivity: 0.9349030470914127 Test FP Count: 94.0 Test AUROC: 0.7511283610755441
+
+
+Epoch: 7 Train Loss: 13.589832305908203
+Train Accuracy: 0.8692671394799054 Train Sensitivity: 0.6156351791530945 Train Specitivity: 0.9123340707964602 Train FP Count: 634.0 Train AUROC: 0.738561965137932
+Test Accuracy: 0.9049645390070922 Test Sensitivity: 0.7566666666666667 Test Specitivity: 0.9294765840220386 Test FP Count: 128.0 Test AUROC: 0.7989796734955186
+
+
+Epoch: 8 Train Loss: 6.624204635620117
+Train Accuracy: 0.8690307328605201 Train Sensitivity: 0.6161449752883031 Train Specitivity: 0.911399392768424 Train FP Count: 642.0 Train AUROC: 0.7361085954433058
+Test Accuracy: 0.8940898345153664 Test Sensitivity: 0.7673469387755102 Test Specitivity: 0.9106951871657754 Test FP Count: 167.0 Test AUROC: 0.7485955505761844
+
+
+Epoch: 9 Train Loss: 9.829421043395996
+Train Accuracy: 0.8617021276595744 Train Sensitivity: 0.5895765472312704 Train Specitivity: 0.9079092920353983 Train FP Count: 666.0 Train AUROC: 0.7247880903198235
+Test Accuracy: 0.8997635933806146 Test Sensitivity: 0.7391304347826086 Test Specitivity: 0.9262114537444934 Test FP Count: 134.0 Test AUROC: 0.7891085147247119
+
+
+Fold Number 4
+Epoch: 0 Train Loss: 4632.537109375
+Train Accuracy: 0.8126477541371159 Train Sensitivity: 0.42105263157894735 Train Specitivity: 0.8795847750865052 Train FP Count: 870.0 Train AUROC: 0.6364845888494296
+Test Accuracy: 0.8728132387706856 Test Sensitivity: 0.6696428571428571 Test Specitivity: 0.8968799576943416 Test FP Count: 195.0 Test AUROC: 0.6964873495455661
+
+
+Epoch: 1 Train Loss: 628.4210205078125
+Train Accuracy: 0.8483451536643026 Train Sensitivity: 0.5481548154815482 Train Specitivity: 0.8937270376922031 Train FP Count: 781.0 Train AUROC: 0.6835626265607033
+Test Accuracy: 0.6964539007092199 Test Sensitivity: 0.311787072243346 Test Specitivity: 0.9253393665158371 Test FP Count: 99.0 Test AUROC: 0.7031319086219603
+
+
+Epoch: 2 Train Loss: 1479.425048828125
+Train Accuracy: 0.8508274231678487 Train Sensitivity: 0.5586080586080586 Train Specitivity: 0.8941368078175895 Train FP Count: 780.0 Train AUROC: 0.6853367659479205
+Test Accuracy: 0.8591016548463357 Test Sensitivity: 0.573208722741433 Test Specitivity: 0.9102564102564102 Test FP Count: 161.0 Test AUROC: 0.7279661016949153
+
+
+Epoch: 3 Train Loss: 276.2797546386719
+Train Accuracy: 0.8505910165484634 Train Sensitivity: 0.5548780487804879 Train Specitivity: 0.8970185995623632 Train FP Count: 753.0 Train AUROC: 0.6929980767860959
+Test Accuracy: 0.7092198581560284 Test Sensitivity: 0.33496332518337407 Test Specitivity: 0.9452582883577486 Test FP Count: 71.0 Test AUROC: 0.7434291328911816
+
+
+Epoch: 4 Train Loss: 81.62154388427734
+Train Accuracy: 0.8567375886524823 Train Sensitivity: 0.5733113673805601 Train Specitivity: 0.904223019597019 Train FP Count: 694.0 Train AUROC: 0.7137260488638791
+Test Accuracy: 0.8775413711583925 Test Sensitivity: 0.7263157894736842 Test Specitivity: 0.8924675324675325 Test FP Count: 207.0 Test AUROC: 0.6853107344632767
+
+
+Epoch: 5 Train Loss: 32.9555778503418
+Train Accuracy: 0.8598108747044917 Train Sensitivity: 0.581081081081081 Train Specitivity: 0.908497639544571 Train FP Count: 659.0 Train AUROC: 0.7256794847007825
+Test Accuracy: 0.8704491725768322 Test Sensitivity: 0.8380952380952381 Test Specitivity: 0.8721393034825871 Test FP Count: 257.0 Test AUROC: 0.6227339719970523
+
+
+Epoch: 6 Train Loss: 16.14531898498535
+Train Accuracy: 0.856855791962175 Train Sensitivity: 0.5697583787996883 Train Specitivity: 0.9081789048348893 Train FP Count: 659.0 Train AUROC: 0.7239114507545308
+Test Accuracy: 0.7683215130023641 Test Sensitivity: 0.37076648841354726 Test Specitivity: 0.9118404118404119 Test FP Count: 137.0 Test AUROC: 0.701731761238025
+
+
+Epoch: 7 Train Loss: 5.28816556930542
+Train Accuracy: 0.8497635933806147 Train Sensitivity: 0.5443698732289336 Train Specitivity: 0.9072903497682259 Train FP Count: 660.0 Train AUROC: 0.7193791784111606
+Test Accuracy: 0.766903073286052 Test Sensitivity: 0.3531746031746032 Test Specitivity: 0.8963376784605835 Test FP Count: 167.0 Test AUROC: 0.6658806190125276
+
+
+Epoch: 8 Train Loss: 9.15414047241211
+Train Accuracy: 0.8515366430260047 Train Sensitivity: 0.5506042296072508 Train Specitivity: 0.9073710762331838 Train FP Count: 661.0 Train AUROC: 0.7201510079065462
+Test Accuracy: 0.8888888888888888 Test Sensitivity: 0.7412280701754386 Test Specitivity: 0.9067302596714362 Test FP Count: 176.0 Test AUROC: 0.7282608695652174
+
+
+Epoch: 9 Train Loss: 12.573332786560059
+Train Accuracy: 0.8494089834515366 Train Sensitivity: 0.5424597364568082 Train Specitivity: 0.9085142373837045 Train FP Count: 649.0 Train AUROC: 0.7223459139336339
+Test Accuracy: 0.8316784869976359 Test Sensitivity: 0.4854111405835544 Test Specitivity: 0.906789413118527 Test FP Count: 162.0 Test AUROC: 0.7104151314173421
+
+
+--------------------------------
+Patient 05
+Fold Number 0
+Epoch: 0 Train Loss: 1.036133050918579
+Train Accuracy: 0.7401664145234493 Train Sensitivity: 0.5479192938209332 Train Specitivity: 0.8225283630470016 Train FP Count: 657.0 Train AUROC: 0.6894362679007778
+Test Accuracy: 0.846444780635401 Test Sensitivity: 0.8313725490196079 Test Specitivity: 0.8500468603561387 Test FP Count: 160.0 Test AUROC: 0.7623146576117712
+
+
+Epoch: 1 Train Loss: 1.2905638217926025
+Train Accuracy: 0.8124054462934948 Train Sensitivity: 0.685933147632312 Train Specitivity: 0.8595534787123572 Train FP Count: 541.0 Train AUROC: 0.7627976669502502
+Test Accuracy: 0.7881996974281392 Test Sensitivity: 0.5970464135021097 Test Specitivity: 0.8950471698113207 Test FP Count: 89.0 Test AUROC: 0.7798500282965478
+
+
+Epoch: 2 Train Loss: 4.204006195068359
+Train Accuracy: 0.8055975794251135 Train Sensitivity: 0.6651193633952255 Train Specitivity: 0.8616402116402117 Train FP Count: 523.0 Train AUROC: 0.7615184054102451
+Test Accuracy: 0.8555219364599093 Test Sensitivity: 0.8339483394833949 Test Specitivity: 0.8610846812559467 Test FP Count: 146.0 Test AUROC: 0.7800792303338991
+
+
+Epoch: 3 Train Loss: 4.306159973144531
+Train Accuracy: 0.8082450832072617 Train Sensitivity: 0.6711229946524064 Train Specitivity: 0.8623417721518988 Train FP Count: 522.0 Train AUROC: 0.7635738637670072
+Test Accuracy: 0.857034795763994 Test Sensitivity: 0.792332268370607 Test Specitivity: 0.8771060455896927 Test FP Count: 124.0 Test AUROC: 0.7991228070175438
+
+
+Epoch: 4 Train Loss: 2.2020914554595947
+Train Accuracy: 0.8188350983358548 Train Sensitivity: 0.6875825627476883 Train Specitivity: 0.8714891361950186 Train FP Count: 485.0 Train AUROC: 0.7782223141952741
+Test Accuracy: 0.8706505295007564 Test Sensitivity: 0.8316831683168316 Test Specitivity: 0.8822374877330716 Test FP Count: 120.0 Test AUROC: 0.8118675721561969
+
+
+Epoch: 5 Train Loss: 1.020027995109558
+Train Accuracy: 0.8313161875945537 Train Sensitivity: 0.7162346521145976 Train Specitivity: 0.8754578754578755 Train FP Count: 476.0 Train AUROC: 0.7887469577474406
+Test Accuracy: 0.8804841149773072 Test Sensitivity: 0.8905109489051095 Test Specitivity: 0.8778625954198473 Test FP Count: 128.0 Test AUROC: 0.8121675155631012
+
+
+Epoch: 6 Train Loss: 1.4811609983444214
+Train Accuracy: 0.8396369137670197 Train Sensitivity: 0.7334710743801653 Train Specitivity: 0.879822732012513 Train FP Count: 461.0 Train AUROC: 0.7975161005098234
+Test Accuracy: 0.8623298033282905 Test Sensitivity: 0.7950310559006211 Test Specitivity: 0.884 Test FP Count: 116.0 Test AUROC: 0.8093491794001131
+
+
+Epoch: 7 Train Loss: 1.4372034072875977
+Train Accuracy: 0.8430408472012103 Train Sensitivity: 0.7383561643835617 Train Specitivity: 0.8829676071055381 Train FP Count: 448.0 Train AUROC: 0.8024401426139717
+Test Accuracy: 0.8441754916792739 Test Sensitivity: 0.7085427135678392 Test Specitivity: 0.9025974025974026 Test FP Count: 90.0 Test AUROC: 0.8179796264855688
+
+
+Epoch: 8 Train Loss: 1.1129684448242188
+Train Accuracy: 0.8432299546142209 Train Sensitivity: 0.7438768369489154 Train Specitivity: 0.880020730759264 Train FP Count: 463.0 Train AUROC: 0.7996518610956082
+Test Accuracy: 0.8691376701966718 Test Sensitivity: 0.8283828382838284 Test Specitivity: 0.8812561334641805 Test FP Count: 121.0 Test AUROC: 0.8099971703452179
+
+
+Epoch: 9 Train Loss: 3.5880990028381348
+Train Accuracy: 0.8364220877458396 Train Sensitivity: 0.7204803202134756 Train Specitivity: 0.8822908419107944 Train FP Count: 446.0 Train AUROC: 0.798177853585869
+Test Accuracy: 0.8744326777609682 Test Sensitivity: 0.9813084112149533 Test Specitivity: 0.8537906137184116 Test FP Count: 162.0 Test AUROC: 0.7801528013582343
+
+
+Fold Number 1
+Epoch: 0 Train Loss: 1.3151421546936035
+Train Accuracy: 0.7505673222390318 Train Sensitivity: 0.5684071381361533 Train Specitivity: 0.8235761589403974 Train FP Count: 666.0 Train AUROC: 0.6949934956936404
+Test Accuracy: 0.8245083207261724 Test Sensitivity: 0.7002881844380403 Test Specitivity: 0.8687179487179487 Test FP Count: 128.0 Test AUROC: 0.772813976492329
+
+
+Epoch: 1 Train Loss: 0.9554314017295837
+Train Accuracy: 0.7982223903177005 Train Sensitivity: 0.6588235294117647 Train Specitivity: 0.8506375227686703 Train FP Count: 574.0 Train AUROC: 0.7464029478756664
+Test Accuracy: 0.8222390317700454 Test Sensitivity: 0.9857142857142858 Test Specitivity: 0.8028764805414551 Test FP Count: 233.0 Test AUROC: 0.6849323027824308
+
+
+Epoch: 2 Train Loss: 2.5095925331115723
+Train Accuracy: 0.7806354009077155 Train Sensitivity: 0.6174582798459564 Train Specitivity: 0.8487935656836462 Train FP Count: 564.0 Train AUROC: 0.7359899610020324
+Test Accuracy: 0.8434190620272315 Test Sensitivity: 0.91 Test Specitivity: 0.8315508021390374 Test FP Count: 189.0 Test AUROC: 0.7358192964704482
+
+
+Epoch: 3 Train Loss: 0.7098549008369446
+Train Accuracy: 0.8152420574886535 Train Sensitivity: 0.6894409937888198 Train Specitivity: 0.862724667882261 Train FP Count: 527.0 Train AUROC: 0.767517730941198
+Test Accuracy: 0.8653555219364599 Test Sensitivity: 0.8669201520912547 Test Specitivity: 0.8649669499527857 Test FP Count: 143.0 Test AUROC: 0.7888759455928077
+
+
+Epoch: 4 Train Loss: 1.2027435302734375
+Train Accuracy: 0.8184568835098336 Train Sensitivity: 0.7009943181818182 Train Specitivity: 0.8610824742268042 Train FP Count: 539.0 Train AUROC: 0.7674402157743538
+Test Accuracy: 0.8782148260211801 Test Sensitivity: 0.875 Test Specitivity: 0.8790786948176583 Test FP Count: 126.0 Test AUROC: 0.8117869968057457
+
+
+Epoch: 5 Train Loss: 4.170851230621338
+Train Accuracy: 0.8099470499243571 Train Sensitivity: 0.6733200266134398 Train Specitivity: 0.8642007926023778 Train FP Count: 514.0 Train AUROC: 0.7663280037736823
+Test Accuracy: 0.8797276853252648 Test Sensitivity: 0.9690265486725663 Test Specitivity: 0.8613138686131386 Test FP Count: 152.0 Test AUROC: 0.7914679114905292
+
+
+Epoch: 6 Train Loss: 4.03564453125
+Train Accuracy: 0.795196671709531 Train Sensitivity: 0.6435515230071289 Train Specitivity: 0.8576769025367156 Train FP Count: 533.0 Train AUROC: 0.7522610041924384
+Test Accuracy: 0.8419062027231468 Test Sensitivity: 0.9709302325581395 Test Specitivity: 0.8226086956521739 Test FP Count: 204.0 Test AUROC: 0.7224385736676672
+
+
+Epoch: 7 Train Loss: 1.2578963041305542
+Train Accuracy: 0.8148638426626323 Train Sensitivity: 0.6770226537216828 Train Specitivity: 0.8717606198236708 Train FP Count: 480.0 Train AUROC: 0.7764049754634014
+Test Accuracy: 0.8850226928895613 Test Sensitivity: 0.8590163934426229 Test Specitivity: 0.8928220255653884 Test FP Count: 109.0 Test AUROC: 0.830491949175361
+
+
+Epoch: 8 Train Loss: 1.602502703666687
+Train Accuracy: 0.8473903177004538 Train Sensitivity: 0.7558718861209964 Train Specitivity: 0.8805047643574556 Train FP Count: 464.0 Train AUROC: 0.8023810917340612
+Test Accuracy: 0.8895612708018155 Test Sensitivity: 0.8548895899053628 Test Specitivity: 0.900497512437811 Test FP Count: 100.0 Test AUROC: 0.8410440421630232
+
+
+Epoch: 9 Train Loss: 0.4664205312728882
+Train Accuracy: 0.8502269288956127 Train Sensitivity: 0.7625178826895566 Train Specitivity: 0.8817480719794345 Train FP Count: 460.0 Train AUROC: 0.80515369602767
+Test Accuracy: 0.9024205748865356 Test Sensitivity: 0.9548872180451128 Test Specitivity: 0.8892045454545454 Test FP Count: 117.0 Test AUROC: 0.8360089110342073
+
+
+Fold Number 2
+Epoch: 0 Train Loss: 2.1910805702209473
+Train Accuracy: 0.7475416036308623 Train Sensitivity: 0.5632031767041694 Train Specitivity: 0.8212867355043686 Train FP Count: 675.0 Train AUROC: 0.6911142535237177
+Test Accuracy: 0.8449319213313162 Test Sensitivity: 0.8603603603603603 Test Specitivity: 0.8418181818181818 Test FP Count: 174.0 Test AUROC: 0.7454473883855083
+
+
+Epoch: 1 Train Loss: 1.507800579071045
+Train Accuracy: 0.794251134644478 Train Sensitivity: 0.6510344827586206 Train Specitivity: 0.8483585200625325 Train FP Count: 582.0 Train AUROC: 0.742053911537253
+Test Accuracy: 0.8358547655068078 Test Sensitivity: 0.7846153846153846 Test Specitivity: 0.8483992467043314 Test FP Count: 161.0 Test AUROC: 0.750193956570905
+
+
+Epoch: 2 Train Loss: 4.4658660888671875
+Train Accuracy: 0.7929273827534039 Train Sensitivity: 0.6373486297004461 Train Specitivity: 0.8585641301425114 Train FP Count: 526.0 Train AUROC: 0.7520293296488372
+Test Accuracy: 0.8472012102874432 Test Sensitivity: 0.96045197740113 Test Specitivity: 0.8296943231441049 Test FP Count: 195.0 Test AUROC: 0.7292194500508152
+
+
+Epoch: 3 Train Loss: 0.4414985179901123
+Train Accuracy: 0.8152420574886535 Train Sensitivity: 0.6899653979238755 Train Specitivity: 0.8623471246422066 Train FP Count: 529.0 Train AUROC: 0.7671282390017301
+Test Accuracy: 0.8146747352496218 Test Sensitivity: 0.655440414507772 Test Specitivity: 0.8803418803418803 Test FP Count: 112.0 Test AUROC: 0.7770873591846665
+
+
+Epoch: 4 Train Loss: 1.4354808330535889
+Train Accuracy: 0.829803328290469 Train Sensitivity: 0.7194950911640954 Train Specitivity: 0.8705334023821854 Train FP Count: 500.0 Train AUROC: 0.7830097902526681
+Test Accuracy: 0.8615733736762481 Test Sensitivity: 0.9136363636363637 Test Specitivity: 0.8511796733212341 Test FP Count: 164.0 Test AUROC: 0.7654156109989838
+
+
+Epoch: 5 Train Loss: 1.6527550220489502
+Train Accuracy: 0.8124054462934948 Train Sensitivity: 0.6818801089918256 Train Specitivity: 0.862565445026178 Train FP Count: 525.0 Train AUROC: 0.7659136024659927
+Test Accuracy: 0.859304084720121 Test Sensitivity: 0.8403041825095057 Test Specitivity: 0.8640226628895185 Test FP Count: 144.0 Test AUROC: 0.7807961523596856
+
+
+Epoch: 6 Train Loss: 2.489687204360962
+Train Accuracy: 0.8305597579425114 Train Sensitivity: 0.7122641509433962 Train Specitivity: 0.8767087276550999 Train FP Count: 469.0 Train AUROC: 0.7895785474249984
+Test Accuracy: 0.8782148260211801 Test Sensitivity: 0.9594594594594594 Test Specitivity: 0.8618181818181818 Test FP Count: 152.0 Test AUROC: 0.7870786275604413
+
+
+Epoch: 7 Train Loss: 2.939082622528076
+Train Accuracy: 0.8292360060514372 Train Sensitivity: 0.7155709342560553 Train Specitivity: 0.8719750195160031 Train FP Count: 492.0 Train AUROC: 0.7841690339276046
+Test Accuracy: 0.8555219364599093 Test Sensitivity: 0.9306930693069307 Test Specitivity: 0.8419642857142857 Test FP Count: 177.0 Test AUROC: 0.7502197220194387
+
+
+Epoch: 8 Train Loss: 4.284536361694336
+Train Accuracy: 0.8078668683812406 Train Sensitivity: 0.6677631578947368 Train Specitivity: 0.8643842887473461 Train FP Count: 511.0 Train AUROC: 0.7654502533787902
+Test Accuracy: 0.8177004538577912 Test Sensitivity: 0.9920634920634921 Test Specitivity: 0.7993311036789298 Test FP Count: 240.0 Test AUROC: 0.6707104106726214
+
+
+Epoch: 9 Train Loss: 7.3203582763671875
+Train Accuracy: 0.8069213313161876 Train Sensitivity: 0.6649248856956238 Train Specitivity: 0.864785733297844 Train FP Count: 508.0 Train AUROC: 0.7653699511497677
+Test Accuracy: 0.8736762481089259 Test Sensitivity: 0.9541284403669725 Test Specitivity: 0.8577898550724637 Test FP Count: 157.0 Test AUROC: 0.7797068464522408
+
+
+Fold Number 3
+Epoch: 0 Train Loss: 1.8503395318984985
+Train Accuracy: 0.7600226928895613 Train Sensitivity: 0.5815873015873015 Train Specitivity: 0.8357123619714517 Train FP Count: 610.0 Train AUROC: 0.7125446713809824
+Test Accuracy: 0.8502269288956127 Test Sensitivity: 0.9741379310344828 Test Specitivity: 0.8238532110091743 Test FP Count: 192.0 Test AUROC: 0.7670163441588688
+
+
+Epoch: 1 Train Loss: 7.312775611877441
+Train Accuracy: 0.7965204236006052 Train Sensitivity: 0.6492042440318302 Train Specitivity: 0.8552910052910053 Train FP Count: 547.0 Train AUROC: 0.7504649168096778
+Test Accuracy: 0.8010590015128594 Test Sensitivity: 0.8297872340425532 Test Specitivity: 0.7948482060717571 Test FP Count: 223.0 Test AUROC: 0.7111296947114367
+
+
+Epoch: 2 Train Loss: 5.003897190093994
+Train Accuracy: 0.8080559757942511 Train Sensitivity: 0.6688697951090549 Train Specitivity: 0.863841059602649 Train FP Count: 514.0 Train AUROC: 0.7649989234972335
+Test Accuracy: 0.8517397881996974 Test Sensitivity: 0.9743589743589743 Test Specitivity: 0.8253676470588235 Test FP Count: 190.0 Test AUROC: 0.7694086886564763
+
+
+Epoch: 3 Train Loss: 3.2620744705200195
+Train Accuracy: 0.8171331316187594 Train Sensitivity: 0.687458081824279 Train Specitivity: 0.8680537266262839 Train FP Count: 501.0 Train AUROC: 0.7739102064307279
+Test Accuracy: 0.859304084720121 Test Sensitivity: 0.8118279569892473 Test Specitivity: 0.8778947368421053 Test FP Count: 116.0 Test AUROC: 0.8225272049794641
+
+
+Epoch: 4 Train Loss: 8.729096412658691
+Train Accuracy: 0.8180786686838124 Train Sensitivity: 0.6885026737967914 Train Specitivity: 0.869198312236287 Train FP Count: 496.0 Train AUROC: 0.7755484764176217
+Test Accuracy: 0.869894099848714 Test Sensitivity: 0.8271276595744681 Test Specitivity: 0.8868921775898521 Test FP Count: 107.0 Test AUROC: 0.8360582419443621
+
+
+Epoch: 5 Train Loss: 4.361794471740723
+Train Accuracy: 0.8184568835098336 Train Sensitivity: 0.6835278858625162 Train Specitivity: 0.8739989321943407 Train FP Count: 472.0 Train AUROC: 0.7804881957465251
+Test Accuracy: 0.8918305597579426 Test Sensitivity: 0.9537953795379538 Test Specitivity: 0.873405299313052 Test FP Count: 129.0 Test AUROC: 0.837950417072448
+
+
+Epoch: 6 Train Loss: 0.9000873565673828
+Train Accuracy: 0.8243192133131618 Train Sensitivity: 0.6980756469807564 Train Specitivity: 0.8746363395927004 Train FP Count: 474.0 Train AUROC: 0.7842188526640482
+Test Accuracy: 0.857034795763994 Test Sensitivity: 0.7608200455580866 Test Specitivity: 0.9048697621744054 Test FP Count: 84.0 Test AUROC: 0.8414463098615405
+
+
+Epoch: 7 Train Loss: 1.1610499620437622
+Train Accuracy: 0.848714069591528 Train Sensitivity: 0.7436241610738255 Train Specitivity: 0.889942074776198 Train FP Count: 418.0 Train AUROC: 0.8122697625353347
+Test Accuracy: 0.9114977307110439 Test Sensitivity: 0.9966996699669967 Test Specitivity: 0.8861629048086359 Test FP Count: 116.0 Test AUROC: 0.8606909217936233
+
+
+Epoch: 8 Train Loss: 2.158456802368164
+Train Accuracy: 0.846444780635401 Train Sensitivity: 0.7435197817189632 Train Specitivity: 0.8859236002093145 Train FP Count: 436.0 Train AUROC: 0.8071694387483862
+Test Accuracy: 0.9069591527987897 Test Sensitivity: 0.9566563467492261 Test Specitivity: 0.8908908908908909 Test FP Count: 109.0 Test AUROC: 0.8618738620485245
+
+
+Epoch: 9 Train Loss: 12.424668312072754
+Train Accuracy: 0.8281013615733737 Train Sensitivity: 0.7030941408821593 Train Specitivity: 0.878482356062616 Train FP Count: 458.0 Train AUROC: 0.789992948732688
+Test Accuracy: 0.8789712556732224 Test Sensitivity: 0.9742647058823529 Test Specitivity: 0.8542857142857143 Test FP Count: 153.0 Test AUROC: 0.8131139645170852
+
+
+Fold Number 4
+Epoch: 0 Train Loss: 7.43657922744751
+Train Accuracy: 0.7532148260211801 Train Sensitivity: 0.5714285714285714 Train Specitivity: 0.8283881315156375 Train FP Count: 642.0 Train AUROC: 0.7015281113542823
+Test Accuracy: 0.8396369137670197 Test Sensitivity: 0.7796610169491526 Test Specitivity: 0.8568646543330087 Test FP Count: 147.0 Test AUROC: 0.7706482534068742
+
+
+Epoch: 1 Train Loss: 0.8267366290092468
+Train Accuracy: 0.7908472012102874 Train Sensitivity: 0.6383399209486166 Train Specitivity: 0.8522546419098144 Train FP Count: 557.0 Train AUROC: 0.7445302162829927
+Test Accuracy: 0.8767019667170953 Test Sensitivity: 0.928 Test Specitivity: 0.8647388059701493 Test FP Count: 145.0 Test AUROC: 0.7981684981684981
+
+
+Epoch: 2 Train Loss: 3.7659552097320557
+Train Accuracy: 0.8133509833585476 Train Sensitivity: 0.684715558601782 Train Specitivity: 0.8623661530425699 Train FP Count: 527.0 Train AUROC: 0.7661886506647492
+Test Accuracy: 0.8577912254160364 Test Sensitivity: 0.813953488372093 Test Specitivity: 0.8707149853085211 Test FP Count: 132.0 Test AUROC: 0.7953040573730229
+
+
+Epoch: 3 Train Loss: 0.5268225073814392
+Train Accuracy: 0.823373676248109 Train Sensitivity: 0.7019099590723056 Train Specitivity: 0.86996336996337 Train FP Count: 497.0 Train AUROC: 0.7790751552219443
+Test Accuracy: 0.8630862329803328 Test Sensitivity: 0.7987804878048781 Test Specitivity: 0.8843058350100603 Test FP Count: 115.0 Test AUROC: 0.8125594711801608
+
+
+Epoch: 4 Train Loss: 3.7595865726470947
+Train Accuracy: 0.8316944024205749 Train Sensitivity: 0.7157394843962008 Train Specitivity: 0.8765076035658101 Train FP Count: 471.0 Train AUROC: 0.7899865036513998
+Test Accuracy: 0.8623298033282905 Test Sensitivity: 0.9620853080568721 Test Specitivity: 0.8433843384338434 Test FP Count: 174.0 Test AUROC: 0.7649979649979649
+
+
+Epoch: 5 Train Loss: 2.4360427856445312
+Train Accuracy: 0.8226172465960666 Train Sensitivity: 0.6975806451612904 Train Specitivity: 0.871578947368421 Train FP Count: 488.0 Train AUROC: 0.7802962368389699
+Test Accuracy: 0.8305597579425114 Test Sensitivity: 0.6907730673316709 Test Specitivity: 0.8914223669923995 Test FP Count: 100.0 Test AUROC: 0.8017655396965742
+
+
+Epoch: 6 Train Loss: 0.881856381893158
+Train Accuracy: 0.8252647503782148 Train Sensitivity: 0.7033783783783784 Train Specitivity: 0.8726365546218487 Train FP Count: 485.0 Train AUROC: 0.7827411871351997
+Test Accuracy: 0.7254160363086233 Test Sensitivity: 0.511986301369863 Test Specitivity: 0.8943089430894309 Test FP Count: 78.0 Test AUROC: 0.7457580733442801
+
+
+Epoch: 7 Train Loss: 1.7864103317260742
+Train Accuracy: 0.8248865355521936 Train Sensitivity: 0.6965923984272608 Train Specitivity: 0.8769271664008507 Train FP Count: 463.0 Train AUROC: 0.7867597824140558
+Test Accuracy: 0.869894099848714 Test Sensitivity: 0.8338762214983714 Test Specitivity: 0.8807881773399014 Test FP Count: 121.0 Test AUROC: 0.8125384194349711
+
+
+Epoch: 8 Train Loss: 0.6102038621902466
+Train Accuracy: 0.8439863842662633 Train Sensitivity: 0.7392491467576792 Train Specitivity: 0.8841224169500392 Train FP Count: 443.0 Train AUROC: 0.8040784126008655
+Test Accuracy: 0.8086232980332829 Test Sensitivity: 0.6359649122807017 Test Specitivity: 0.8995381062355658 Test FP Count: 87.0 Test AUROC: 0.7967846967846968
+
+
+Epoch: 9 Train Loss: 3.097012758255005
+Train Accuracy: 0.8419062027231468 Train Sensitivity: 0.7306149732620321 Train Specitivity: 0.8858122362869199 Train FP Count: 433.0 Train AUROC: 0.8045638839941108
+Test Accuracy: 0.869894099848714 Test Sensitivity: 0.8673835125448028 Test Specitivity: 0.8705656759348035 Test FP Count: 135.0 Test AUROC: 0.8013781875850841
+
+
+--------------------------------
+Patient 08
+Fold Number 0
+Epoch: 0 Train Loss: 10.868708610534668
+Train Accuracy: 0.535140562248996 Train Sensitivity: 0.6616915422885572 Train Specitivity: 0.34096692111959287 Train FP Count: 259.0 Train AUROC: 0.5014163414327081
+Test Accuracy: 0.751004016064257 Test Sensitivity: 0.7559808612440191 Test Specitivity: 0.725 Test FP Count: 11.0 Test AUROC: 0.6487056213017751
+
+
+Epoch: 1 Train Loss: 10.339845657348633
+Train Accuracy: 0.7299196787148594 Train Sensitivity: 0.8082408874801902 Train Specitivity: 0.5945205479452055 Train FP Count: 148.0 Train AUROC: 0.708543911080736
+Test Accuracy: 0.8313253012048193 Test Sensitivity: 0.8469945355191257 Test Specitivity: 0.7878787878787878 Test FP Count: 14.0 Test AUROC: 0.7835798816568047
+
+
+Epoch: 2 Train Loss: 0.2725975513458252
+Train Accuracy: 0.8393574297188755 Train Sensitivity: 0.8795731707317073 Train Specitivity: 0.7617647058823529 Train FP Count: 81.0 Train AUROC: 0.8215859426988724
+Test Accuracy: 0.7309236947791165 Test Sensitivity: 0.8541666666666666 Test Specitivity: 0.5619047619047619 Test FP Count: 46.0 Test AUROC: 0.7326553254437871
+
+
+Epoch: 3 Train Loss: 1.273007869720459
+Train Accuracy: 0.8283132530120482 Train Sensitivity: 0.8706240487062404 Train Specitivity: 0.7463126843657817 Train FP Count: 86.0 Train AUROC: 0.8089108109566374
+Test Accuracy: 0.8313253012048193 Test Sensitivity: 0.8944099378881988 Test Specitivity: 0.7159090909090909 Test FP Count: 25.0 Test AUROC: 0.8197855029585798
+
+
+Epoch: 4 Train Loss: 0.5732073783874512
+Train Accuracy: 0.8473895582329317 Train Sensitivity: 0.8977987421383647 Train Specitivity: 0.7583333333333333 Train FP Count: 87.0 Train AUROC: 0.8377367313537526
+Test Accuracy: 0.8273092369477911 Test Sensitivity: 0.842391304347826 Test Specitivity: 0.7846153846153846 Test FP Count: 14.0 Test AUROC: 0.7773298816568047
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.8353413654618473 Train Sensitivity: 0.8686567164179104 Train Specitivity: 0.7668711656441718 Train FP Count: 76.0 Train AUROC: 0.8120717253286812
+Test Accuracy: 0.8072289156626506 Test Sensitivity: 0.8579881656804734 Test Specitivity: 0.7 Test FP Count: 24.0 Test AUROC: 0.7789940828402366
+
+
+Epoch: 6 Train Loss: 1.7029167413711548
+Train Accuracy: 0.8393574297188755 Train Sensitivity: 0.8890625 Train Specitivity: 0.75 Train FP Count: 89.0 Train AUROC: 0.8273412348698764
+Test Accuracy: 0.8594377510040161 Test Sensitivity: 0.9135802469135802 Test Specitivity: 0.7586206896551724 Test FP Count: 21.0 Test AUROC: 0.850369822485207
+
+
+Epoch: 7 Train Loss: 1.7881380642847944e-07
+Train Accuracy: 0.856425702811245 Train Sensitivity: 0.8943338437978561 Train Specitivity: 0.7842565597667639 Train FP Count: 74.0 Train AUROC: 0.8416979910433265
+Test Accuracy: 0.8674698795180723 Test Sensitivity: 0.8695652173913043 Test Specitivity: 0.8615384615384616 Test FP Count: 9.0 Test AUROC: 0.8233727810650886
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.8755020080321285 Train Sensitivity: 0.9057750759878419 Train Specitivity: 0.8165680473372781 Train FP Count: 62.0 Train AUROC: 0.8611715616625599
+Test Accuracy: 0.8795180722891566 Test Sensitivity: 0.9316770186335404 Test Specitivity: 0.7840909090909091 Test FP Count: 19.0 Test AUROC: 0.8750369822485209
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.8674698795180723 Train Sensitivity: 0.9033742331288344 Train Specitivity: 0.7994186046511628 Train FP Count: 69.0 Train AUROC: 0.8543731227855614
+Test Accuracy: 0.8393574297188755 Test Sensitivity: 0.8909090909090909 Test Specitivity: 0.7380952380952381 Test FP Count: 22.0 Test AUROC: 0.8224112426035504
+
+
+Fold Number 1
+Epoch: 0 Train Loss: 2.3566503524780273
+Train Accuracy: 0.6034136546184738 Train Sensitivity: 0.697151424287856 Train Specitivity: 0.4133738601823708 Train FP Count: 193.0 Train AUROC: 0.5545268969982554
+Test Accuracy: 0.7228915662650602 Test Sensitivity: 0.8113207547169812 Test Specitivity: 0.5666666666666667 Test FP Count: 39.0 Test AUROC: 0.6987433862433863
+
+
+Epoch: 1 Train Loss: 14.017837524414062
+Train Accuracy: 0.7650602409638554 Train Sensitivity: 0.8354430379746836 Train Specitivity: 0.6428571428571429 Train FP Count: 130.0 Train AUROC: 0.7473696516249708
+Test Accuracy: 0.8032128514056225 Test Sensitivity: 0.8324022346368715 Test Specitivity: 0.7285714285714285 Test FP Count: 19.0 Test AUROC: 0.7582671957671958
+
+
+Epoch: 2 Train Loss: 8.814412117004395
+Train Accuracy: 0.8012048192771084 Train Sensitivity: 0.8516819571865444 Train Specitivity: 0.7046783625730995 Train FP Count: 101.0 Train AUROC: 0.7797611553749033
+Test Accuracy: 0.8112449799196787 Test Sensitivity: 0.8579881656804734 Test Specitivity: 0.7125 Test FP Count: 23.0 Test AUROC: 0.7833994708994709
+
+
+Epoch: 3 Train Loss: 21.613386154174805
+Train Accuracy: 0.8253012048192772 Train Sensitivity: 0.8734567901234568 Train Specitivity: 0.735632183908046 Train FP Count: 92.0 Train AUROC: 0.8087894102624054
+Test Accuracy: 0.8353413654618473 Test Sensitivity: 0.8757396449704142 Test Specitivity: 0.75 Test FP Count: 20.0 Test AUROC: 0.8108465608465607
+
+
+Epoch: 4 Train Loss: 0.04409288614988327
+Train Accuracy: 0.8062248995983936 Train Sensitivity: 0.8582434514637904 Train Specitivity: 0.7089337175792507 Train FP Count: 101.0 Train AUROC: 0.7871576050790453
+Test Accuracy: 0.8273092369477911 Test Sensitivity: 0.8654970760233918 Test Specitivity: 0.7435897435897436 Test FP Count: 20.0 Test AUROC: 0.7985008818342152
+
+
+Epoch: 5 Train Loss: 8.017382621765137
+Train Accuracy: 0.8373493975903614 Train Sensitivity: 0.8803680981595092 Train Specitivity: 0.7558139534883721 Train FP Count: 84.0 Train AUROC: 0.820785597381342
+Test Accuracy: 0.8433734939759037 Test Sensitivity: 0.856353591160221 Test Specitivity: 0.8088235294117647 Test FP Count: 13.0 Test AUROC: 0.8008156966490301
+
+
+Epoch: 6 Train Loss: 0.5739551186561584
+Train Accuracy: 0.8524096385542169 Train Sensitivity: 0.8853695324283559 Train Specitivity: 0.7867867867867868 Train FP Count: 71.0 Train AUROC: 0.8336225967158863
+Test Accuracy: 0.8032128514056225 Test Sensitivity: 0.8562874251497006 Test Specitivity: 0.6951219512195121 Test FP Count: 25.0 Test AUROC: 0.77744708994709
+
+
+Epoch: 7 Train Loss: 14.523143768310547
+Train Accuracy: 0.8293172690763052 Train Sensitivity: 0.8685800604229608 Train Specitivity: 0.7514970059880239 Train FP Count: 83.0 Train AUROC: 0.8082318663333394
+Test Accuracy: 0.8594377510040161 Test Sensitivity: 0.9290322580645162 Test Specitivity: 0.7446808510638298 Test FP Count: 24.0 Test AUROC: 0.8606701940035275
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.8443775100401606 Train Sensitivity: 0.8804841149773072 Train Specitivity: 0.7731343283582089 Train FP Count: 76.0 Train AUROC: 0.8253853347961367
+Test Accuracy: 0.8072289156626506 Test Sensitivity: 0.9054054054054054 Test Specitivity: 0.6633663366336634 Test FP Count: 34.0 Test AUROC: 0.8123897707231041
+
+
+Epoch: 9 Train Loss: 9.27214527130127
+Train Accuracy: 0.8373493975903614 Train Sensitivity: 0.8827160493827161 Train Specitivity: 0.7528735632183908 Train FP Count: 86.0 Train AUROC: 0.8222244204240929
+Test Accuracy: 0.8875502008032129 Test Sensitivity: 0.9022988505747126 Test Specitivity: 0.8533333333333334 Test FP Count: 11.0 Test AUROC: 0.8623236331569665
+
+
+Fold Number 2
+Epoch: 0 Train Loss: 33.430084228515625
+Train Accuracy: 0.5893574297188755 Train Sensitivity: 0.7099494097807757 Train Specitivity: 0.4119106699751861 Train FP Count: 237.0 Train AUROC: 0.5654709447671804
+Test Accuracy: 0.7751004016064257 Test Sensitivity: 0.87248322147651 Test Specitivity: 0.63 Test FP Count: 37.0 Test AUROC: 0.7733678983496423
+
+
+Epoch: 1 Train Loss: 1.0086917877197266
+Train Accuracy: 0.8132530120481928 Train Sensitivity: 0.8699059561128527 Train Specitivity: 0.7122905027932961 Train FP Count: 103.0 Train AUROC: 0.7989514577075951
+Test Accuracy: 0.7550200803212851 Test Sensitivity: 0.8533333333333334 Test Specitivity: 0.6060606060606061 Test FP Count: 39.0 Test AUROC: 0.7490871914707171
+
+
+Epoch: 2 Train Loss: 0.0001021072530420497
+Train Accuracy: 0.8293172690763052 Train Sensitivity: 0.8788819875776398 Train Specitivity: 0.7386363636363636 Train FP Count: 92.0 Train AUROC: 0.8147065700257189
+Test Accuracy: 0.8232931726907631 Test Sensitivity: 0.8554913294797688 Test Specitivity: 0.75 Test FP Count: 19.0 Test AUROC: 0.7906747480648458
+
+
+Epoch: 3 Train Loss: 1.639126594454865e-07
+Train Accuracy: 0.8343373493975904 Train Sensitivity: 0.8673621460506706 Train Specitivity: 0.7661538461538462 Train FP Count: 76.0 Train AUROC: 0.8105924353878526
+Test Accuracy: 0.8634538152610441 Test Sensitivity: 0.9523809523809523 Test Specitivity: 0.7352941176470589 Test FP Count: 27.0 Test AUROC: 0.8764787498174383
+
+
+Epoch: 4 Train Loss: 5.907649993896484
+Train Accuracy: 0.8514056224899599 Train Sensitivity: 0.8911042944785276 Train Specitivity: 0.7761627906976745 Train FP Count: 77.0 Train AUROC: 0.8364597759033111
+Test Accuracy: 0.8835341365461847 Test Sensitivity: 0.9423076923076923 Test Specitivity: 0.7849462365591398 Test FP Count: 20.0 Test AUROC: 0.8852417116985541
+
+
+Epoch: 5 Train Loss: 1.0828204154968262
+Train Accuracy: 0.8483935742971888 Train Sensitivity: 0.8894009216589862 Train Specitivity: 0.7710144927536232 Train FP Count: 79.0 Train AUROC: 0.8334607291235769
+Test Accuracy: 0.8674698795180723 Test Sensitivity: 0.9085365853658537 Test Specitivity: 0.788235294117647 Test FP Count: 18.0 Test AUROC: 0.8546443697969914
+
+
+Epoch: 6 Train Loss: 0.08980828523635864
+Train Accuracy: 0.8554216867469879 Train Sensitivity: 0.8882175226586103 Train Specitivity: 0.7904191616766467 Train FP Count: 70.0 Train AUROC: 0.8373410550169961
+Test Accuracy: 0.8835341365461847 Test Sensitivity: 0.9662162162162162 Test Specitivity: 0.7623762376237624 Test FP Count: 24.0 Test AUROC: 0.8976559076968015
+
+
+Epoch: 7 Train Loss: 0.0009149275138042867
+Train Accuracy: 0.8744979919678715 Train Sensitivity: 0.9106317411402157 Train Specitivity: 0.8069164265129684 Train FP Count: 67.0 Train AUROC: 0.8632893293286091
+Test Accuracy: 0.9196787148594378 Test Sensitivity: 0.9454545454545454 Test Specitivity: 0.8690476190476191 Test FP Count: 11.0 Test AUROC: 0.9121878194829852
+
+
+Epoch: 8 Train Loss: 2.1739118892583065e-05
+Train Accuracy: 0.8674698795180723 Train Sensitivity: 0.8913690476190477 Train Specitivity: 0.8179012345679012 Train FP Count: 59.0 Train AUROC: 0.8471790075718062
+Test Accuracy: 0.7389558232931727 Test Sensitivity: 1.0 Test Specitivity: 0.5578231292517006 Test FP Count: 65.0 Test AUROC: 0.8053892215568863
+
+
+Epoch: 9 Train Loss: 1.0326078154321294e-05
+Train Accuracy: 0.8534136546184738 Train Sensitivity: 0.8975155279503105 Train Specitivity: 0.7727272727272727 Train FP Count: 80.0 Train AUROC: 0.8415765903490945
+Test Accuracy: 0.8273092369477911 Test Sensitivity: 0.984375 Test Specitivity: 0.6611570247933884 Test FP Count: 41.0 Test AUROC: 0.8650503870308164
+
+
+Fold Number 3
+Epoch: 0 Train Loss: 11.490606307983398
+Train Accuracy: 0.6646586345381527 Train Sensitivity: 0.7515527950310559 Train Specitivity: 0.5056818181818182 Train FP Count: 174.0 Train AUROC: 0.6310947644826532
+Test Accuracy: 0.8795180722891566 Test Sensitivity: 0.8924050632911392 Test Specitivity: 0.8571428571428571 Test FP Count: 13.0 Test AUROC: 0.8683185235816815
+
+
+Epoch: 1 Train Loss: 0.38423916697502136
+Train Accuracy: 0.8323293172690763 Train Sensitivity: 0.8806201550387597 Train Specitivity: 0.7435897435897436 Train FP Count: 90.0 Train AUROC: 0.8177056168054533
+Test Accuracy: 0.9156626506024096 Test Sensitivity: 0.9403973509933775 Test Specitivity: 0.8775510204081632 Test FP Count: 12.0 Test AUROC: 0.9136705399863295
+
+
+Epoch: 2 Train Loss: 0.002557476283982396
+Train Accuracy: 0.8684738955823293 Train Sensitivity: 0.9047619047619048 Train Specitivity: 0.8 Train FP Count: 69.0 Train AUROC: 0.8558524127263898
+Test Accuracy: 0.8755020080321285 Test Sensitivity: 0.8682634730538922 Test Specitivity: 0.8902439024390244 Test FP Count: 9.0 Test AUROC: 0.8549897470950102
+
+
+Epoch: 3 Train Loss: 5.190776348114014
+Train Accuracy: 0.8634538152610441 Train Sensitivity: 0.9015384615384615 Train Specitivity: 0.791907514450867 Train FP Count: 72.0 Train AUROC: 0.8506141975863745
+Test Accuracy: 0.8795180722891566 Test Sensitivity: 0.9025974025974026 Test Specitivity: 0.8421052631578947 Test FP Count: 15.0 Test AUROC: 0.8723513328776487
+
+
+Epoch: 4 Train Loss: 0.0
+Train Accuracy: 0.8664658634538153 Train Sensitivity: 0.9057187017001546 Train Specitivity: 0.7936962750716332 Train FP Count: 72.0 Train AUROC: 0.8550520674088596
+Test Accuracy: 0.9156626506024096 Test Sensitivity: 0.9182389937106918 Test Specitivity: 0.9111111111111111 Test FP Count: 8.0 Test AUROC: 0.9056049213943951
+
+
+Epoch: 5 Train Loss: 0.0
+Train Accuracy: 0.8624497991967871 Train Sensitivity: 0.8929110105580694 Train Specitivity: 0.8018018018018018 Train FP Count: 66.0 Train AUROC: 0.8448184385172929
+Test Accuracy: 0.9076305220883534 Test Sensitivity: 0.9281045751633987 Test Specitivity: 0.875 Test FP Count: 12.0 Test AUROC: 0.9031442241968557
+
+
+Epoch: 6 Train Loss: 0.0
+Train Accuracy: 0.8835341365461847 Train Sensitivity: 0.9208074534161491 Train Specitivity: 0.8153409090909091 Train FP Count: 65.0 Train AUROC: 0.8751641157533138
+Test Accuracy: 0.9518072289156626 Test Sensitivity: 0.9930555555555556 Test Specitivity: 0.8952380952380953 Test FP Count: 11.0 Test AUROC: 0.9590225563909774
+
+
+Epoch: 7 Train Loss: 0.0
+Train Accuracy: 0.8885542168674698 Train Sensitivity: 0.9201228878648233 Train Specitivity: 0.8289855072463768 Train FP Count: 59.0 Train AUROC: 0.8782440963292026
+Test Accuracy: 0.7951807228915663 Test Sensitivity: 0.764102564102564 Test Specitivity: 0.9074074074074074 Test FP Count: 5.0 Test AUROC: 0.741660970608339
+
+
+Epoch: 8 Train Loss: 0.0
+Train Accuracy: 0.8694779116465864 Train Sensitivity: 0.8987915407854985 Train Specitivity: 0.811377245508982 Train FP Count: 63.0 Train AUROC: 0.8530152335389651
+Test Accuracy: 0.8634538152610441 Test Sensitivity: 0.8225806451612904 Test Specitivity: 0.9841269841269841 Test FP Count: 1.0 Test AUROC: 0.8230690362269311
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.8865461847389559 Train Sensitivity: 0.91350531107739 Train Specitivity: 0.8338278931750742 Train FP Count: 56.0 Train AUROC: 0.8731272818834194
+Test Accuracy: 0.9196787148594378 Test Sensitivity: 0.8941176470588236 Test Specitivity: 0.9746835443037974 Test FP Count: 2.0 Test AUROC: 0.8987696514012303
+
+
+Fold Number 4
+Epoch: 0 Train Loss: 5.985036849975586
+Train Accuracy: 0.5612449799196787 Train Sensitivity: 0.6790923824959482 Train Specitivity: 0.36939313984168864 Train FP Count: 239.0 Train AUROC: 0.5254896494667363
+Test Accuracy: 0.6706827309236948 Test Sensitivity: 0.7437185929648241 Test Specitivity: 0.38 Test FP Count: 31.0 Test AUROC: 0.5491221069433361
+
+
+Epoch: 1 Train Loss: 0.26326122879981995
+Train Accuracy: 0.7630522088353414 Train Sensitivity: 0.8130563798219584 Train Specitivity: 0.6583850931677019 Train FP Count: 110.0 Train AUROC: 0.7300228413158035
+Test Accuracy: 0.7871485943775101 Test Sensitivity: 0.8795180722891566 Test Specitivity: 0.6024096385542169 Test FP Count: 33.0 Test AUROC: 0.7649640861931366
+
+
+Epoch: 2 Train Loss: 6.290295124053955
+Train Accuracy: 0.7951807228915663 Train Sensitivity: 0.8418674698795181 Train Specitivity: 0.7018072289156626 Train FP Count: 99.0 Train AUROC: 0.769446592687182
+Test Accuracy: 0.8514056224899599 Test Sensitivity: 0.9034090909090909 Test Specitivity: 0.726027397260274 Test FP Count: 20.0 Test AUROC: 0.822705506783719
+
+
+Epoch: 3 Train Loss: 0.874602735042572
+Train Accuracy: 0.8232931726907631 Train Sensitivity: 0.8662613981762918 Train Specitivity: 0.7396449704142012 Train FP Count: 88.0 Train AUROC: 0.8029531842952464
+Test Accuracy: 0.7349397590361446 Test Sensitivity: 0.900709219858156 Test Specitivity: 0.5185185185185185 Test FP Count: 52.0 Test AUROC: 0.7547486033519554
+
+
+Epoch: 4 Train Loss: 5.9276275634765625
+Train Accuracy: 0.8303212851405622 Train Sensitivity: 0.8721461187214612 Train Specitivity: 0.7492625368731564 Train FP Count: 85.0 Train AUROC: 0.8111499793169188
+Test Accuracy: 0.8473895582329317 Test Sensitivity: 0.8852459016393442 Test Specitivity: 0.7424242424242424 Test FP Count: 17.0 Test AUROC: 0.8025139664804468
+
+
+Epoch: 5 Train Loss: 0.7082370519638062
+Train Accuracy: 0.8644578313253012 Train Sensitivity: 0.901689708141321 Train Specitivity: 0.7942028985507247 Train FP Count: 71.0 Train AUROC: 0.8513740760058274
+Test Accuracy: 0.7751004016064257 Test Sensitivity: 0.9361702127659575 Test Specitivity: 0.5648148148148148 Test FP Count: 47.0 Test AUROC: 0.8044293695131683
+
+
+Epoch: 6 Train Loss: 2.0116428913752316e-06
+Train Accuracy: 0.8443775100401606 Train Sensitivity: 0.8911353032659409 Train Specitivity: 0.7592067988668555 Train FP Count: 85.0 Train AUROC: 0.8318600384885165
+Test Accuracy: 0.8554216867469879 Test Sensitivity: 0.9181286549707602 Test Specitivity: 0.717948717948718 Test FP Count: 22.0 Test AUROC: 0.8385474860335197
+
+
+Epoch: 7 Train Loss: 8.960023842519149e-05
+Train Accuracy: 0.8524096385542169 Train Sensitivity: 0.8924731182795699 Train Specitivity: 0.7768115942028986 Train FP Count: 77.0 Train AUROC: 0.8379390658441395
+Test Accuracy: 0.8554216867469879 Test Sensitivity: 0.8907103825136612 Test Specitivity: 0.7575757575757576 Test FP Count: 16.0 Test AUROC: 0.8124501197126897
+
+
+Epoch: 8 Train Loss: 7.329501152038574
+Train Accuracy: 0.8554216867469879 Train Sensitivity: 0.8953846153846153 Train Specitivity: 0.7803468208092486 Train FP Count: 76.0 Train AUROC: 0.8416575241452492
+Test Accuracy: 0.8514056224899599 Test Sensitivity: 0.9127906976744186 Test Specitivity: 0.7142857142857143 Test FP Count: 22.0 Test AUROC: 0.8314046288906625
+
+
+Epoch: 9 Train Loss: 0.0
+Train Accuracy: 0.856425702811245 Train Sensitivity: 0.8943338437978561 Train Specitivity: 0.7842565597667639 Train FP Count: 74.0 Train AUROC: 0.8416979910433265
+Test Accuracy: 0.8674698795180723 Test Sensitivity: 0.9451219512195121 Test Specitivity: 0.7176470588235294 Test FP Count: 24.0 Test AUROC: 0.8686751795690344
+
+
