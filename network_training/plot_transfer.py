@@ -36,14 +36,24 @@ for dataset_idx, pretrained_data_file in enumerate(pretrained_data_files):
         for fold in pretrained_data_file[pretrained_data_file["Patient"] == patient][
             "Fold"
         ].unique():
-            test_set_accuracy.append(
-                max(
-                    pretrained_data_file[
-                        (pretrained_data_file["Patient"] == patient)
-                        & (pretrained_data_file["Fold"] == fold)
-                    ]["Test Accuracy"].values
+            if dataset_idx == 0:
+                test_set_accuracy.append(
+                    max(
+                        pretrained_data_file[
+                            (pretrained_data_file["Patient"] == patient)
+                            & (pretrained_data_file["Fold"] == fold)
+                        ]["Test Accuracy"].values
+                    ) * 100
                 )
-            )
+            else:
+                test_set_accuracy.append(
+                    max(
+                        pretrained_data_file[
+                            (pretrained_data_file["Patient"] == patient)
+                            & (pretrained_data_file["Fold"] == fold)
+                        ]["Test Accuracy"].values
+                    )
+                )
 
         test_set_accuracy_mean = np.mean(test_set_accuracy)
         test_set_accuracy_std = np.std(test_set_accuracy)
