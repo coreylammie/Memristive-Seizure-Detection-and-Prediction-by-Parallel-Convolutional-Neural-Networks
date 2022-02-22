@@ -22,7 +22,7 @@ from utils import foldretrieve
 # -----------------------------------------------------------
 rootPath = '/scratch/jcu/cl/TBioCAS/processed_data/'
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
-seed = 42
+seed = 8
 patients = ['01', '02', '03', '05', '08']
 dataset = 'CHBMIT'
 dataType = 'features'
@@ -41,11 +41,11 @@ torch.use_deterministic_algorithms(True)
 torch.backends.cudnn.deterministic = True
 os.environ['PYTHONHASHSEED'] = str(seed)
 
-if dataType == 'features':
+df = pd.DataFrame(columns=['Patient', 'Fold', 'Epoch', 'Loss', 'Train Accuracy', 'Test Accuracy'])
+for patient in patients:
     allData = np.empty((0, 176))
     rawLabel = np.empty((0,), dtype=int)
 
-for patient in patients:
     newData = np.load(rootPath+dataType+'/'+dataset+'_'+'patient'+'_'+patient+'_'+'synthetic_preictal.npy')
     allData = np.append(allData,newData,axis=0)
     rawLabel = np.append(rawLabel,np.zeros((newData.shape[0],),dtype=int),axis=0)
@@ -56,37 +56,34 @@ for patient in patients:
     allData = np.append(allData,newData,axis=0)
     rawLabel = np.append(rawLabel,np.ones((newData.shape[0],),dtype=int),axis=0)
 
-allLabel = np.zeros((rawLabel.size, rawLabel.max()+1))
-allLabel[np.arange(rawLabel.size),rawLabel] = 1
+    allLabel = np.zeros((rawLabel.size, rawLabel.max()+1))
+    allLabel[np.arange(rawLabel.size),rawLabel] = 1
 
-pca = PCA(n_components=64)
-allData = pca.fit_transform(allData)
+    pca = PCA(n_components=64)
+    allData = pca.fit_transform(allData)
 
-inputbits = 6
-inputstep = (np.amax(allData) - np.amin(allData)) / (2**inputbits-1)
-allData = np.round(allData/inputstep)
-allData *= inputstep
+    inputbits=6
+    inputstep=(np.amax(allData) - np.amin(allData))/(2**inputbits-1)
+    allData = np.round(allData/inputstep)
+    allData *= inputstep
 
-randInd = np.arange(0,len(allData))
-np.random.shuffle(randInd)
-allData = allData[randInd]
-allLabel = allLabel[randInd]
-allData = allData[:math.floor(allData.shape[0]/5)*5]
-allLabel = allLabel[:math.floor(allLabel.shape[0]/5)*5]
+    randInd = np.arange(0,len(allData))
+    np.random.shuffle(randInd)
+    allData = allData[randInd]
+    allLabel = allLabel[randInd]
+    allData = allData[:math.floor(allData.shape[0]/5)*5]
+    allLabel = allLabel[:math.floor(allLabel.shape[0]/5)*5]
 
-foldsData = np.split(allData,numFold)
-foldsLabel = np.split(allLabel,numFold)
+    foldsData = np.split(allData,numFold)
+    foldsLabel = np.split(allLabel,numFold)
 
-loss_function = nn.BCEWithLogitsLoss()
-
-df = pd.DataFrame(columns=['Patient', 'Fold', 'Epoch', 'Loss', 'Train Accuracy', 'Test Accuracy'])
-for patient in patients:
+    loss_function = nn.BCEWithLogitsLoss()
     print('--------------------------------')
     print(f'Patient {patient}')
     for fold in range(0,numFold):
         trainData, testData, trainLabel, testLabel = foldretrieve(fold, foldsData, foldsLabel)
         print(f'Fold Number {fold}')
-        network = ParallelConvolution(size=network_size).to(device)
+        network = ParallelConvolution(size=network_size).to(device, dtype=torch.float)
         optimizer = torch.optim.Adam(network.parameters())
         lossHist = []
         testAccHist = []
@@ -96,7 +93,7 @@ for patient in patients:
         bestSpe = 0
         bestFPC = 1e10
         bestAUR = 0
-        bestEpoch = [0] * 5
+        bestEpoch = [0, 0, 0, 0, 0]
         for epoch in range(num_epoch):
             trainCorrect = 0
             trainTotal = 0
@@ -200,5 +197,5 @@ for patient in patients:
             lossHist.append(loss)
             trainAccHist.append(trainCorrect/trainTotal)
             testAccHist.append(testCorrect/testTotal)
-            df = df.append({'Patient': patient, 'Fold': fold, 'Epoch': epoch, 'Loss': loss.cpu().item(), 'Train Accuracy': trainAccuracy * 100., 'Test Accuracy': testAccuracy * 100.}, ignore_index=True)
+            df = df.append({'Patient': patient, 'Fold': fold, 'Epoch': epoch, 'Loss': loss.cpu().item(), 'Train Accuracy': trainAccuracy, 'Test Accuracy': testAccuracy}, ignore_index=True)
             df.to_csv('CHBMIT.csv', index=False)
