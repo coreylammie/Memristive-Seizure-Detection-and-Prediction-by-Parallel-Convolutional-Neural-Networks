@@ -1,0 +1,17 @@
+# Memristive Seizure Detection and Prediction by Parallel Convolutional Neural Networks
+Code for *Memristive Seizure Detection and Prediction by Parallel Convolutional Neural Networks*, which has been accepted for publication in the journal *IEEE Transactions on Biomedical Circuits and Systems*.
+
+> **Chenqi Li<sup>†</sup>**, **Corey Lammie<sup>†</sup>**, Xuening Dong, Amirali Amirsoleimani, Mostafa Rahimi Azghadi, and Roman Genov<br>
+>
+> **Abstract:** _During the past two decades, epileptic seizure detection and prediction algorithms have evolved rapidly. However, despite significant performance improvements, their hardware implementation using conventional technologies, such as Complementary Metal–Oxide–Semiconductor (CMOS), in power and area-constrained settings remains a challenging task; especially when many recording channels are used. In this paper, we propose a novel low-latency parallel Convolutional Neural Network (CNN) architecture that has between 2-2,800x fewer network parameters compared to State-Of-The-Art (SOTA) CNN architectures and achieves 5-fold cross validation accuracy of 99.84% for epileptic seizure detection, and 99.01% and 97.54% for epileptic seizure prediction, when evaluated using the University of Bonn Electroencephalogram (EEG), CHB MIT and SWEC-ETHZ seizure datasets, respectively. We subsequently implement our network onto analog crossbar arrays comprising Resistive Random-Access Memory (RRAM) devices, and provide a comprehensive benchmark by simulating, laying out, and determining hardware requirements of the CNN component of our system. To the best of our knowledge, we are the first to parallelize the execution of convolution layer kernels on separate analog crossbars to enable 2 orders of magnitude reduction in latency compared to SOTA hybrid Memristive-CMOS Deep Learning (DL) accelerators. Furthermore, we investigate the effects of non-idealities on our system and investigate Quantization Aware Training (QAT) to mitigate the performance degradation due to low Analog-to-Digital Converter (ADC)/Digital-to-Analog Converter (DAC) resolution. Finally, we propose a stuck weight offsetting methodology to mitigate performance degradation due to stuck R_ON/R_OFF memristor weights, recovering up to 32% accuracy, without requiring retraining. The CNN component of our platform is estimated to consume approximately 2.791W of power while occupying an area of 31.255mm2 in a 22nm FDSOI CMOS process_
+
+**<sup>†</sup>These authors contributed equally.**
+
+## File Overview
+1. `extract_interval_data_CHBMIT.py` is used to extract preictal, ictal, and interictal samples from the [CHB-MIT](https://physionet.org/content/chbmit/1.0.0/) dataset.
+2. `extract_interval_data_SWEC_ETHZ.py` is used to extract preictal, ictal, and interictal samples from the [SWEC-ETHZ](http://ieeg-swez.ethz.ch/) dataset.
+3. `gen_features.py` is used to generate time-series-based features from extracted samples to be fed into ML/DL architectures for classification.
+4. `gen_spectograms.py` is used to generate spectograms from extracted samples to be fed into Machine Learning (ML)/Deep Learning (DL) architectures for classification.
+5. The `figure_generation` directory contains figure generation scripts.
+6. The `MATLAB_simulations` directory contains all MATLAB simulation scripts.
+7. The `network_training` directory contains all network training scripts and trained model parameters.
